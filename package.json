@@ -5,9 +5,8 @@
   "author": "Mario",
   "private": true,
   "scripts": {
-    "static": "cornerstone-static hash",
-    "build": "npm run static && webpack --env.NODE_ENV=production",
-    "release": "npm run static && webpack --env.NODE_ENV=release",
+    "build": "webpack --env.NODE_ENV=production",
+    "release": "webpack --env.NODE_ENV=release",
     "hotDeploy": "npm run build && cornerstone-update build deploy",
     "copyToAndroid": "cornerstone-update mobile deploy platforms/android/app/src/main/assets/www",
     "copyToIos": "cornerstone-update mobile deploy platforms/ios/www"
