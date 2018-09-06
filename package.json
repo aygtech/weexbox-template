@@ -5,10 +5,7 @@
   "author": "Mario",
   "private": true,
   "scripts": {
-    "build": "webpack --env.NODE_ENV=production",
-    "hotDeploy": "npm run build && cornerstone-update build deploy",
-    "copyToAndroid": "cornerstone-update mobile deploy platforms/android/app/src/main/assets/www",
-    "copyToIos": "cornerstone-update mobile deploy platforms/ios/www"
+    "build": "webpack --env.NODE_ENV=production && weexbox-service update && weexbox-service copy"
   },
   "keywords": [
     "weex"
@@ -22,6 +19,7 @@
     "weex-vue-render": "^1.0.17"
   },
   "devDependencies": {
+    "@weexbox/service": "^0.0.4",
     "autoprefixer": "^8.0.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.1",
