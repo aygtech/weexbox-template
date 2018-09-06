@@ -1,10 +1,14 @@
 [
   {
     "path": "login/page1.js",
-    "md5": "0722c9a7eda2ce6563e3b7433c922b42"
+    "md5": "2a7740f98d04e4b2d61309248670d0d2"
   },
   {
     "path": "module1/page1.js",
-    "md5": "3b183ef22febdaa7c95d5d4327af32a6"
+    "md5": "18d4faa54e163fc2263773a2717b56af"
+  },
+  {
+    "path": "static/q_afd2d8a5077b9b9ea41bfeafb1b0ffbe.png",
+    "md5": "afd2d8a5077b9b9ea41bfeafb1b0ffbe"
   }
 ]
