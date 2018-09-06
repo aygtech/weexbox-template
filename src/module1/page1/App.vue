@@ -2,9 +2,7 @@
   <div class="wrapper">
     <image :src="logo" class="logo" />
     img:{{img}}
-    logo:{{logo}}
-    text:{{text}}ffffffff
-    <text class="greeting">The environment is ready!</text>
+    <text class="greeting">module1/page1</text>
     <HelloWorld/>
   </div>
 </template>
@@ -23,7 +21,6 @@ export default {
       // ddd
       logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png',
       img,
-      text: 'fdff',
     }
   },
   created() {
