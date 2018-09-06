@@ -6,7 +6,6 @@
   "private": true,
   "scripts": {
     "build": "webpack --env.NODE_ENV=production",
-    "release": "webpack --env.NODE_ENV=release",
     "hotDeploy": "npm run build && cornerstone-update build deploy",
     "copyToAndroid": "cornerstone-update mobile deploy platforms/android/app/src/main/assets/www",
     "copyToIos": "cornerstone-update mobile deploy platforms/ios/www"

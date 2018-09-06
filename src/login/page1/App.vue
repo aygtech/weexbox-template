@@ -8,7 +8,7 @@
 
 <script>
 import HelloWorld from '../../components/HelloWorld.vue'
-import png from '../../../static/1.png'
+
 export default {
   name: 'App',
   components: {
@@ -18,7 +18,6 @@ export default {
     return {
       // ddd
       // logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png'
-      logo: png
     }
   },
   created() {
