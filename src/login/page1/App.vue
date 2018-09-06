@@ -1,6 +1,9 @@
 <template>
   <div class="wrapper">
-    <image :src="logo" class="logo" />
+    <image :src="img" class="logo" />
+    img:{{img}}
+    logo:{{logo}}
+    text:{{text}}
     <text class="greeting">The environment is ready!</text>
     <HelloWorld/>
   </div>
@@ -8,6 +11,7 @@
 
 <script>
 import HelloWorld from '../../components/HelloWorld.vue'
+import img from '../../../static/q.png'
 
 export default {
   name: 'App',
@@ -17,12 +21,14 @@ export default {
   data () {
     return {
       // ddd
-      // logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png'
+      logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png',
+      img,
+      text: 'fdff',
     }
   },
   created() {
     console.log('开始加载了')
-    // formatImage('1.ac72e6e')
+    console.log(img)
   }
 }
 </script>
