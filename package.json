@@ -5,7 +5,7 @@
   "author": "Mario",
   "private": true,
   "scripts": {
-    "build": "webpack --env.NODE_ENV=production && weexbox-service update && weexbox-service copy"
+    "hotDeploy": "webpack --env.NODE_ENV=production && weexbox-service update && weexbox-service copy"
   },
   "keywords": [
     "weex"

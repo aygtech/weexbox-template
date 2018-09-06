@@ -9,7 +9,7 @@ const path = require('path')
 
 const weexConfig = webpackMerge({
   plugins: [
-    new CleanWebpackPlugin(helper.rootNode(config.distDir), {
+    new CleanWebpackPlugin(helper.rootNode(config.delpoyDir), {
       root: path.resolve('/'),
       verbose: true
     }),

@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <image :src="img" class="logo" />
-    img:{{img}}
+    <!-- img:{{img}} -->
     logo:{{logo}}
     text:{{text}}
     <text class="greeting">The environment is ready!</text>
@@ -11,7 +11,7 @@
 
 <script>
 import HelloWorld from '../../components/HelloWorld.vue'
-import img from '../../../static/q.png'
+// import img from '../../../static/w.png'
 
 export default {
   name: 'App',
@@ -22,7 +22,7 @@ export default {
     return {
       // ddd
       logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png',
-      img,
+      // img,
       text: 'fdff',
     }
   },

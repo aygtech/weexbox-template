@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper">
-    <image :src="img" class="logo" />
+    <image :src="logo" class="logo" />
     img:{{img}}
     logo:{{logo}}
-    text:{{text}}
+    text:{{text}}ffffffff
     <text class="greeting">The environment is ready!</text>
     <HelloWorld/>
   </div>
@@ -11,7 +11,7 @@
 
 <script>
 import HelloWorld from '../../components/HelloWorld.vue'
-import img from '../../../static/q.png'
+import img from '../../../static/w.png'
 
 export default {
   name: 'App',

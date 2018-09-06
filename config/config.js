@@ -9,6 +9,7 @@ const config = {
   // router
   // common
   sourceDir: 'src',
+  delpoyDir: 'deploy',
   distDir: 'deploy/www',
   staticDic: 'deploy/static',
   templateDir: '.temp',
@@ -35,7 +36,7 @@ const config = {
       aggregateTimeout: 300,
       poll: false
     },
-        /**
+    /**
      * Source Maps
      */
     // https://webpack.js.org/configuration/devtool/#development
