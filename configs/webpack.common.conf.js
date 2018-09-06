@@ -33,7 +33,9 @@ const weexConfig = {
           {
             loader: 'file-loader',
             options: {
-              publicPath: weexbox_config.imagePublicPath
+              publicPath: weexbox_config.imagePublicPath,
+              name: '[name]_[hash].[ext]',
+              outputPath: '/static/'
             }
           }
         ]
