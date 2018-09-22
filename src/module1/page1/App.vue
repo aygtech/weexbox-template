@@ -18,12 +18,12 @@ export default {
   components: {
     HelloWorld
   },
-  data () {
+  data() {
     return {
       // ddd
       logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png',
       img,
-      text: 'fdff',
+      text: 'fdff'
     }
   },
   created() {
@@ -34,24 +34,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .wrapper {
-    justify-content: center;
-    align-items: center;
-  }
-  $width: 424px;
-  .logo {
-    width: $width;
-    height: 200px;
-  }
-  .greeting {
-    text-align: center;
-    margin-top: 70px;
-    font-size: 50px;
-    color: #41B883;
-  }
-  .message {
-    margin: 30px;
-    font-size: 32px;
-    color: #727272;
-  }
+.wrapper {
+  justify-content: center;
+  align-items: center;
+}
+$width: 424px;
+.logo {
+  width: $width;
+  height: 200px;
+}
+.greeting {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 50px;
+  color: #41b883;
+}
+.message {
+  margin: 30px;
+  font-size: 32px;
+  color: #727272;
+}
 </style>

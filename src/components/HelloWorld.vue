@@ -5,8 +5,7 @@
 <script>
 export default {
   created() {
-    console.log("111111q")
-    
+    console.log('111111q')
   }
 }
 </script>

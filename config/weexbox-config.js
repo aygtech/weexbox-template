@@ -1,5 +1,5 @@
 const config = {
-    imagePublicPath: "https://www.weexbox.com/static/"
+  imagePublicPath: 'https://www.weexbox.com/static/'
 }
 
-module.exports = config;
+module.exports = config
