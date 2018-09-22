@@ -5,8 +5,7 @@
   "author": "Mario",
   "private": true,
   "scripts": {
-    "build": "weexbox-service build",
-    "release": "weexbox-service release",
+    "hotDeploy": "weexbox-service build && weexbox-service update && weexbox-service copy",
     "debug": "weexbox-service debug"
   },
   "keywords": [
@@ -15,6 +14,6 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "@weexbox/service": "0.3.0"
+    "@weexbox/service": "0.3.2"
   }
 }
