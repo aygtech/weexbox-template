@@ -1,1 +1,1 @@
-# vue-template
+# weexbox-template

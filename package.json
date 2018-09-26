@@ -14,6 +14,6 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "@weexbox/service": "0.3.2"
+    "@weexbox/service": "0.3.6"
   }
 }
