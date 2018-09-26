@@ -1,5 +1,5 @@
 const config = {
-  imagePublicPath: 'https://www.weexbox.com/static/'
+  imagePublicPath: 'http://iquest-test92.aiyuangong.com/hotdeploy/static/'
 }
 
 module.exports = config
