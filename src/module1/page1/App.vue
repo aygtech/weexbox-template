@@ -23,7 +23,7 @@ export default {
       // ddd
       logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png',
       img,
-      text: 'fdff'
+      text: 'fdfggf'
     }
   },
   created() {
