@@ -1,6 +1,6 @@
 {
-  "presets": ["@babel/preset-env"],
-  "plugins": [
-    "@babel/plugin-proposal-function-bind"
+  "presets": [
+    "es2015",
+    "stage-0"
   ]
 }

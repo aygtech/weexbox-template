@@ -1,6 +1,6 @@
 {
   "name": "weexbox",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A weex project",
   "author": "Mario",
   "private": true,
@@ -15,9 +15,10 @@
     "weex"
   ],
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@weexbox/builder": "0.7.1",
+    "@weexbox/debugger": "0.7.1"
+  },
   "devDependencies": {
-    "@weexbox/builder": "0.5.3",
-    "@weexbox/debugger": "0.3.2"
   }
 }
