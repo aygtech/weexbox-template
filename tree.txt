@@ -1,0 +1,18 @@
+.
+├── config
+│   ├── update-config.json
+│   └── weexbox-config.js
+├── deploy
+├── package.json
+├── platforms
+│   ├── android
+│   └── ios
+├── src
+│   └── module
+│       └── page
+│           ├── App.vue
+│           └── index.js
+├── static
+└── tree.txt
+
+9 directories, 6 files
