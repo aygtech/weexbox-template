@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         
         // 使用 WBNavigationController 作为导航基类
-        window?.rootViewController = WBNavigationController(rootViewController: ViewController())
+        window?.rootViewController = WBNavigationController(rootViewController: LaunchController())
         
         window?.makeKeyAndVisible()
         
