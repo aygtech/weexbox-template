@@ -9,15 +9,16 @@
     "develop": "weexbox-builder develop",
     "test": "weexbox-builder test",
     "preRelease": "weexbox-builder preRelease",
-    "release": "weexbox-builder release"
+    "release": "weexbox-builder release",
+    "deploy": "surge deploy https://hot-update.surge.sh"
   },
   "keywords": [
     "weex"
   ],
   "license": "MIT",
   "dependencies": {
-    "@weexbox/builder": "0.7.1",
-    "@weexbox/debugger": "0.7.1"
+    "@weexbox/builder": "1.0.1",
+    "@weexbox/debugger": "1.0.1"
   },
   "devDependencies": {
   }

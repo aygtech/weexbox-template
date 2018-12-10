@@ -1,15 +1,15 @@
 const config = {
   develop: {
-    imagePublicPath: 'http://iquest-test94.aiyuangong.com/hotdeploy/static/'
+    imagePublicPath: 'https://hot-update.surge.sh'
   },
   test: {
-    imagePublicPath: 'http://iquest-test92.aiyuangong.com/hotdeploy/static/'
+    imagePublicPath: 'https://hot-update.surge.sh'
   },
   preRelease: {
-    imagePublicPath: 'http://iquest-test92.aiyuangong.com/hotdeploy/static/'
+    imagePublicPath: 'https://hot-update.surge.sh'
   },
   release: {
-    imagePublicPath: 'http://iquest-test92.aiyuangong.com/hotdeploy/static/'
+    imagePublicPath: 'https://hot-update.surge.sh'
   }
 }
 

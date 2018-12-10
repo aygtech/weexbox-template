@@ -29,6 +29,8 @@ module.exports = {
     'no-unused-expressions': 0,
     'radix': 0,
     'comma-dangle': ['error', 'never'],
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }]
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'prefer-promise-reject-errors': 0,
+    'linebreak-style': ["off", "windows"]
   }
 }

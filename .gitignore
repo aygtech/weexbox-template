@@ -1,5 +1,6 @@
 deploy
-platforms
+package-lock.json
+.editorconfig
 
 # Logs
 logs
@@ -62,4 +63,3 @@ typings/
 
 # next.js build output
 .next
-package-lock.json
