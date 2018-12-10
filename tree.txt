@@ -12,7 +12,6 @@
 │       └── page
 │           ├── App.vue
 │           └── index.js
-├── static
 └── tree.txt
 
-9 directories, 6 files
+8 directories, 6 files
