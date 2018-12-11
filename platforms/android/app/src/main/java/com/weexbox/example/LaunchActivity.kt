@@ -12,6 +12,8 @@ import com.weexbox.core.controller.WBBaseActivity
 class LaunchActivity: WBBaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        router.navBarHidden = true
+
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_launch)

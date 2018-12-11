@@ -45,7 +45,7 @@ class LaunchFragment : WBBaseFragment() {
                     // 如果开启了强制更新，会等到下载完成才会进入这里。否则就是静默更新，解压成功就会进入
                     val router = Router()
                     router.name = Router.NAME_WEEX
-                    router.url = "module1/page1.js"
+                    router.url = "page/home.js"
                     router.closeFrom = 0
                     router.open(activity as LaunchActivity)
                 }
