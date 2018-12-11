@@ -12,23 +12,19 @@
         android:name=".App"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
-        android:label="WeexBox"
+        android:label="WeexBoxExample"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NoActionbarTheme"
         android:largeHeap="true"
     	tools:replace="android:allowBackup,android:theme">
 
-        <activity android:name=".NormalActivity">
+        <activity android:name=".LaunchActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <activity android:name=".WeexActivity">
-
         </activity>
 
 

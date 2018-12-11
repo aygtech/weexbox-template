@@ -16,11 +16,6 @@ class App : Application() {
 
         // 开启调试
         WeexBoxEngine.isDebug = true
-
-        Router.register(Router.NAME_WEEX, WeexActivity::class.java)
-
-        UpdateManager.serverUrl = "https://weexbox.surge.sh"
-        UpdateManager.update { state, progress, error, url ->  }
     }
 
 }

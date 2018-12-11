@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <FrameLayout
-        android:id="@+id/weex_fragment"
+        android:id="@+id/launchFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </FrameLayout>

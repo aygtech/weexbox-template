@@ -12,7 +12,7 @@ import WeexBox
 class WeexViewController: WBWeexViewController {
     
     override func viewDidLoad() {
-        router.url = "module1/page1.js"
+        router.url = "page/home.js"
         
         super.viewDidLoad()
     }
