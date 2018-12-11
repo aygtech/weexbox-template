@@ -52,7 +52,6 @@ export default {
   methods: {
     getLocation() {
       location.getLocation((result) => {
-        console.log(JSON.stringify(result))
         if (result.status === 0) {
           this.info = result.data
           modal.toast({
