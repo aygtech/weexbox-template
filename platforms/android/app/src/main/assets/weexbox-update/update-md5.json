@@ -1,6 +1,18 @@
 [
   {
-    "path": "module1/page1.js",
-    "md5": "5d0a8943fba6d1652f312a099d417901"
+    "path": "page/home.js",
+    "md5": "193e91218ff59447f025e667de2db2a0"
+  },
+  {
+    "path": "page/page1.js",
+    "md5": "a99a99422055f883176123231611023f"
+  },
+  {
+    "path": "page/wb-router.js",
+    "md5": "79f2965a55cc006e0731f8692d59fe1a"
+  },
+  {
+    "path": "page/web.js",
+    "md5": "1a0079ca3046aeff8b3a0c0c328ced98"
   }
 ]
