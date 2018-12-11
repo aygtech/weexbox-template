@@ -1,0 +1,26 @@
+.wrap {
+  padding: 30px;
+}
+.empty {
+  height: 40px;
+}
+.title {
+  font-size: 28px;
+  color: #333333;
+  padding-bottom: 15px;
+}
+.button {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 78px;
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom right,#0FCF2C,#21B0C4);
+}
+.button:active {
+  background-image: linear-gradient(to bottom right,#15DF34,#2AC5DB);
+}
+.button-text {
+  font-size: 28px;
+  color: #ffffff;
+}

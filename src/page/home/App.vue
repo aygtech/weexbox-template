@@ -1,6 +1,7 @@
 <template>
   <div class="wrapper">
     <text
+      class="item"
       v-for="(item, index) in moduleList"
       :key="index"
       @click="detail(item)">{{item}}</text>
@@ -42,4 +43,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.item {
+  padding: 30px 30px;
+  border-bottom-color: #e7e5e5;
+  border-bottom-width: 1px;
+}
 </style>
