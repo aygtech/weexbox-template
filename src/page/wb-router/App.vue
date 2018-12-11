@@ -6,6 +6,7 @@
 import { router } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
+const params = router.getParams()
 
 export default {
   components: {
@@ -15,21 +16,26 @@ export default {
     }
   },
   created() {
-    navigator.setCenterItem({
-      text: 'wb-router',
+    if (params) {
+      navigator.setCenterItem({
+        text: params.title,
+        color: '3d3d3d'
+      }, () => {})
+    }
+    navigator.setRightItems([{
+      text: '查看文档',
       color: '3d3d3d'
-    }, () => {})
-  },
-  methods: {
-    wbRouter() {
+    }], () => {
       router.open({
         url: 'page/web.js',
         params: {
-          title: 'wb-router',
-          url: '#wb-router'
+          title: params.title,
+          url: params.url
         }
       })
-    }
+    })
+  },
+  methods: {
   }
 }
 </script>

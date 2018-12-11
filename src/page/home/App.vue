@@ -3,7 +3,7 @@
     <text
       v-for="(item, index) in moduleList"
       :key="index"
-      @click="wbRouter">{{item}}</text>
+      @click="detail(item)">{{item}}</text>
   </div>
 </template>
 
@@ -28,12 +28,12 @@ export default {
     }, () => {})
   },
   methods: {
-    wbRouter() {
+    detail(item) {
       router.open({
-        url: 'page/web.js',
+        url: `page/${item}.js`,
         params: {
-          title: 'wb-router',
-          url: '#wb-router'
+          title: item,
+          url: item
         }
       })
     }
