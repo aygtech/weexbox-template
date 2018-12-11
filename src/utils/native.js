@@ -2,13 +2,12 @@
  * @Author: remi.zhang
  * @Date: 2018-12-11 11:04:31
  * @Last Modified by: remi.zhang
- * @Last Modified time: 2018-12-11 11:27:31
+ * @Last Modified time: 2018-12-11 14:59:42
  */
 // const modal = weex.requireModule('wb-modal')
 // const _network = weex.requireModule('wb-network')
 const _router = weex.requireModule('wb-router')
 // const _location = weex.requireModule('wb-location')
-const _nativerouter = weex.requireModule('wb-nativerouter')
 
 const { env } = weex.config
 
@@ -19,7 +18,7 @@ export const weexBoxUrl = 'https://weexbox.surge.sh/guide/module.html'
  * 工具栏高度
  */
 export const toolbarHeight = () => {
-  const height = _nativerouter.nativeNavigationHeight() / env.deviceWidth * 750
+  const height = env.deviceHeight / env.deviceWidth * 750
   return Math.ceil(height)
 }
 
