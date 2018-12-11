@@ -1,15 +1,9 @@
 <template>
-  <div class="wrapper">
-    <text
-      v-for="(item, index) in moduleList"
-      :key="index"
-      @click="wbRouter">{{item}}</text>
-  </div>
+  <text>wb-router</text>
 </template>
 
 <script>
 import { router } from '../../utils/native'
-import { moduleList } from '../../utils/moduleList'
 
 const navigator = weex.requireModule('wb-navigator')
 
@@ -18,12 +12,11 @@ export default {
   },
   data() {
     return {
-      moduleList
     }
   },
   created() {
     navigator.setCenterItem({
-      text: 'weexbox',
+      text: 'wb-router',
       color: '3d3d3d'
     }, () => {})
   },
