@@ -31,7 +31,7 @@ class LaunchController: WBBaseViewController {
         UpdateManager.serverUrl = hotDeployUrl
         
         // 是否需要强制更新
-        UpdateManager.forceUpdate = true
+        UpdateManager.forceUpdate = false
         
         // 执行热更新
         UpdateManager.update { [weak self] (state, progress, error, url) in
@@ -41,7 +41,9 @@ class LaunchController: WBBaseViewController {
                 HUD.showProgress(view: self?.view, progress: Float(progress) / 100, message: "解压中")
             case .DownloadFile:
                 // 下载
-                HUD.showProgress(view: self?.view, progress: Float(progress) / 100, message: "下载中")
+                if UpdateManager.forceUpdate {
+                    HUD.showProgress(view: self?.view, progress: Float(progress) / 100, message: "下载中")
+                }
             case .UpdateSuccess:
                 // 更新成功，可以进入APP
                 // 如果开启了强制更新，会等到下载完成才会进入这里。否则就是静默更新，解压成功就会进入
