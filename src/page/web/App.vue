@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import { toolbarHeight, router, weexBoxUrl } from '../../utils/native'
+import { screenHeight, router, weexBoxUrl } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
 
@@ -13,7 +13,7 @@ export default {
   },
   data() {
     return {
-      height: toolbarHeight,
+      height: screenHeight,
       url: ''
     }
   },

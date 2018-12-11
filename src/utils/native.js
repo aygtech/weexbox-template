@@ -2,7 +2,7 @@
  * @Author: remi.zhang
  * @Date: 2018-12-11 11:04:31
  * @Last Modified by: remi.zhang
- * @Last Modified time: 2018-12-11 14:59:42
+ * @Last Modified time: 2018-12-11 17:03:15
  */
 // const modal = weex.requireModule('wb-modal')
 // const _network = weex.requireModule('wb-network')
@@ -15,9 +15,9 @@ const { env } = weex.config
 export const weexBoxUrl = 'https://weexbox.surge.sh/guide/module.html'
 
 /**
- * 工具栏高度
+ * 屏幕高度
  */
-export const toolbarHeight = () => {
+export const screenHeight = () => {
   const height = env.deviceHeight / env.deviceWidth * 750
   return Math.ceil(height)
 }
@@ -68,5 +68,5 @@ export const router = {
 export default {
   weexBoxUrl,
   router,
-  toolbarHeight
+  screenHeight
 }
