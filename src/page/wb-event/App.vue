@@ -1,26 +1,26 @@
 <template>
   <div class="wrap">
-    <text class="title">打开新页面</text>
-    <div class="button" @click="open">
-      <text class="button-text">打开新页面</text>
+    <text class="title">注册事件</text>
+    <div class="button" @click="register">
+      <text class="button-text">register</text>
     </div>
     <div class="empty"></div>
 
-    <text class="title">获取router的params参数</text>
-    <div class="button" @click="getParams">
-      <text class="button-text">获取参数</text>
+    <text class="title">发送事件</text>
+    <div class="button" @click="emit">
+      <text class="button-text">emit</text>
     </div>
     <div class="empty"></div>
 
-    <text class="title">关闭页面</text>
+    <text class="title">注销事件</text>
     <div class="button" @click="close">
-      <text class="button-text">关闭本页</text>
+      <text class="button-text">unregister</text>
     </div>
     <div class="empty"></div>
 
-    <text class="title">刷新weex页面</text>
+    <text class="title">注销所有事件</text>
     <div class="button" @click="refresh">
-      <text class="button-text">刷新本页</text>
+      <text class="button-text">unregisterAll</text>
     </div>
     <div class="empty"></div>
   </div>
@@ -31,10 +31,11 @@ import { router } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
 const modal = weex.requireModule('wb-modal')
+const event = weex.requireModule('wb-event')
 // const params = router.getParams()
 const params = {
-  title: 'wb-router',
-  url: 'wb-router'
+  title: 'wb-event',
+  url: 'wb-event'
 }
 
 export default {
@@ -65,25 +66,37 @@ export default {
     })
   },
   methods: {
-    close() {
-      router.close()
-    },
-    refresh() {
-      router.refresh()
-    },
-    getParams() {
+    unregisterAll() {
+      event.unregisterAll()
       modal.showToast({
-        text: `${JSON.stringify(params)}`,
+        text: '注销所有事件成功',
         duration: 2
       })
     },
-    open() {
-      router.open({
-        url: 'page/web.js',
+    unregister() {
+      event.unregister('eventName')
+      modal.showToast({
+        text: '注销成功',
+        duration: 2
+      })
+    },
+    emit() {
+      event.emit({
+        // 事件名称
+        name: 'eventName',
+        // 事件参数，默认为空
         params: {
-          title: params.title,
-          url: params.url
+          desc: 'test'
         }
+      })
+    },
+    register() {
+      event.register('eventName', (result) => {
+        // result为传过来的参数
+        modal.showToast({
+          text: `接收内容：${result.desc}`,
+          duration: 2
+        })
       })
     }
   }
