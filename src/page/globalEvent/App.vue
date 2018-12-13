@@ -49,13 +49,13 @@ export default {
       globalEvent.addEventListener('viewDidAppear', () => {
         modal.showToast({
           text: 'viewDidAppear',
-          duration: 2
+          duration: 1.5
         })
       })
       globalEvent.addEventListener('viewDidDisappear', () => {
         modal.showToast({
           text: 'viewDidDisappear',
-          duration: 2
+          duration: 1.5
         })
       })
     }

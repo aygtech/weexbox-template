@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <text class="title">获取经纬度</text>
+    <text class="title">获取经纬度(getLocation)</text>
     <div class="button" @click="getLocation">
       <text class="button-text">获取经纬度</text>
     </div>
