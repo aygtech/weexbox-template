@@ -1,0 +1,34 @@
+[
+  {
+    "path": "page/globalEvent.js",
+    "md5": "f9a1c8e8671f8f888bf3a47b4bdcad41"
+  },
+  {
+    "path": "page/home.js",
+    "md5": "354008c56c3520246a326094f9bb188e"
+  },
+  {
+    "path": "page/page1.js",
+    "md5": "5b72d5acf6e062110b61407459744d2a"
+  },
+  {
+    "path": "page/wb-event.js",
+    "md5": "94d7c8fee8a7461c0ce9ee3f381e19ba"
+  },
+  {
+    "path": "page/wb-location.js",
+    "md5": "eb7cde48e48c097d42e8f26753c2f45c"
+  },
+  {
+    "path": "page/wb-modal.js",
+    "md5": "fd902edad464ec6c30a3e0f07cd906ea"
+  },
+  {
+    "path": "page/wb-router.js",
+    "md5": "a529d82d79b8412a12a7ee12cc15585c"
+  },
+  {
+    "path": "page/web.js",
+    "md5": "e1fd54a355dd3fb8f68c10a417e5babc"
+  }
+]

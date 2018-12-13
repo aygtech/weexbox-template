@@ -1,0 +1,1 @@
+/Users/mario/Documents/aygtech/weexbox-template/platforms/ios/Pods/Target Support Files/RealmSwift/RealmSwift-umbrella.h
