@@ -68,9 +68,9 @@ export default {
         },
         // 响应类型, json 或 text，默认 json
         responseType: 'json'
-      }, (result) => {
+      }, () => {
         modal.showToast({
-          text: JSON.stringify(result),
+          text: '请求完成',
           duration: 1.5
         })
       })
@@ -81,16 +81,16 @@ export default {
         url: 'https://weexbox.com/xxx/xxx',
         // 本地文件路径数组
         files: ['/docment/1.png']
-      }, (result) => {
+      }, () => {
         // 完成的callback
         modal.showToast({
-          text: JSON.stringify(result),
+          text: '完成的callback',
           duration: 1.5
         })
-      }, (result) => {
+      }, () => {
         // 进度的callback
         modal.showToast({
-          text: JSON.stringify(result),
+          text: '进度的callback',
           duration: 1.5
         })
       })
