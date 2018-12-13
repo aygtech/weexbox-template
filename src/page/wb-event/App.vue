@@ -1,25 +1,25 @@
 <template>
   <div class="wrap">
-    <text class="title">注册事件</text>
+    <text class="title">注册事件(register)</text>
     <div class="button" @click="register">
       <text class="button-text">register</text>
     </div>
     <div class="empty"></div>
 
-    <text class="title">发送事件</text>
+    <text class="title">发送事件(emit)</text>
     <div class="button" @click="emit">
       <text class="button-text">emit</text>
     </div>
     <div class="empty"></div>
 
-    <text class="title">注销事件</text>
-    <div class="button" @click="close">
+    <text class="title">注销事件(unregister)</text>
+    <div class="button" @click="unregister">
       <text class="button-text">unregister</text>
     </div>
     <div class="empty"></div>
 
-    <text class="title">注销所有事件</text>
-    <div class="button" @click="refresh">
+    <text class="title">注销所有事件(unregisterAll)</text>
+    <div class="button" @click="unregisterAll">
       <text class="button-text">unregisterAll</text>
     </div>
     <div class="empty"></div>
@@ -70,14 +70,14 @@ export default {
       event.unregisterAll()
       modal.showToast({
         text: '注销所有事件成功',
-        duration: 2
+        duration: 1.5
       })
     },
     unregister() {
       event.unregister('eventName')
       modal.showToast({
         text: '注销成功',
-        duration: 2
+        duration: 1.5
       })
     },
     emit() {
@@ -95,7 +95,7 @@ export default {
         // result为传过来的参数
         modal.showToast({
           text: `接收内容：${result.desc}`,
-          duration: 2
+          duration: 1.5
         })
       })
     }
