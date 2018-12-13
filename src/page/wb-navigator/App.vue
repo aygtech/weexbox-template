@@ -2,7 +2,7 @@
   <scroller class="wrap">
     <text class="title">禁用返回手势(disableGestureBack)</text>
     <div class="button" @click="disableGestureBack">
-      <text class="button-text">禁用返回手势</text>
+      <text class="button-text">{{this.disabledBack ? '取消' : ''}}禁用返回手势</text>
     </div>
     <div class="empty"></div>
 
@@ -48,6 +48,7 @@ export default {
   },
   data() {
     return {
+      disabledBack: false
     }
   },
   created() {
@@ -72,7 +73,8 @@ export default {
   },
   methods: {
     disableGestureBack() {
-      navigator.disableGestureBack(true)
+      this.disabledBack = !this.disabledBack
+      navigator.disableGestureBack(this.disabledBack)
     },
     setLeftItems() {
       navigator.setLeftItems([

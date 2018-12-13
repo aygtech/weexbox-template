@@ -1,7 +1,7 @@
 <template>
   <scroller class="wrap">
     <text class="title">打开浏览器(openBrowser)</text>
-    <div class="button" @click="disableGestureBack">
+    <div class="button" @click="openBrowser">
       <text class="button-text">打开浏览器</text>
     </div>
     <div class="empty"></div>
