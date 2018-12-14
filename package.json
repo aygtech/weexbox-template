@@ -9,8 +9,7 @@
     "develop": "weexbox-builder develop",
     "test": "weexbox-builder test",
     "preRelease": "weexbox-builder preRelease",
-    "release": "weexbox-builder release",
-    "deploy": "npm run release && surge deploy https://hot-update.surge.sh"
+    "release": "weexbox-builder release"
   },
   "keywords": [
     "weex"
