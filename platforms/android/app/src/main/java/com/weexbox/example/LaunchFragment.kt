@@ -21,7 +21,7 @@ class LaunchFragment : WBBaseFragment() {
         super.onActivityCreated(savedInstanceState)
 
         // 配置热更新地址
-        val hotDeployUrl = "https://hot-update.surge.sh"
+        val hotDeployUrl = "https://raw.githubusercontent.com/aygtech/weexbox-template/master/deploy"
         UpdateManager.serverUrl = hotDeployUrl
 
         // 是否需要强制更新

@@ -27,7 +27,7 @@ class LaunchController: WBBaseViewController {
         }
         
         // 配置热更新地址
-        let hotDeployUrl = URL(string: "https://hot-update.surge.sh")!
+        let hotDeployUrl = URL(string: "https://raw.githubusercontent.com/aygtech/weexbox-template/master/deploy")!
         UpdateManager.serverUrl = hotDeployUrl
         
         // 是否需要强制更新

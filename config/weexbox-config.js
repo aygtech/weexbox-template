@@ -1,15 +1,15 @@
 const config = {
   develop: {
-    imagePublicPath: 'https://hot-update.surge.sh'
+    imagePublicPath: 'https://raw.githubusercontent.com/aygtech/weexbox-template/master/deploy'
   },
   test: {
-    imagePublicPath: 'https://hot-update.surge.sh'
+    imagePublicPath: 'https://raw.githubusercontent.com/aygtech/weexbox-template/master/deploy'
   },
   preRelease: {
-    imagePublicPath: 'https://hot-update.surge.sh'
+    imagePublicPath: 'https://raw.githubusercontent.com/aygtech/weexbox-template/master/deploy'
   },
   release: {
-    imagePublicPath: 'https://hot-update.surge.sh'
+    imagePublicPath: 'https://raw.githubusercontent.com/aygtech/weexbox-template/master/deploy'
   }
 }
 
