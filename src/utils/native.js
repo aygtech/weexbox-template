@@ -12,7 +12,7 @@ const _router = weex.requireModule('wb-router')
 const { env } = weex.config
 
 // weexbox module域名地址
-export const weexBoxUrl = 'https://weexbox.surge.sh/guide/module.html'
+export const weexBoxUrl = 'https://aygtech.github.io/weexbox/guide/module.html'
 
 /**
  * 屏幕高度

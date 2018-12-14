@@ -1,4 +1,4 @@
-WeexBox项目模板，包含3个端 https://weexbox.surge.sh
+WeexBox 项目模板，包含3个端 https://aygtech.github.io/weexbox
 
 # 介绍
 

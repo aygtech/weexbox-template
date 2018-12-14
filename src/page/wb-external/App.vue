@@ -67,7 +67,7 @@ export default {
   },
   methods: {
     openBrowser() {
-      external.openBrowser('https://weexbox.surge.sh/')
+      external.openBrowser('https://aygtech.github.io/weexbox')
     },
     callPhone() {
       external.callPhone('114', () => {})

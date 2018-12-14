@@ -19,7 +19,7 @@ class LaunchController: WBBaseViewController {
         navigationController?.isNavigationBarHidden = true
         let logo = UIImageView()
         logo.contentMode = .scaleAspectFit
-        logo.sd_setImage(with: URL(string: "https://raw.githubusercontent.com/aygtech/weexbox-document/master/docs/.vuepress/public/logo.png"))
+        logo.sd_setImage(with: URL(string: "https://aygtech.github.io/weexbox/logo.png"))
         view.addSubview(logo)
         logo.snp.makeConstraints { (make) -> Void in
             make.width.equalToSuperview()
