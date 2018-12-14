@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <text class="title">globalEvent 全局事件</text>
+    <text class="title">{{text}}</text>
   </div>
 </template>
 
@@ -8,7 +8,6 @@
 import { router } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
-const modal = weex.requireModule('wb-modal')
 const globalEvent = weex.requireModule('globalEvent')
 // const params = router.getParams()
 const params = {
@@ -21,6 +20,7 @@ export default {
   },
   data() {
     return {
+      text: 'globalEvent 全局事件'
     }
   },
   created() {
@@ -47,16 +47,12 @@ export default {
   methods: {
     init() {
       globalEvent.addEventListener('viewDidAppear', () => {
-        modal.showToast({
-          text: 'viewDidAppear',
-          duration: 1.5
-        })
+        this.text += '\n'
+        this.text += 'viewDidAppear'
       })
       globalEvent.addEventListener('viewDidDisappear', () => {
-        modal.showToast({
-          text: 'viewDidDisappear',
-          duration: 1.5
-        })
+        this.text += '\n'
+        this.text += 'viewDidDisappear'
       })
     }
   }
