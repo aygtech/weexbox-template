@@ -64,6 +64,13 @@ export default {
         }
       })
     })
+    event.register('eventName', (result) => {
+      // result为传过来的参数
+      modal.showToast({
+        text: `register接收的内容：${result.desc}`,
+        duration: 1.5
+      })
+    })
   },
   methods: {
     unregisterAll() {
@@ -91,13 +98,6 @@ export default {
       })
     },
     register() {
-      event.register('eventName', (result) => {
-        // result为传过来的参数
-        modal.showToast({
-          text: `接收内容：${result.desc}`,
-          duration: 1.5
-        })
-      })
     }
   }
 }
