@@ -111,7 +111,6 @@ export default {
     prompt() {
       modal.prompt({
         title: '标题',
-        message: '',
         placeholder: '请输入密码',
         cancelTitle: '取消',
         okTitle: '确定'
@@ -124,7 +123,6 @@ export default {
     },
     actionSheet() {
       modal.actionSheet({
-        message: '',
         actions: [
           { type: 'normal', title: '拍照' },
           { type: 'normal', title: '相册' },

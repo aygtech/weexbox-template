@@ -2,7 +2,7 @@
   <scroller class="wrap">
     <text class="title">禁用返回手势(disableGestureBack)</text>
     <div class="button" @click="disableGestureBack">
-      <text class="button-text">{{this.disabledBack ? '取消' : ''}}禁用返回手势</text>
+      <text class="button-text">{{disabledBack ? '取消' : ''}}禁用返回手势</text>
     </div>
     <div class="empty"></div>
 
@@ -52,6 +52,7 @@ export default {
     }
   },
   created() {
+    // this.disableGestureBack()
     if (params) {
       navigator.setCenterItem({
         text: params.title,
