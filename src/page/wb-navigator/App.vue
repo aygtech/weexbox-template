@@ -1,11 +1,5 @@
 <template>
   <scroller class="wrap">
-    <text class="title">禁用返回手势(disableGestureBack)</text>
-    <div class="button" @click="disableGestureBack">
-      <text class="button-text">{{disabledBack ? '取消' : ''}}禁用返回手势</text>
-    </div>
-    <div class="empty"></div>
-
     <text class="title">设置导航栏左边按钮(setLeftItems)</text>
     <div class="button" @click="setLeftItems">
       <text class="button-text">设置导航栏左边按钮</text>
@@ -52,7 +46,6 @@ export default {
     }
   },
   created() {
-    // this.disableGestureBack()
     if (params) {
       navigator.setCenterItem({
         text: params.title,
@@ -73,10 +66,6 @@ export default {
     })
   },
   methods: {
-    disableGestureBack() {
-      this.disabledBack = !this.disabledBack
-      navigator.disableGestureBack(this.disabledBack)
-    },
     setLeftItems() {
       navigator.setLeftItems([
         {
