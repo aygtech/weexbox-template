@@ -1,41 +1,74 @@
 <template>
-  <scroller class="wrapper">
-    <text
-      class="item"
-      v-for="(item, index) in moduleList"
-      :key="index"
-      @click="detail(item)">{{item}}</text>
-  </scroller>
+  <div>
+    <scroller class="logo-panel">
+      <div class="logo">
+        <image src="https://aygtech.github.io/weexbox/logo.png" class="icon"></image>
+        <text class="title">WeexBox</text>
+      </div>
+    </scroller>
+    <div class="wrapper">
+      <div class="item" @click="course">
+        <text>教程</text>
+      </div>
+      <div class="item" @click="modulePage">
+        <text>实例</text>
+      </div>
+      <div class="item" @click="about">
+        <text>关于</text>
+      </div>
+      <div class="item" @click="use">
+        <text>谁在使用WeexBox</text>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 import { router } from '../../utils/native'
-import { moduleList } from '../../utils/moduleList'
 
 const navigator = weex.requireModule('wb-navigator')
+const modal = weex.requireModule('wb-modal')
 
 export default {
   components: {
   },
   data() {
     return {
-      moduleList
     }
   },
   created() {
     navigator.setCenterItem({
-      text: 'weexbox',
+      text: 'WeexBox',
       color: '3d3d3d'
     }, () => {})
   },
   methods: {
-    detail(item) {
+    use() {
+      modal.showToast({
+        text: '整理中...',
+        duration: 1.5
+      })
+    },
+    course() {
       router.open({
-        url: `page/${item}.js`,
+        url: 'page/web.js',
         params: {
-          title: item,
-          url: item
+          type: 1, // 1普通网页，0demo页面
+          title: '教程',
+          url: 'https://aygtech.github.io/weexbox/guide/'
         }
+      })
+    },
+    about() {
+      router.open({
+        url: 'page/about.js',
+        params: {}
+      })
+    },
+    modulePage() {
+      router.open({
+        url: 'page/module.js',
+        params: {}
       })
     }
   }
@@ -43,9 +76,44 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.item {
-  padding: 30px 30px;
-  border-bottom-color: #e7e5e5;
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.logo-panel {
   border-bottom-width: 1px;
+  border-bottom-color: #e7e5e5;
+}
+.logo {
+  flex: 1;
+  width: 750px;
+  padding-top: 150px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.icon {
+  width: 200px;
+  height: 200px;
+}
+.title {
+  padding-top: 50px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.item {
+  width: 375px;
+  padding: 80px 0px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 1px;
+  border-right-width: 1px;
+  border-right-color: #e7e5e5;
+  border-bottom-width: 1px;
+  border-bottom-color: #e7e5e5;
+  background-color: #f7f7f7;
 }
 </style>
