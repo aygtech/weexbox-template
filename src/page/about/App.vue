@@ -46,6 +46,7 @@ export default {
     website() {
       router.open({
         name: 'web',
+        title: '官网',
         url: 'https://aygtech.github.io/weexbox'
       })
     },

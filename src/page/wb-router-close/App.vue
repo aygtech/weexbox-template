@@ -50,18 +50,6 @@ export default {
         color: '3d3d3d'
       }, () => {})
     }
-    navigator.setRightItems([{
-      text: '查看文档',
-      color: '3d3d3d'
-    }], () => {
-      router.open({
-        url: 'page/web.js',
-        params: {
-          title: params.title,
-          url: params.url
-        }
-      })
-    })
   },
   methods: {
     close() {

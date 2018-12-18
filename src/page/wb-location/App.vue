@@ -42,6 +42,7 @@ export default {
     }], () => {
       router.open({
         name: 'web',
+        title: params.title,
         url: `${weexBoxUrl}#${params.url}`
       })
       // router.open({
