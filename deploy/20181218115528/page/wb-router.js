@@ -83,7 +83,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 57);
+/******/ 	return __webpack_require__(__webpack_require__.s = 75);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -178,21 +178,21 @@ exports.default = {
 
 /***/ }),
 
-/***/ 57:
+/***/ 75:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(58);
+module.exports = __webpack_require__(76);
 
 
 /***/ }),
 
-/***/ 58:
+/***/ 76:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _App = __webpack_require__(59);
+var _App = __webpack_require__(77);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -203,21 +203,21 @@ new Vue(_App2.default);
 
 /***/ }),
 
-/***/ 59:
+/***/ 77:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(60)
+__vue_styles__.push(__webpack_require__(78)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(61)
+__vue_exports__ = __webpack_require__(79)
 
 /* template */
-var __vue_template__ = __webpack_require__(62)
+var __vue_template__ = __webpack_require__(80)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -229,10 +229,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "D:\\code\\work\\weexbox-template\\src\\page\\wb-modal\\App.vue"
+__vue_options__.__file = "/Users/mario/Documents/aygtech/weexbox-template/src/page/wb-router/App.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-2e7b60e7"
+__vue_options__._scopeId = "data-v-10f50016"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -248,7 +248,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 60:
+/***/ 78:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -283,7 +283,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 61:
+/***/ 79:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -335,18 +335,12 @@ var navigator = weex.requireModule('wb-navigator'); //
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 var modal = weex.requireModule('wb-modal');
 // const params = router.getParams()
 var params = {
-  title: 'wb-modal',
-  url: 'wb-modal'
+  title: 'wb-router',
+  url: 'wb-router'
 };
 
 exports.default = {
@@ -376,155 +370,134 @@ exports.default = {
   },
 
   methods: {
-    alert: function alert() {
-      modal.alert({
-        title: '标题',
-        message: '弹窗内容',
-        okTitle: '确定'
-      }, function () {
-        modal.showToast({
-          text: '确定回调',
-          duration: 1.5
-        });
+    // 打开新页面并关闭本页
+    closeRoot: function closeRoot() {
+      _native.router.open({
+        url: 'page/web.js',
+        // 指定从堆栈的哪个页面开始关闭
+        closeFrom: 1,
+        // 关闭的页面个数
+        closeCount: 3,
+        // 关闭页面的方向，默认(true)和堆栈方向一致
+        closeFromBottomToTop: true,
+        params: {
+          title: params.title,
+          url: params.url
+        }
       });
     },
-    confirm: function confirm() {
-      modal.confirm({
-        title: '标题',
-        message: '弹窗内容',
-        cancelTitle: '取消',
-        okTitle: '确定'
-      }, function (result) {
-        modal.showToast({
-          text: result.status === -1 ? '取消回调' : '确定回调',
-          duration: 1.5
-        });
+    closePre: function closePre() {
+      _native.router.open({
+        url: 'page/web.js',
+        // 指定从堆栈的哪个页面开始关闭
+        closeFrom: 1,
+        // 关闭的页面个数
+        closeCount: 1,
+        // 关闭页面的方向，默认(true)和堆栈方向一致
+        closeFromBottomToTop: false,
+        params: {
+          title: params.title,
+          url: params.url
+        }
       });
     },
-    prompt: function prompt() {
-      modal.prompt({
-        title: '标题',
-        placeholder: '请输入密码',
-        cancelTitle: '取消',
-        okTitle: '确定'
-      }, function (result) {
-        modal.showToast({
-          text: result.data.text,
-          duration: 1.5
-        });
-      });
+    close: function close() {
+      _native.router.close();
     },
-    actionSheet: function actionSheet() {
-      modal.actionSheet({
-        actions: [{ type: 'normal', title: '拍照' }, { type: 'normal', title: '相册' }, { type: 'cancel', title: '取消' }]
-      }, function (result) {
-        var index = result.data.index;
-
-        modal.showToast({
-          text: index,
-          duration: 1.5
-        });
-      });
+    refresh: function refresh() {
+      _native.router.refresh();
     },
-    showToast: function showToast() {
+    getParams: function getParams() {
       modal.showToast({
-        text: '提示信息',
+        text: '' + JSON.stringify(params),
         duration: 1.5
       });
     },
-    showLoading: function showLoading() {
-      var _this = this;
-
-      modal.showLoading('加载中...');
-      setTimeout(function () {
-        _this.dismiss();
-      }, 1500);
-    },
-    showProgress: function showProgress() {
-      modal.showProgress({
-        progress: 50,
-        text: '加载中...'
+    open: function open() {
+      _native.router.open({
+        url: 'page/web.js',
+        params: {
+          title: params.title,
+          url: params.url
+        }
       });
-    },
-    dismiss: function dismiss() {
-      modal.dismiss();
     }
   }
 };
 
 /***/ }),
 
-/***/ 62:
+/***/ 80:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('scroller', {
+  return _c('div', {
     staticClass: ["wrap"]
   }, [_c('text', {
     staticClass: ["title"]
-  }, [_vm._v("警告弹窗(alert)")]), _c('div', {
+  }, [_vm._v("打开新页面(open)")]), _c('div', {
     staticClass: ["button"],
     on: {
-      "click": _vm.alert
+      "click": _vm.open
     }
   }, [_c('text', {
     staticClass: ["button-text"]
-  }, [_vm._v("警告弹窗")])]), _c('div', {
+  }, [_vm._v("打开新页面")])]), _c('div', {
     staticClass: ["empty"]
   }), _c('text', {
     staticClass: ["title"]
-  }, [_vm._v("确定弹窗(confirm)")]), _c('div', {
+  }, [_vm._v("打开新页面并关闭到根页面(open)")]), _c('div', {
     staticClass: ["button"],
     on: {
-      "click": _vm.confirm
+      "click": _vm.closeRoot
     }
   }, [_c('text', {
     staticClass: ["button-text"]
-  }, [_vm._v("确定弹窗")])]), _c('div', {
+  }, [_vm._v("打开新页面并关闭到根页面")])]), _c('div', {
     staticClass: ["empty"]
   }), _c('text', {
     staticClass: ["title"]
-  }, [_vm._v("输入弹窗(prompt)")]), _c('div', {
+  }, [_vm._v("打开新页面并关闭前一个页面(open)")]), _c('div', {
     staticClass: ["button"],
     on: {
-      "click": _vm.prompt
+      "click": _vm.closePre
     }
   }, [_c('text', {
     staticClass: ["button-text"]
-  }, [_vm._v("输入弹窗")])]), _c('div', {
+  }, [_vm._v("打开新页面并关闭前一个页面")])]), _c('div', {
     staticClass: ["empty"]
   }), _c('text', {
     staticClass: ["title"]
-  }, [_vm._v("操作表弹窗(actionSheet)")]), _c('div', {
+  }, [_vm._v("获取router的params参数(getParams)")]), _c('div', {
     staticClass: ["button"],
     on: {
-      "click": _vm.actionSheet
+      "click": _vm.getParams
     }
   }, [_c('text', {
     staticClass: ["button-text"]
-  }, [_vm._v("操作表弹窗")])]), _c('div', {
+  }, [_vm._v("获取参数")])]), _c('div', {
     staticClass: ["empty"]
   }), _c('text', {
     staticClass: ["title"]
-  }, [_vm._v("吐司(showToast)")]), _c('div', {
+  }, [_vm._v("关闭页面(close)")]), _c('div', {
     staticClass: ["button"],
     on: {
-      "click": _vm.showToast
+      "click": _vm.close
     }
   }, [_c('text', {
     staticClass: ["button-text"]
-  }, [_vm._v("吐司")])]), _c('div', {
+  }, [_vm._v("关闭本页")])]), _c('div', {
     staticClass: ["empty"]
   }), _c('text', {
     staticClass: ["title"]
-  }, [_vm._v("菊花圈(showLoading)")]), _c('div', {
+  }, [_vm._v("刷新weex页面(refresh)")]), _c('div', {
     staticClass: ["button"],
     on: {
-      "click": _vm.showLoading
+      "click": _vm.refresh
     }
   }, [_c('text', {
     staticClass: ["button-text"]
-  }, [_vm._v("菊花圈")])]), _c('div', {
+  }, [_vm._v("刷新本页")])]), _c('div', {
     staticClass: ["empty"]
   })])
 },staticRenderFns: []}

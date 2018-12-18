@@ -83,210 +83,12 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 63);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/******/ ({
 
-module.exports = __webpack_require__(1);
-
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _App = __webpack_require__(2);
-
-var _App2 = _interopRequireDefault(_App);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_App2.default.el = '#root';
-new Vue(_App2.default);
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(3)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(4)
-
-/* template */
-var __vue_template__ = __webpack_require__(6)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "D:\\code\\work\\weexbox-template\\src\\page\\about\\App.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-695eb6aa"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-module.exports = {
-  "ver": {
-    "marginTop": "30",
-    "marginRight": "30",
-    "marginBottom": "30",
-    "marginLeft": "30",
-    "paddingTop": "30",
-    "paddingRight": "30",
-    "paddingBottom": "30",
-    "paddingLeft": "30",
-    "backgroundColor": "#f7f7f7",
-    "borderRadius": "10"
-  },
-  "title": {
-    "color": "#999999",
-    "textAlign": "center",
-    "fontSize": "34",
-    "paddingBottom": "20"
-  },
-  "info": {
-    "display": "flex",
-    "flexDirection": "row",
-    "justifyContent": "flex-start",
-    "flexWrap": "wrap"
-  },
-  "info-item": {
-    "width": "315",
-    "borderBottomColor": "#e7e5e5",
-    "borderBottomWidth": "1"
-  },
-  "info-left": {
-    "paddingTop": "20",
-    "paddingRight": "0",
-    "paddingBottom": "20",
-    "paddingLeft": "0",
-    "textAlign": "right",
-    "color": "#999999"
-  },
-  "info-right": {
-    "paddingTop": "20",
-    "paddingRight": "0",
-    "paddingBottom": "20",
-    "paddingLeft": "30",
-    "textAlign": "left"
-  },
-  "item": {
-    "paddingTop": "30",
-    "paddingRight": "30",
-    "paddingBottom": "30",
-    "paddingLeft": "30",
-    "borderBottomColor": "#e7e5e5",
-    "borderBottomWidth": "1"
-  }
-}
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _native = __webpack_require__(5);
-
-var navigator = weex.requireModule('wb-navigator'); //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-var modal = weex.requireModule('wb-modal');
-var env = weex.config.env;
-exports.default = {
-  components: {},
-  data: function data() {
-    return {
-      env: env
-    };
-  },
-  created: function created() {
-    navigator.setCenterItem({
-      text: 'WeexBox',
-      color: '3d3d3d'
-    }, function () {});
-  },
-
-  methods: {
-    website: function website() {
-      _native.router.open({
-        url: 'page/web.js',
-        params: {
-          type: 1, // 1普通网页，0demo页面
-          title: '教程',
-          url: 'https://aygtech.github.io/weexbox/guide/'
-        }
-      });
-    },
-    problem: function problem() {
-      modal.showToast({
-        text: '整理中...',
-        duration: 1.5
-      });
-    }
-  }
-};
-
-/***/ }),
-/* 5 */
+/***/ 5:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -375,49 +177,284 @@ exports.default = {
 };
 
 /***/ }),
-/* 6 */
+
+/***/ 63:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(64);
+
+
+/***/ }),
+
+/***/ 64:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _App = __webpack_require__(65);
+
+var _App2 = _interopRequireDefault(_App);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_App2.default.el = '#root';
+new Vue(_App2.default);
+
+/***/ }),
+
+/***/ 65:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(66)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(67)
+
+/* template */
+var __vue_template__ = __webpack_require__(68)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/mario/Documents/aygtech/weexbox-template/src/page/wb-navigator/App.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-678fd8be"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ 66:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "wrap": {
+    "paddingTop": "30",
+    "paddingRight": "30",
+    "paddingBottom": "30",
+    "paddingLeft": "30"
+  },
+  "empty": {
+    "height": "40"
+  },
+  "title": {
+    "fontSize": "28",
+    "color": "#333333",
+    "paddingBottom": "15"
+  },
+  "button": {
+    "justifyContent": "center",
+    "alignItems": "center",
+    "alignContent": "center",
+    "height": "78",
+    "borderRadius": "8",
+    "backgroundImage": "linear-gradient(to bottom right, #0FCF2C, #21B0C4)",
+    "backgroundImage:active": "linear-gradient(to bottom right, #15DF34, #2AC5DB)"
+  },
+  "button-text": {
+    "fontSize": "28",
+    "color": "#ffffff"
+  }
+}
+
+/***/ }),
+
+/***/ 67:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _native = __webpack_require__(5);
+
+var navigator = weex.requireModule('wb-navigator'); //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var modal = weex.requireModule('wb-modal');
+// const params = router.getParams()
+var params = {
+  title: 'wb-navigator',
+  url: 'wb-navigator'
+};
+
+exports.default = {
+  components: {},
+  data: function data() {
+    return {
+      disabledBack: false
+    };
+  },
+  created: function created() {
+    if (params) {
+      navigator.setCenterItem({
+        text: params.title,
+        color: '3d3d3d'
+      }, function () {});
+    }
+    navigator.setRightItems([{
+      text: '查看文档',
+      color: '3d3d3d'
+    }], function () {
+      _native.router.open({
+        url: 'page/web.js',
+        params: {
+          title: params.title,
+          url: params.url
+        }
+      });
+    });
+  },
+
+  methods: {
+    setLeftItems: function setLeftItems() {
+      navigator.setLeftItems([{
+        text: '返回',
+        color: '000000'
+      }], function () {
+        modal.showToast({
+          text: '返回回调',
+          duration: 1.5
+        });
+      });
+    },
+    setRightItems: function setRightItems() {
+      navigator.setRightItems([{
+        text: '确定',
+        color: '000000'
+      }], function () {
+        modal.showToast({
+          text: '确定回调',
+          duration: 1.5
+        });
+      });
+    },
+    setCenterItem: function setCenterItem() {
+      navigator.setCenterItem({
+        text: 'weex-box',
+        color: '000000'
+      }, function () {
+        modal.showToast({
+          text: '设置标题：weex-box',
+          duration: 1.5
+        });
+      });
+    },
+    setNavColor: function setNavColor() {
+      navigator.setNavColor('00ff00');
+    }
+  }
+};
+
+/***/ }),
+
+/***/ 68:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('scroller', [_c('div', {
-    staticClass: ["ver"]
+  return _c('scroller', {
+    staticClass: ["wrap"]
   }, [_c('text', {
     staticClass: ["title"]
-  }, [_vm._v("Weex SDK Version")]), _c('div', {
-    staticClass: ["info"]
+  }, [_vm._v("设置导航栏左边按钮(setLeftItems)")]), _c('div', {
+    staticClass: ["button"],
+    on: {
+      "click": _vm.setLeftItems
+    }
   }, [_c('text', {
-    staticClass: ["info-item", "info-left"]
-  }, [_vm._v("appVersion")]), _c('text', {
-    staticClass: ["info-item", "info-right"]
-  }, [_vm._v(_vm._s(_vm.env['appVersion']))]), _c('text', {
-    staticClass: ["info-item", "info-left"]
-  }, [_vm._v("weexVersion")]), _c('text', {
-    staticClass: ["info-item", "info-right"]
-  }, [_vm._v(_vm._s(_vm.env['weexVersion']))]), _c('text', {
-    staticClass: ["info-item", "info-left"]
-  }, [_vm._v("platform")]), _c('text', {
-    staticClass: ["info-item", "info-right"]
-  }, [_vm._v(_vm._s(_vm.env['platform']))]), _c('text', {
-    staticClass: ["info-item", "info-left"]
-  }, [_vm._v("osVersion")]), _c('text', {
-    staticClass: ["info-item", "info-right"]
-  }, [_vm._v(_vm._s(_vm.env['osVersion']))]), _c('text', {
-    staticClass: ["info-item", "info-left"]
-  }, [_vm._v("deviceModel")]), _c('text', {
-    staticClass: ["info-item", "info-right"]
-  }, [_vm._v(_vm._s(_vm.env['deviceModel']))])])]), _c('text', {
-    staticClass: ["item"],
+    staticClass: ["button-text"]
+  }, [_vm._v("设置导航栏左边按钮")])]), _c('div', {
+    staticClass: ["empty"]
+  }), _c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("设置导航栏右边按钮(setRightItems)")]), _c('div', {
+    staticClass: ["button"],
     on: {
-      "click": _vm.website
+      "click": _vm.setRightItems
     }
-  }, [_vm._v("WeexBox 官网")]), _c('text', {
-    staticClass: ["item"],
+  }, [_c('text', {
+    staticClass: ["button-text"]
+  }, [_vm._v("设置导航栏右边按钮")])]), _c('div', {
+    staticClass: ["empty"]
+  }), _c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("设置导航栏中间的按钮(setCenterItem)")]), _c('div', {
+    staticClass: ["button"],
     on: {
-      "click": _vm.problem
+      "click": _vm.setCenterItem
     }
-  }, [_vm._v("常见问题")])])
+  }, [_c('text', {
+    staticClass: ["button-text"]
+  }, [_vm._v("设置导航栏中间的按钮")])]), _c('div', {
+    staticClass: ["empty"]
+  }), _c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("设置导航栏颜色(setNavColor)")]), _c('div', {
+    staticClass: ["button"],
+    on: {
+      "click": _vm.setNavColor
+    }
+  }, [_c('text', {
+    staticClass: ["button-text"]
+  }, [_vm._v("设置导航栏颜色")])]), _c('div', {
+    staticClass: ["empty"]
+  })])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ })
-/******/ ]);
+
+/******/ });

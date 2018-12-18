@@ -83,7 +83,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 75);
+/******/ 	return __webpack_require__(__webpack_require__.s = 69);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -178,21 +178,21 @@ exports.default = {
 
 /***/ }),
 
-/***/ 75:
+/***/ 69:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(76);
+module.exports = __webpack_require__(70);
 
 
 /***/ }),
 
-/***/ 76:
+/***/ 70:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _App = __webpack_require__(77);
+var _App = __webpack_require__(71);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -203,21 +203,21 @@ new Vue(_App2.default);
 
 /***/ }),
 
-/***/ 77:
+/***/ 71:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(78)
+__vue_styles__.push(__webpack_require__(72)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(79)
+__vue_exports__ = __webpack_require__(73)
 
 /* template */
-var __vue_template__ = __webpack_require__(80)
+var __vue_template__ = __webpack_require__(74)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -229,10 +229,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "D:\\code\\work\\weexbox-template\\src\\page\\wb-router\\App.vue"
+__vue_options__.__file = "/Users/mario/Documents/aygtech/weexbox-template/src/page/wb-network/App.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-2832d9ae"
+__vue_options__._scopeId = "data-v-e6f49656"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -248,7 +248,7 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 78:
+/***/ 72:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -283,7 +283,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 79:
+/***/ 73:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -311,36 +311,13 @@ var navigator = weex.requireModule('wb-navigator'); //
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
+var network = weex.requireModule('wb-network');
 var modal = weex.requireModule('wb-modal');
 // const params = router.getParams()
 var params = {
-  title: 'wb-router',
-  url: 'wb-router'
+  title: 'wb-network',
+  url: 'wb-network'
 };
 
 exports.default = {
@@ -370,56 +347,45 @@ exports.default = {
   },
 
   methods: {
-    // 打开新页面并关闭本页
-    closeRoot: function closeRoot() {
-      _native.router.open({
-        url: 'page/web.js',
-        // 指定从堆栈的哪个页面开始关闭
-        closeFrom: 1,
-        // 关闭的页面个数
-        closeCount: 3,
-        // 关闭页面的方向，默认(true)和堆栈方向一致
-        closeFromBottomToTop: true,
+    request: function request() {
+      network.request({
+        // 请求的URL
+        url: 'https://weexbox.com/xxx/xxx',
+        // 请求时使用的方法，默认是 get
+        method: 'post',
+        // 请求头
+        headers: { 'X-Requested-With': 'XMLHttpRequest' },
+        // 发送的 URL/Body 参数
         params: {
-          title: params.title,
-          url: params.url
-        }
+          ID: 12345
+        },
+        // 响应类型, json 或 text，默认 json
+        responseType: 'json'
+      }, function () {
+        modal.showToast({
+          text: '请求完成',
+          duration: 1.5
+        });
       });
     },
-    closePre: function closePre() {
-      _native.router.open({
-        url: 'page/web.js',
-        // 指定从堆栈的哪个页面开始关闭
-        closeFrom: 1,
-        // 关闭的页面个数
-        closeCount: 1,
-        // 关闭页面的方向，默认(true)和堆栈方向一致
-        closeFromBottomToTop: false,
-        params: {
-          title: params.title,
-          url: params.url
-        }
-      });
-    },
-    close: function close() {
-      _native.router.close();
-    },
-    refresh: function refresh() {
-      _native.router.refresh();
-    },
-    getParams: function getParams() {
-      modal.showToast({
-        text: '' + JSON.stringify(params),
-        duration: 1.5
-      });
-    },
-    open: function open() {
-      _native.router.open({
-        url: 'page/web.js',
-        params: {
-          title: params.title,
-          url: params.url
-        }
+    upload: function upload() {
+      network.upload({
+        // 请求的URL
+        url: 'https://weexbox.com/xxx/xxx',
+        // 本地文件路径数组
+        files: ['/docment/1.png']
+      }, function () {
+        // 完成的callback
+        modal.showToast({
+          text: '完成的callback',
+          duration: 1.5
+        });
+      }, function () {
+        // 进度的callback
+        modal.showToast({
+          text: '进度的callback',
+          duration: 1.5
+        });
       });
     }
   }
@@ -427,77 +393,33 @@ exports.default = {
 
 /***/ }),
 
-/***/ 80:
+/***/ 74:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  return _c('scroller', {
     staticClass: ["wrap"]
   }, [_c('text', {
     staticClass: ["title"]
-  }, [_vm._v("打开新页面(open)")]), _c('div', {
+  }, [_vm._v("请求接口(request)")]), _c('div', {
     staticClass: ["button"],
     on: {
-      "click": _vm.open
+      "click": _vm.request
     }
   }, [_c('text', {
     staticClass: ["button-text"]
-  }, [_vm._v("打开新页面")])]), _c('div', {
+  }, [_vm._v("请求接口")])]), _c('div', {
     staticClass: ["empty"]
   }), _c('text', {
     staticClass: ["title"]
-  }, [_vm._v("打开新页面并关闭到根页面(open)")]), _c('div', {
+  }, [_vm._v("文件上传(upload)")]), _c('div', {
     staticClass: ["button"],
     on: {
-      "click": _vm.closeRoot
+      "click": _vm.upload
     }
   }, [_c('text', {
     staticClass: ["button-text"]
-  }, [_vm._v("打开新页面并关闭到根页面")])]), _c('div', {
-    staticClass: ["empty"]
-  }), _c('text', {
-    staticClass: ["title"]
-  }, [_vm._v("打开新页面并关闭前一个页面(open)")]), _c('div', {
-    staticClass: ["button"],
-    on: {
-      "click": _vm.closePre
-    }
-  }, [_c('text', {
-    staticClass: ["button-text"]
-  }, [_vm._v("打开新页面并关闭前一个页面")])]), _c('div', {
-    staticClass: ["empty"]
-  }), _c('text', {
-    staticClass: ["title"]
-  }, [_vm._v("获取router的params参数(getParams)")]), _c('div', {
-    staticClass: ["button"],
-    on: {
-      "click": _vm.getParams
-    }
-  }, [_c('text', {
-    staticClass: ["button-text"]
-  }, [_vm._v("获取参数")])]), _c('div', {
-    staticClass: ["empty"]
-  }), _c('text', {
-    staticClass: ["title"]
-  }, [_vm._v("关闭页面(close)")]), _c('div', {
-    staticClass: ["button"],
-    on: {
-      "click": _vm.close
-    }
-  }, [_c('text', {
-    staticClass: ["button-text"]
-  }, [_vm._v("关闭本页")])]), _c('div', {
-    staticClass: ["empty"]
-  }), _c('text', {
-    staticClass: ["title"]
-  }, [_vm._v("刷新weex页面(refresh)")]), _c('div', {
-    staticClass: ["button"],
-    on: {
-      "click": _vm.refresh
-    }
-  }, [_c('text', {
-    staticClass: ["button-text"]
-  }, [_vm._v("刷新本页")])]), _c('div', {
+  }, [_vm._v("文件上传")])]), _c('div', {
     staticClass: ["empty"]
   })])
 },staticRenderFns: []}

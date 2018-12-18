@@ -83,10 +83,229 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 51);
+/******/ 	return __webpack_require__(__webpack_require__.s = 45);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ 45:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(46);
+
+
+/***/ }),
+
+/***/ 46:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _App = __webpack_require__(47);
+
+var _App2 = _interopRequireDefault(_App);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_App2.default.el = '#root';
+new Vue(_App2.default);
+
+/***/ }),
+
+/***/ 47:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(48)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(49)
+
+/* template */
+var __vue_template__ = __webpack_require__(50)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/mario/Documents/aygtech/weexbox-template/src/page/wb-external/App.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-ef07f450"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ 48:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "wrap": {
+    "paddingTop": "30",
+    "paddingRight": "30",
+    "paddingBottom": "30",
+    "paddingLeft": "30"
+  },
+  "empty": {
+    "height": "40"
+  },
+  "title": {
+    "fontSize": "28",
+    "color": "#333333",
+    "paddingBottom": "15"
+  },
+  "button": {
+    "justifyContent": "center",
+    "alignItems": "center",
+    "alignContent": "center",
+    "height": "78",
+    "borderRadius": "8",
+    "backgroundImage": "linear-gradient(to bottom right, #0FCF2C, #21B0C4)",
+    "backgroundImage:active": "linear-gradient(to bottom right, #15DF34, #2AC5DB)"
+  },
+  "button-text": {
+    "fontSize": "28",
+    "color": "#ffffff"
+  }
+}
+
+/***/ }),
+
+/***/ 49:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _native = __webpack_require__(5);
+
+var navigator = weex.requireModule('wb-navigator'); //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var external = weex.requireModule('wb-external');
+var modal = weex.requireModule('wb-modal');
+// const params = router.getParams()
+var params = {
+  title: 'wb-external',
+  url: 'wb-external'
+};
+
+exports.default = {
+  components: {},
+  data: function data() {
+    return {};
+  },
+  created: function created() {
+    if (params) {
+      navigator.setCenterItem({
+        text: params.title,
+        color: '3d3d3d'
+      }, function () {});
+    }
+    navigator.setRightItems([{
+      text: '查看文档',
+      color: '3d3d3d'
+    }], function () {
+      _native.router.open({
+        url: 'page/web.js',
+        params: {
+          title: params.title,
+          url: params.url
+        }
+      });
+    });
+  },
+
+  methods: {
+    openBrowser: function openBrowser() {
+      external.openBrowser('https://aygtech.github.io/weexbox');
+    },
+    callPhone: function callPhone() {
+      external.callPhone('114');
+    },
+    openCamera: function openCamera() {
+      external.openCamera({
+        enableCrop: true,
+        isCircle: true,
+        width: 500,
+        height: 500
+      }, function (result) {
+        modal.showToast({
+          text: JSON.stringify(result),
+          duration: 1.5
+        });
+      });
+    },
+    openPhoto: function openPhoto() {
+      external.openPhoto({
+        count: 9,
+        enableCrop: true,
+        isCircle: true,
+        width: 500,
+        height: 500
+      }, function (result) {
+        modal.showToast({
+          text: JSON.stringify(result),
+          duration: 1.5
+        });
+      });
+    }
+  }
+};
+
+/***/ }),
 
 /***/ 5:
 /***/ (function(module, exports, __webpack_require__) {
@@ -178,213 +397,57 @@ exports.default = {
 
 /***/ }),
 
-/***/ 51:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(52);
-
-
-/***/ }),
-
-/***/ 52:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _App = __webpack_require__(53);
-
-var _App2 = _interopRequireDefault(_App);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_App2.default.el = '#root';
-new Vue(_App2.default);
-
-/***/ }),
-
-/***/ 53:
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(54)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(55)
-
-/* template */
-var __vue_template__ = __webpack_require__(56)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "D:\\code\\work\\weexbox-template\\src\\page\\wb-location\\App.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-9a0c5a56"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-
-/***/ 54:
-/***/ (function(module, exports) {
-
-module.exports = {
-  "wrap": {
-    "paddingTop": "30",
-    "paddingRight": "30",
-    "paddingBottom": "30",
-    "paddingLeft": "30"
-  },
-  "empty": {
-    "height": "40"
-  },
-  "title": {
-    "fontSize": "28",
-    "color": "#333333",
-    "paddingBottom": "15"
-  },
-  "button": {
-    "justifyContent": "center",
-    "alignItems": "center",
-    "alignContent": "center",
-    "height": "78",
-    "borderRadius": "8",
-    "backgroundImage": "linear-gradient(to bottom right, #0FCF2C, #21B0C4)",
-    "backgroundImage:active": "linear-gradient(to bottom right, #15DF34, #2AC5DB)"
-  },
-  "button-text": {
-    "fontSize": "28",
-    "color": "#ffffff"
-  }
-}
-
-/***/ }),
-
-/***/ 55:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _native = __webpack_require__(5);
-
-var navigator = weex.requireModule('wb-navigator'); //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-var modal = weex.requireModule('wb-modal');
-var location = weex.requireModule('wb-location');
-// const params = router.getParams()
-var params = {
-  title: 'wb-location',
-  url: 'wb-location'
-};
-
-exports.default = {
-  components: {},
-  data: function data() {
-    return {
-      info: null
-    };
-  },
-  created: function created() {
-    if (params) {
-      navigator.setCenterItem({
-        text: params.title,
-        color: '3d3d3d'
-      }, function () {});
-    }
-    navigator.setRightItems([{
-      text: '查看文档',
-      color: '3d3d3d'
-    }], function () {
-      _native.router.open({
-        url: 'page/web.js',
-        params: {
-          title: params.title,
-          url: params.url
-        }
-      });
-    });
-  },
-
-  methods: {
-    getLocation: function getLocation() {
-      var _this = this;
-
-      location.getLocation(function (result) {
-        if (result.status === 0) {
-          _this.info = result.data;
-          modal.toast({
-            message: '获取成功',
-            duration: 1.5
-          });
-        } else {
-          modal.toast({
-            message: '获取失败',
-            duration: 1.5
-          });
-        }
-      });
-    }
-  }
-};
-
-/***/ }),
-
-/***/ 56:
+/***/ 50:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  return _c('scroller', {
     staticClass: ["wrap"]
   }, [_c('text', {
     staticClass: ["title"]
-  }, [_vm._v("获取经纬度(getLocation)")]), _c('div', {
+  }, [_vm._v("打开浏览器(openBrowser)")]), _c('div', {
     staticClass: ["button"],
     on: {
-      "click": _vm.getLocation
+      "click": _vm.openBrowser
     }
   }, [_c('text', {
     staticClass: ["button-text"]
-  }, [_vm._v("获取经纬度")])]), _c('div', {
+  }, [_vm._v("打开浏览器")])]), _c('div', {
     staticClass: ["empty"]
-  }), _c('text', [_vm._v(_vm._s(_vm.info))])])
+  }), _c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("打电话(callPhone)")]), _c('div', {
+    staticClass: ["button"],
+    on: {
+      "click": _vm.callPhone
+    }
+  }, [_c('text', {
+    staticClass: ["button-text"]
+  }, [_vm._v("打电话")])]), _c('div', {
+    staticClass: ["empty"]
+  }), _c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("拍照(openCamera)")]), _c('div', {
+    staticClass: ["button"],
+    on: {
+      "click": _vm.openCamera
+    }
+  }, [_c('text', {
+    staticClass: ["button-text"]
+  }, [_vm._v("拍照")])]), _c('div', {
+    staticClass: ["empty"]
+  }), _c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("打开相册(openPhoto)")]), _c('div', {
+    staticClass: ["button"],
+    on: {
+      "click": _vm.openPhoto
+    }
+  }, [_c('text', {
+    staticClass: ["button-text"]
+  }, [_vm._v("打开相册")])]), _c('div', {
+    staticClass: ["empty"]
+  })])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

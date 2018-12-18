@@ -83,175 +83,10 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 33);
+/******/ 	return __webpack_require__(__webpack_require__.s = 81);
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ 33:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(34);
-
-
-/***/ }),
-
-/***/ 34:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _App = __webpack_require__(35);
-
-var _App2 = _interopRequireDefault(_App);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_App2.default.el = '#root';
-new Vue(_App2.default);
-
-/***/ }),
-
-/***/ 35:
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(36)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(37)
-
-/* template */
-var __vue_template__ = __webpack_require__(38)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "D:\\code\\work\\weexbox-template\\src\\page\\use\\App.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-f6149e36"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-
-/***/ 36:
-/***/ (function(module, exports) {
-
-module.exports = {
-  "wrapper": {
-    "display": "flex",
-    "justifyContent": "flex-start",
-    "alignItems": "center"
-  }
-}
-
-/***/ }),
-
-/***/ 37:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _native = __webpack_require__(5);
-
-var navigator = weex.requireModule('wb-navigator'); //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-exports.default = {
-  components: {},
-  data: function data() {
-    return {};
-  },
-  created: function created() {
-    navigator.setCenterItem({
-      text: 'WeexBox',
-      color: '3d3d3d'
-    }, function () {});
-  },
-
-  methods: {
-    course: function course() {
-      _native.router.open({
-        url: 'page/web.js',
-        params: {
-          title: '教程',
-          url: 'https://aygtech.github.io/weexbox/'
-        }
-      });
-    },
-    module: function module() {
-      _native.router.open({
-        url: 'page/module.js',
-        params: {}
-      });
-    }
-  }
-};
-
-/***/ }),
-
-/***/ 38:
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('scroller', [_c('div', {
-    staticClass: ["wrapper"]
-  }, [_c('div', {
-    staticClass: ["item"]
-  }, [_c('text', [_vm._v("教程")])]), _c('div', {
-    staticClass: ["item"]
-  }, [_c('text', [_vm._v("实例")])]), _c('div', {
-    staticClass: ["item"]
-  }, [_c('text', [_vm._v("关于")])])])])
-}]}
-module.exports.render._withStripped = true
-
-/***/ }),
 
 /***/ 5:
 /***/ (function(module, exports, __webpack_require__) {
@@ -340,6 +175,140 @@ exports.default = {
   router: router,
   screenHeight: screenHeight
 };
+
+/***/ }),
+
+/***/ 81:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(82);
+
+
+/***/ }),
+
+/***/ 82:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _App = __webpack_require__(83);
+
+var _App2 = _interopRequireDefault(_App);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_App2.default.el = '#root';
+new Vue(_App2.default);
+
+/***/ }),
+
+/***/ 83:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(84)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(85)
+
+/* template */
+var __vue_template__ = __webpack_require__(86)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/mario/Documents/aygtech/weexbox-template/src/page/web/App.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-697ac2c2"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ 84:
+/***/ (function(module, exports) {
+
+module.exports = {}
+
+/***/ }),
+
+/***/ 85:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _native = __webpack_require__(5);
+
+var navigator = weex.requireModule('wb-navigator'); //
+//
+//
+//
+//
+
+exports.default = {
+  components: {},
+  data: function data() {
+    return {
+      height: _native.screenHeight,
+      url: ''
+    };
+  },
+  created: function created() {
+    var params = _native.router.getParams();
+    if (params) {
+      this.url = params.type ? params.url : _native.weexBoxUrl + '#' + params.url;
+      navigator.setCenterItem({
+        text: params.title,
+        color: '3d3d3d'
+      }, function () {});
+    }
+  }
+};
+
+/***/ }),
+
+/***/ 86:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('web', {
+    style: {
+      height: (_vm.height + "px")
+    },
+    attrs: {
+      "src": _vm.url
+    }
+  })
+},staticRenderFns: []}
+module.exports.render._withStripped = true
 
 /***/ })
 

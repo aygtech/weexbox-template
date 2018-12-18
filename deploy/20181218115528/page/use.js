@@ -83,10 +83,175 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 69);
+/******/ 	return __webpack_require__(__webpack_require__.s = 33);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ 33:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(34);
+
+
+/***/ }),
+
+/***/ 34:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _App = __webpack_require__(35);
+
+var _App2 = _interopRequireDefault(_App);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_App2.default.el = '#root';
+new Vue(_App2.default);
+
+/***/ }),
+
+/***/ 35:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(36)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(37)
+
+/* template */
+var __vue_template__ = __webpack_require__(38)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/mario/Documents/aygtech/weexbox-template/src/page/use/App.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-8b6a945c"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ 36:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "wrapper": {
+    "display": "flex",
+    "justifyContent": "flex-start",
+    "alignItems": "center"
+  }
+}
+
+/***/ }),
+
+/***/ 37:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _native = __webpack_require__(5);
+
+var navigator = weex.requireModule('wb-navigator'); //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+  components: {},
+  data: function data() {
+    return {};
+  },
+  created: function created() {
+    navigator.setCenterItem({
+      text: 'WeexBox',
+      color: '3d3d3d'
+    }, function () {});
+  },
+
+  methods: {
+    course: function course() {
+      _native.router.open({
+        url: 'page/web.js',
+        params: {
+          title: '教程',
+          url: 'https://aygtech.github.io/weexbox/'
+        }
+      });
+    },
+    module: function module() {
+      _native.router.open({
+        url: 'page/module.js',
+        params: {}
+      });
+    }
+  }
+};
+
+/***/ }),
+
+/***/ 38:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('scroller', [_c('div', {
+    staticClass: ["wrapper"]
+  }, [_c('div', {
+    staticClass: ["item"]
+  }, [_c('text', [_vm._v("教程")])]), _c('div', {
+    staticClass: ["item"]
+  }, [_c('text', [_vm._v("实例")])]), _c('div', {
+    staticClass: ["item"]
+  }, [_c('text', [_vm._v("关于")])])])])
+}]}
+module.exports.render._withStripped = true
+
+/***/ }),
 
 /***/ 5:
 /***/ (function(module, exports, __webpack_require__) {
@@ -175,255 +340,6 @@ exports.default = {
   router: router,
   screenHeight: screenHeight
 };
-
-/***/ }),
-
-/***/ 69:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(70);
-
-
-/***/ }),
-
-/***/ 70:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _App = __webpack_require__(71);
-
-var _App2 = _interopRequireDefault(_App);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_App2.default.el = '#root';
-new Vue(_App2.default);
-
-/***/ }),
-
-/***/ 71:
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(72)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(73)
-
-/* template */
-var __vue_template__ = __webpack_require__(74)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "D:\\code\\work\\weexbox-template\\src\\page\\wb-network\\App.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-4253e428"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-
-/***/ 72:
-/***/ (function(module, exports) {
-
-module.exports = {
-  "wrap": {
-    "paddingTop": "30",
-    "paddingRight": "30",
-    "paddingBottom": "30",
-    "paddingLeft": "30"
-  },
-  "empty": {
-    "height": "40"
-  },
-  "title": {
-    "fontSize": "28",
-    "color": "#333333",
-    "paddingBottom": "15"
-  },
-  "button": {
-    "justifyContent": "center",
-    "alignItems": "center",
-    "alignContent": "center",
-    "height": "78",
-    "borderRadius": "8",
-    "backgroundImage": "linear-gradient(to bottom right, #0FCF2C, #21B0C4)",
-    "backgroundImage:active": "linear-gradient(to bottom right, #15DF34, #2AC5DB)"
-  },
-  "button-text": {
-    "fontSize": "28",
-    "color": "#ffffff"
-  }
-}
-
-/***/ }),
-
-/***/ 73:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _native = __webpack_require__(5);
-
-var navigator = weex.requireModule('wb-navigator'); //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-var network = weex.requireModule('wb-network');
-var modal = weex.requireModule('wb-modal');
-// const params = router.getParams()
-var params = {
-  title: 'wb-network',
-  url: 'wb-network'
-};
-
-exports.default = {
-  components: {},
-  data: function data() {
-    return {};
-  },
-  created: function created() {
-    if (params) {
-      navigator.setCenterItem({
-        text: params.title,
-        color: '3d3d3d'
-      }, function () {});
-    }
-    navigator.setRightItems([{
-      text: '查看文档',
-      color: '3d3d3d'
-    }], function () {
-      _native.router.open({
-        url: 'page/web.js',
-        params: {
-          title: params.title,
-          url: params.url
-        }
-      });
-    });
-  },
-
-  methods: {
-    request: function request() {
-      network.request({
-        // 请求的URL
-        url: 'https://weexbox.com/xxx/xxx',
-        // 请求时使用的方法，默认是 get
-        method: 'post',
-        // 请求头
-        headers: { 'X-Requested-With': 'XMLHttpRequest' },
-        // 发送的 URL/Body 参数
-        params: {
-          ID: 12345
-        },
-        // 响应类型, json 或 text，默认 json
-        responseType: 'json'
-      }, function () {
-        modal.showToast({
-          text: '请求完成',
-          duration: 1.5
-        });
-      });
-    },
-    upload: function upload() {
-      network.upload({
-        // 请求的URL
-        url: 'https://weexbox.com/xxx/xxx',
-        // 本地文件路径数组
-        files: ['/docment/1.png']
-      }, function () {
-        // 完成的callback
-        modal.showToast({
-          text: '完成的callback',
-          duration: 1.5
-        });
-      }, function () {
-        // 进度的callback
-        modal.showToast({
-          text: '进度的callback',
-          duration: 1.5
-        });
-      });
-    }
-  }
-};
-
-/***/ }),
-
-/***/ 74:
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('scroller', {
-    staticClass: ["wrap"]
-  }, [_c('text', {
-    staticClass: ["title"]
-  }, [_vm._v("请求接口(request)")]), _c('div', {
-    staticClass: ["button"],
-    on: {
-      "click": _vm.request
-    }
-  }, [_c('text', {
-    staticClass: ["button-text"]
-  }, [_vm._v("请求接口")])]), _c('div', {
-    staticClass: ["empty"]
-  }), _c('text', {
-    staticClass: ["title"]
-  }, [_vm._v("文件上传(upload)")]), _c('div', {
-    staticClass: ["button"],
-    on: {
-      "click": _vm.upload
-    }
-  }, [_c('text', {
-    staticClass: ["button-text"]
-  }, [_vm._v("文件上传")])]), _c('div', {
-    staticClass: ["empty"]
-  })])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
 
 /***/ })
 

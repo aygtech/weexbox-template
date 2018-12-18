@@ -83,131 +83,26 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 19);
+/******/ 	return __webpack_require__(__webpack_require__.s = 26);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */
+/******/ ({
+
+/***/ 26:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(27);
+
+
+/***/ }),
+
+/***/ 27:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-/*
- * @Author: remi.zhang
- * @Date: 2018-12-11 11:04:31
- * @Last Modified by: remi.zhang
- * @Last Modified time: 2018-12-11 17:03:15
- */
-// const modal = weex.requireModule('wb-modal')
-// const _network = weex.requireModule('wb-network')
-var _router = weex.requireModule('wb-router');
-// const _location = weex.requireModule('wb-location')
-
-var env = weex.config.env;
-
-// weexbox module域名地址
-
-var weexBoxUrl = exports.weexBoxUrl = 'https://aygtech.github.io/weexbox/guide/module.html';
-
-/**
- * 屏幕高度
- */
-var screenHeight = exports.screenHeight = function screenHeight() {
-  var height = env.deviceHeight / env.deviceWidth * 750;
-  return Math.ceil(height);
-};
-
-// 页面路由
-var router = exports.router = {
-  /**
-   * 打开页面
-   * @param {object} option - 参数
-   * @param {string} option.url - 下一个weex/web的路径
-   * @param {string} [option.name] - 页面名称。内置"weex"、"web"，其他路由需要原生先注册
-   * @param {string} [option.type=push] - 下一个weex/web的路径
-   * @param {boolean} [option.navBarHidden=false] - 是否隐藏导航栏
-   * @param {object} [option.params={}] - // 需要传到下一个页面的数据
-   */
-  open: function open(option) {
-    var _option = {
-      name: 'weex',
-      url: null,
-      type: 'push',
-      navBarHidden: false,
-      params: {}
-    };
-    var param = Object.assign(_option, option);
-    _router.open(param);
-  },
-
-  /**
-   * 关闭页面
-   * @param {string} [level=1] - 关闭页面的级数
-   */
-  close: function close() {
-    var level = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
-
-    _router.close(level);
-  },
-
-  /**
-   * 刷新weex页面
-   */
-  refresh: function refresh() {
-    _router.refresh();
-  },
-
-  /**
-   * 获取页面参数
-   */
-  getParams: function getParams() {
-    return _router.getParams();
-  }
-};
-
-exports.default = {
-  weexBoxUrl: weexBoxUrl,
-  router: router,
-  screenHeight: screenHeight
-};
-
-/***/ }),
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(20);
-
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _App = __webpack_require__(21);
+var _App = __webpack_require__(28);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -217,21 +112,22 @@ _App2.default.el = '#root';
 new Vue(_App2.default);
 
 /***/ }),
-/* 21 */
+
+/***/ 28:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(22)
+__vue_styles__.push(__webpack_require__(29)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(23)
+__vue_exports__ = __webpack_require__(30)
 
 /* template */
-var __vue_template__ = __webpack_require__(25)
+var __vue_template__ = __webpack_require__(32)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -243,10 +139,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "D:\\code\\work\\weexbox-template\\src\\page\\module\\App.vue"
+__vue_options__.__file = "/Users/mario/Documents/aygtech/weexbox-template/src/page/page1/App.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-59719e30"
+__vue_options__._scopeId = "data-v-33bbaee6"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -261,22 +157,30 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 22 */
+
+/***/ 29:
 /***/ (function(module, exports) {
 
 module.exports = {
-  "item": {
-    "paddingTop": "30",
-    "paddingRight": "30",
-    "paddingBottom": "30",
-    "paddingLeft": "30",
-    "borderBottomColor": "#e7e5e5",
-    "borderBottomWidth": "1"
+  "wrapper": {
+    "justifyContent": "center",
+    "alignItems": "center"
+  },
+  "logo": {
+    "width": "200",
+    "height": "200"
+  },
+  "greeting": {
+    "textAlign": "center",
+    "marginTop": "70",
+    "fontSize": "50",
+    "color": "#41b883"
   }
 }
 
 /***/ }),
-/* 23 */
+
+/***/ 30:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -286,93 +190,54 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _native = __webpack_require__(5);
+var _logo = __webpack_require__(31);
 
-var _moduleList = __webpack_require__(24);
+var _logo2 = _interopRequireDefault(_logo);
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-var navigator = weex.requireModule('wb-navigator');
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
-  components: {},
   data: function data() {
     return {
-      moduleList: _moduleList.moduleList
+      logo: _logo2.default
     };
   },
-  created: function created() {
-    navigator.setCenterItem({
-      text: 'WeexBox例子',
-      color: '3d3d3d'
-    }, function () {});
-  },
-
-  methods: {
-    detail: function detail(item) {
-      _native.router.open({
-        url: 'page/' + item + '.js',
-        params: {
-          title: item,
-          url: item
-        }
-      });
-    }
-  }
-};
+  created: function created() {}
+}; //
+//
+//
+//
+//
+//
+//
+//
 
 /***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+/***/ 31:
+/***/ (function(module, exports) {
 
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-/*
- * @Author: remi.zhang
- * @Date: 2018-12-11 14:09:43
- * @Last Modified by: remi.zhang
- * @Last Modified time: 2018-12-11 16:45:02
- */
-
-var moduleList = exports.moduleList = ['wb-router', 'wb-network', 'wb-event', 'globalEvent', 'wb-location', 'wb-modal', 'wb-navigator', 'wb-external'];
-
-exports.default = {
-  moduleList: moduleList
-};
+module.exports = "https://raw.githubusercontent.com/aygtech/weexbox-template/master/deploy/static/logo_22d65007f0315f3c4df5428887743373.png";
 
 /***/ }),
-/* 25 */
+
+/***/ 32:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('scroller', {
+  return _c('div', {
     staticClass: ["wrapper"]
-  }, _vm._l((_vm.moduleList), function(item, index) {
-    return _c('text', {
-      key: index,
-      staticClass: ["item"],
-      on: {
-        "click": function($event) {
-          _vm.detail(item)
-        }
-      }
-    }, [_vm._v(_vm._s(item))])
-  }))
+  }, [_c('image', {
+    staticClass: ["logo"],
+    attrs: {
+      "src": _vm.logo
+    }
+  }), _c('text', {
+    staticClass: ["greeting"]
+  }, [_vm._v("WeexBox is ready!")]), _c('HelloWorld')], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ })
-/******/ ]);
+
+/******/ });
