@@ -1,13 +1,5 @@
 [
   {
-    "path": "page/about.js",
-    "md5": "ee37df566cef2708c5215da434325688"
-  },
-  {
-    "path": "page/globalEvent.js",
-    "md5": "e2e31cb6c45adda76cb9e64255e67761"
-  },
-  {
     "path": "page/home.js",
     "md5": "31643f66b0cda2166dfffb77fce38b02"
   },
