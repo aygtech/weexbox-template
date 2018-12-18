@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import { router } from '../../utils/native'
+import { router, weexBoxUrl } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
 const modal = weex.requireModule('wb-modal')
@@ -63,12 +63,17 @@ export default {
       color: '3d3d3d'
     }], () => {
       router.open({
-        url: 'page/web.js',
-        params: {
-          title: params.title,
-          url: params.url
-        }
+        name: 'web',
+        title: params.title,
+        url: `${weexBoxUrl}#${params.url}`
       })
+      // router.open({
+      //   url: 'page/web.js',
+      //   params: {
+      //     title: params.title,
+      //     url: params.url
+      //   }
+      // })
     })
   },
   methods: {

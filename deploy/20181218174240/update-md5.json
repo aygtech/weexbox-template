@@ -1,15 +1,15 @@
 [
   {
     "path": "page/about.js",
-    "md5": "a27628983c19a0f51bb47570b2c854d4"
+    "md5": "ee37df566cef2708c5215da434325688"
   },
   {
     "path": "page/globalEvent.js",
-    "md5": "2aae0077391915837e0e1b6359b801a2"
+    "md5": "e2e31cb6c45adda76cb9e64255e67761"
   },
   {
     "path": "page/home.js",
-    "md5": "7cbc73d0d353955f718baa91d409f3cb"
+    "md5": "31643f66b0cda2166dfffb77fce38b02"
   },
   {
     "path": "page/module.js",
@@ -21,38 +21,42 @@
   },
   {
     "path": "page/use.js",
-    "md5": "af9ddc675534f583887acbc67044499f"
+    "md5": "23b7e1cc05011bb4480b5a4594268925"
   },
   {
     "path": "page/wb-event.js",
-    "md5": "8d8485cd25457fe04bbdce866b0d5540"
+    "md5": "3b477f9d648db673814a3f6bf1fa5930"
   },
   {
     "path": "page/wb-external.js",
-    "md5": "b39ec84fcf5f466e66d6390b19acd053"
+    "md5": "5b8fd3dfe2be03edfd01551783705259"
   },
   {
     "path": "page/wb-location.js",
-    "md5": "4269101ddf9f890d55e67ba35b191f75"
+    "md5": "14e3122190b215eba4b644e39265de60"
   },
   {
     "path": "page/wb-modal.js",
-    "md5": "90d0e68dda26d99b951d8840874811db"
+    "md5": "43575d0aaa432ecf16278ae119331608"
   },
   {
     "path": "page/wb-navigator.js",
-    "md5": "42194d8908862e6b0d805ead959006ef"
+    "md5": "d3ec97ed7b398ae586f2659d4ff3f7c9"
   },
   {
     "path": "page/wb-network.js",
-    "md5": "852ba5529efab388564c26144396fb60"
+    "md5": "e0e7e564b076eec139465575207736d0"
+  },
+  {
+    "path": "page/wb-router-close.js",
+    "md5": "2297c500733ae90c2adcd1abab1d1ab2"
   },
   {
     "path": "page/wb-router.js",
-    "md5": "23f254357bded256cbc2416b43393667"
+    "md5": "e2f6b5f3a47a175d5266a11ed6ba1a0d"
   },
   {
     "path": "page/web.js",
-    "md5": "aa4349df7294bd4a7cd2bb42410d2d47"
+    "md5": "fcb8dede6c47f44bb0254ea139d609ce"
   }
 ]
