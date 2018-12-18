@@ -24,8 +24,8 @@
     </div>
     <div class="empty"></div>
 
-    <text class="title">获取状态栏高度(nativeNavigationHeight)</text>
-    <div class="button" @click="nativeNavigationHeight">
+    <text class="title">获取状态栏高度(getHeight)</text>
+    <div class="button" @click="getHeight">
       <text class="button-text">获取状态栏高度</text>
     </div>
     <div class="empty"></div>
@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import { router, toolbarHeight } from '../../utils/native'
+import { router } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
 const modal = weex.requireModule('wb-modal')
@@ -72,9 +72,10 @@ export default {
     })
   },
   methods: {
-    nativeNavigationHeight() {
+    getHeight() {
+      const navHeight = navigator.getHeight()
       modal.showToast({
-        text: `状态栏高度：${toolbarHeight}`,
+        text: `状态栏高度：${navHeight}`,
         duration: 1.5
       })
     },

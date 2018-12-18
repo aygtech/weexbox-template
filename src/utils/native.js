@@ -2,26 +2,17 @@
  * @Author: remi.zhang
  * @Date: 2018-12-11 11:04:31
  * @Last Modified by: remi.zhang
- * @Last Modified time: 2018-12-18 14:01:05
+ * @Last Modified time: 2018-12-18 14:21:16
  */
 // const modal = weex.requireModule('wb-modal')
 // const _network = weex.requireModule('wb-network')
 const _router = weex.requireModule('wb-router')
-const _nativerouter = weex.requireModule('wb-nativerouter')
 // const _location = weex.requireModule('wb-location')
 
 const { env } = weex.config
 
 // weexbox module域名地址
 export const weexBoxUrl = 'https://aygtech.github.io/weexbox/guide/module.html'
-
-/**
- * 状态栏高度
- */
-export const toolbarHeight = () => {
-  const height = _nativerouter.nativeNavigationHeight() / env.deviceWidth * 750
-  return Math.ceil(height)
-}
 
 /**
  * 屏幕高度
