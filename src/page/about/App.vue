@@ -80,7 +80,8 @@ export default {
   flex-wrap: wrap;
 }
 .info-item {
-  width: 315px;
+  font-size: 30px;
+  width: 310px;
   border-bottom-color: #e7e5e5;
   border-bottom-width: 1px;
 }
@@ -94,6 +95,7 @@ export default {
   text-align: left;
 }
 .item {
+  font-size: 34px;
   padding: 30px 30px;
   border-bottom-color: #e7e5e5;
   border-bottom-width: 1px;
