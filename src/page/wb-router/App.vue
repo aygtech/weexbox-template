@@ -6,17 +6,17 @@
     </div>
     <div class="empty"></div>
 
-    <text class="title">打开新页面并关闭到根页面(open)</text>
-    <div class="button" @click="closeRoot">
-      <text class="button-text">打开新页面并关闭到根页面</text>
+    <text class="title">打开页面与关闭页面(closeFromBottomToTop)</text>
+    <div class="button" @click="closeFromBottomToTop">
+      <text class="button-text">打开页面与关闭页面</text>
     </div>
     <div class="empty"></div>
 
-    <text class="title">打开新页面并关闭前一个页面(open)</text>
+    <!-- <text class="title">打开新页面并关闭指定页面(open)</text>
     <div class="button" @click="closePre">
-      <text class="button-text">打开新页面并关闭前一个页面</text>
+      <text class="button-text">打开新页面并关闭module列表页面</text>
     </div>
-    <div class="empty"></div>
+    <div class="empty"></div> -->
 
     <text class="title">获取router的params参数(getParams)</text>
     <div class="button" @click="getParams">
@@ -36,9 +36,9 @@
     </div>
     <div class="empty"></div>
 
-    <text class="title">禁用返回手势(disableGestureBack)</text>
+    <text class="title">打开新页面并禁用返回手势(disableGestureBack)</text>
     <div class="button" @click="disableGestureBack">
-      <text class="button-text">禁用返回手势</text>
+      <text class="button-text">打开新页面并禁用返回手势</text>
     </div>
     <div class="empty"></div>
   </scroller>
@@ -94,36 +94,27 @@ export default {
       })
     },
     // 打开新页面并关闭本页
-    closeRoot() {
+    closeFromBottomToTop() {
       router.open({
-        url: 'page/web.js',
-        // 指定从堆栈的哪个页面开始关闭
-        closeFrom: 1,
-        // 关闭的页面个数
-        closeCount: 3,
-        // 关闭页面的方向，默认(true)和堆栈方向一致
-        closeFromBottomToTop: true,
-        params: {
-          title: params.title,
-          url: params.url
-        }
+        url: 'page/wb-router-close.js',
+        params: {}
       })
     },
-    closePre() {
-      router.open({
-        url: 'page/web.js',
-        // 指定从堆栈的哪个页面开始关闭
-        closeFrom: 1,
-        // 关闭的页面个数
-        closeCount: 1,
-        // 关闭页面的方向，默认(true)和堆栈方向一致
-        closeFromBottomToTop: false,
-        params: {
-          title: params.title,
-          url: params.url
-        }
-      })
-    },
+    // closePre() {
+    //   router.open({
+    //     url: 'page/web.js',
+    //     // 指定从堆栈的哪个页面开始关闭
+    //     closeFrom: 1,
+    //     // 关闭的页面个数
+    //     closeCount: 1,
+    //     // 关闭页面的方向，默认(true)和堆栈方向一致
+    //     closeFromBottomToTop: false,
+    //     params: {
+    //       title: params.title,
+    //       url: params.url
+    //     }
+    //   })
+    // },
     close() {
       router.close()
     },
