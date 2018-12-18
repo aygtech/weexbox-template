@@ -6,6 +6,18 @@
     </div>
     <div class="empty"></div>
 
+    <text class="title">打开新页面并关闭到根页面(open)</text>
+    <div class="button" @click="closeRoot">
+      <text class="button-text">打开新页面并关闭到根页面</text>
+    </div>
+    <div class="empty"></div>
+
+    <text class="title">打开新页面并关闭前一个页面(open)</text>
+    <div class="button" @click="closePre">
+      <text class="button-text">打开新页面并关闭前一个页面</text>
+    </div>
+    <div class="empty"></div>
+
     <text class="title">获取router的params参数(getParams)</text>
     <div class="button" @click="getParams">
       <text class="button-text">获取参数</text>
@@ -65,6 +77,37 @@ export default {
     })
   },
   methods: {
+    // 打开新页面并关闭本页
+    closeRoot() {
+      router.open({
+        url: 'page/web.js',
+        // 指定从堆栈的哪个页面开始关闭
+        closeFrom: 1,
+        // 关闭的页面个数
+        closeCount: 3,
+        // 关闭页面的方向，默认(true)和堆栈方向一致
+        closeFromBottomToTop: true,
+        params: {
+          title: params.title,
+          url: params.url
+        }
+      })
+    },
+    closePre() {
+      router.open({
+        url: 'page/web.js',
+        // 指定从堆栈的哪个页面开始关闭
+        closeFrom: 1,
+        // 关闭的页面个数
+        closeCount: 1,
+        // 关闭页面的方向，默认(true)和堆栈方向一致
+        closeFromBottomToTop: false,
+        params: {
+          title: params.title,
+          url: params.url
+        }
+      })
+    },
     close() {
       router.close()
     },

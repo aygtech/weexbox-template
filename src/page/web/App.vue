@@ -20,7 +20,7 @@ export default {
   created() {
     const params = router.getParams()
     if (params) {
-      this.url = `${weexBoxUrl}#${params.url}`
+      this.url = params.type ? params.url : `${weexBoxUrl}#${params.url}`
       navigator.setCenterItem({
         text: params.title,
         color: '3d3d3d'
