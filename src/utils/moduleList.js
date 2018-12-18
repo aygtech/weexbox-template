@@ -10,7 +10,7 @@ export const moduleList = [
   'wb-network',
   'wb-event',
   'globalEvent',
-  'wb-location',
+  // 'wb-location',
   'wb-modal',
   'wb-navigator',
   'wb-external'

@@ -70,7 +70,7 @@ export default {
       external.openBrowser('https://aygtech.github.io/weexbox')
     },
     callPhone() {
-      external.callPhone('114', () => {})
+      external.callPhone('114')
     },
     openCamera() {
       external.openCamera({

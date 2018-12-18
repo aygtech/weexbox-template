@@ -2,9 +2,5 @@
   "name": "weexbox",
   "ios_min_version": "0.0.0",
   "android_min_version": "0.0.0",
-<<<<<<< HEAD
-  "release": "2018.12.18.11.30.57"
-=======
   "release": "2018.12.18.11.55.28"
->>>>>>> e9a9602b800c7a9eb9c9486aa2e7561f09a68e23
 }

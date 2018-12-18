@@ -20,7 +20,7 @@ import WeexSDK
     
     open override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         if WeexBoxEngine.isDebug {
             Event.register(target: self, name: "RefreshInstance") { [weak self] _ in
                 self?.refreshWeex()
