@@ -24,12 +24,6 @@
     </div>
     <div class="empty"></div>
 
-    <text class="title">关闭页面(close)</text>
-    <div class="button" @click="close">
-      <text class="button-text">关闭本页</text>
-    </div>
-    <div class="empty"></div>
-
     <text class="title">刷新weex页面(refresh)</text>
     <div class="button" @click="refresh">
       <text class="button-text">刷新本页</text>
@@ -45,7 +39,7 @@
 </template>
 
 <script>
-import { router } from '../../utils/native'
+import { router, weexBoxUrl } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
 const modal = weex.requireModule('wb-modal')
@@ -74,12 +68,16 @@ export default {
       color: '3d3d3d'
     }], () => {
       router.open({
-        url: 'page/web.js',
-        params: {
-          title: params.title,
-          url: params.url
-        }
+        name: 'web',
+        url: `${weexBoxUrl}#${params.url}`
       })
+      // router.open({
+      //   url: 'page/web.js',
+      //   params: {
+      //     title: params.title,
+      //     url: params.url
+      //   }
+      // })
     })
   },
   methods: {
@@ -115,9 +113,6 @@ export default {
     //     }
     //   })
     // },
-    close() {
-      router.close()
-    },
     refresh() {
       router.refresh()
     },
@@ -128,12 +123,16 @@ export default {
       })
     },
     open() {
+      // router.open({
+      //   url: 'page/web.js',
+      //   params: {
+      //     title: params.title,
+      //     url: params.url
+      //   }
+      // })
       router.open({
-        url: 'page/web.js',
-        params: {
-          title: params.title,
-          url: params.url
-        }
+        name: 'web',
+        url: `${weexBoxUrl}#${params.url}`
       })
     }
   }

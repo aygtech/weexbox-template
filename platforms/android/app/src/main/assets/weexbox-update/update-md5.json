@@ -5,7 +5,7 @@
   },
   {
     "path": "page/globalEvent.js",
-    "md5": "911cdb88fd48ff5a87f8ecf1470ff406"
+    "md5": "a004871398176f9f192048273d567277"
   },
   {
     "path": "page/home.js",
@@ -25,35 +25,35 @@
   },
   {
     "path": "page/wb-event.js",
-    "md5": "47de14d4de6bbca339274844b9b2aafa"
+    "md5": "3cf0ab17d179ce500e4d0f87812cc6ab"
   },
   {
     "path": "page/wb-external.js",
-    "md5": "97c6c7d69f5c7160a2c6d5aa7233682e"
+    "md5": "17294553436abe3b7f68c51c2c152340"
   },
   {
     "path": "page/wb-location.js",
-    "md5": "3342de5167eeae80fb38ee6a4ed5a844"
+    "md5": "5fad5fc6677ff4f835d4221a0dee65a2"
   },
   {
     "path": "page/wb-modal.js",
-    "md5": "763b67f6f4236ce4a585bb98948a7262"
+    "md5": "d1217eb73ce81e0840b55910e1d0d7f7"
   },
   {
     "path": "page/wb-navigator.js",
-    "md5": "c636ac7a051236c1cc528c3aac66ba52"
+    "md5": "f3cf19e5f7a45faad108543c998834c6"
   },
   {
     "path": "page/wb-network.js",
-    "md5": "395229a5abf2f758c2f75f54055ed9a5"
+    "md5": "c1614be37bae23a2c9800c264ce700db"
   },
   {
     "path": "page/wb-router-close.js",
-    "md5": "56c8079852de3428bfd7e6015e42626f"
+    "md5": "df4a6d0de2d5483a824de8dc802cf959"
   },
   {
     "path": "page/wb-router.js",
-    "md5": "18803a6ebb014977d6d9c49092937054"
+    "md5": "86be5613a90e2332c0b10a8a2819943d"
   },
   {
     "path": "page/web.js",

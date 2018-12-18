@@ -12,11 +12,17 @@
     </div>
     <div class="empty"></div>
 
-    <text class="title">打开新页面并关闭其他页面(不包括首页)(open)</text>
+    <text class="title">关闭页面(close)</text>
+    <div class="button" @click="close">
+      <text class="button-text">关闭本页</text>
+    </div>
+    <div class="empty"></div>
+
+    <!-- <text class="title">打开新页面并关闭其他页面(不包括首页)(open)</text>
     <div class="button" @click="closeRoot">
       <text class="button-text">打开新页面并关闭其他页面</text>
     </div>
-    <div class="empty"></div>
+    <div class="empty"></div> -->
   </scroller>
 </template>
 
@@ -58,6 +64,9 @@ export default {
     })
   },
   methods: {
+    close() {
+      router.close()
+    },
     closeFirst() {
       router.open({
         url: 'page/web.js',
