@@ -6,11 +6,11 @@
     </div>
     <div class="empty"></div>
 
-    <text class="title">文件上传(upload)</text>
+    <!-- <text class="title">文件上传(upload)</text>
     <div class="button" @click="upload">
       <text class="button-text">文件上传</text>
     </div>
-    <div class="empty"></div>
+    <div class="empty"></div> -->
   </scroller>
 </template>
 

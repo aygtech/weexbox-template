@@ -45,12 +45,8 @@ export default {
   methods: {
     website() {
       router.open({
-        url: 'page/web.js',
-        params: {
-          type: 1, // 1普通网页，0demo页面
-          title: '教程',
-          url: 'https://aygtech.github.io/weexbox/guide/'
-        }
+        name: 'web',
+        url: 'https://aygtech.github.io/weexbox'
       })
     },
     problem() {

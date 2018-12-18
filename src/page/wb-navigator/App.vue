@@ -23,11 +23,17 @@
       <text class="button-text">设置导航栏颜色</text>
     </div>
     <div class="empty"></div>
+
+    <text class="title">获取状态栏高度(nativeNavigationHeight)</text>
+    <div class="button" @click="nativeNavigationHeight">
+      <text class="button-text">获取状态栏高度</text>
+    </div>
+    <div class="empty"></div>
   </scroller>
 </template>
 
 <script>
-import { router } from '../../utils/native'
+import { router, toolbarHeight } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
 const modal = weex.requireModule('wb-modal')
@@ -66,6 +72,12 @@ export default {
     })
   },
   methods: {
+    nativeNavigationHeight() {
+      modal.showToast({
+        text: `状态栏高度：${toolbarHeight}`,
+        duration: 1.5
+      })
+    },
     setLeftItems() {
       navigator.setLeftItems([
         {

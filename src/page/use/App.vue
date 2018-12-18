@@ -35,11 +35,8 @@ export default {
   methods: {
     course() {
       router.open({
-        url: 'page/web.js',
-        params: {
-          title: '教程',
-          url: 'https://aygtech.github.io/weexbox/'
-        }
+        name: 'web',
+        url: 'https://aygtech.github.io/weexbox'
       })
     },
     module() {

@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap">
+  <scroller class="wrap">
     <text class="title">打开新页面(open)</text>
     <div class="button" @click="open">
       <text class="button-text">打开新页面</text>
@@ -35,7 +35,13 @@
       <text class="button-text">刷新本页</text>
     </div>
     <div class="empty"></div>
-  </div>
+
+    <text class="title">禁用返回手势(disableGestureBack)</text>
+    <div class="button" @click="disableGestureBack">
+      <text class="button-text">禁用返回手势</text>
+    </div>
+    <div class="empty"></div>
+  </scroller>
 </template>
 
 <script>
@@ -77,6 +83,16 @@ export default {
     })
   },
   methods: {
+    disableGestureBack() {
+      router.open({
+        url: 'page/web.js',
+        disableGestureBack: true,
+        params: {
+          title: params.title,
+          url: params.url
+        }
+      })
+    },
     // 打开新页面并关闭本页
     closeRoot() {
       router.open({
