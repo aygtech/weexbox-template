@@ -26,7 +26,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.aygtech:weexbox-android-library:1.0.27'
+    implementation 'com.github.aygtech:weexbox-android-library:1.0.28'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'

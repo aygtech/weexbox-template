@@ -9,7 +9,7 @@ import com.weexbox.core.controller.WBBaseActivity
  * Description: This is LaunchActivity
  */
 
-class LaunchActivity: WBBaseActivity() {
+class LaunchActivity : WBBaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         router.navBarHidden = true
