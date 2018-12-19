@@ -1,7 +1,7 @@
 [
   {
     "path": "page/about.js",
-    "md5": "ee37df566cef2708c5215da434325688"
+    "md5": "9a61d6afee739ddc68d29593267b1946"
   },
   {
     "path": "page/globalEvent.js",
@@ -9,11 +9,11 @@
   },
   {
     "path": "page/home.js",
-    "md5": "31643f66b0cda2166dfffb77fce38b02"
+    "md5": "1ea416111f3f50804c42a19c4eb13053"
   },
   {
     "path": "page/module.js",
-    "md5": "63c8650dd74d768d2e6005942e5b9245"
+    "md5": "be6e1afd7e17a0c9424b0bff568a9a6b"
   },
   {
     "path": "page/page1.js",
@@ -37,7 +37,7 @@
   },
   {
     "path": "page/wb-modal.js",
-    "md5": "43575d0aaa432ecf16278ae119331608"
+    "md5": "f3333610808af613f6baa0ad00f005a0"
   },
   {
     "path": "page/wb-navigator.js",
@@ -53,7 +53,7 @@
   },
   {
     "path": "page/wb-router.js",
-    "md5": "e2f6b5f3a47a175d5266a11ed6ba1a0d"
+    "md5": "053ded4ea423d2fb41e2c38d67192807"
   },
   {
     "path": "page/web.js",

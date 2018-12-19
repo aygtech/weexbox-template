@@ -30,11 +30,13 @@
     </div>
     <div class="empty"></div>
 
-    <text class="title">打开新页面并禁用返回手势(disableGestureBack)</text>
-    <div class="button" @click="disableGestureBack">
-      <text class="button-text">打开新页面并禁用返回手势</text>
-    </div>
-    <div class="empty"></div>
+    <template v-if="isIos">
+      <text class="title">打开新页面并禁用返回手势(disableGestureBack)</text>
+      <div class="button" @click="disableGestureBack">
+        <text class="button-text">打开新页面并禁用返回手势</text>
+      </div>
+      <div class="empty"></div>
+    </template>
   </scroller>
 </template>
 
@@ -44,6 +46,8 @@ import { router, weexBoxUrl } from '../../utils/native'
 const navigator = weex.requireModule('wb-navigator')
 const modal = weex.requireModule('wb-modal')
 // const params = router.getParams()
+const { env } = weex.config
+
 const params = {
   title: 'wb-router',
   url: 'wb-router'
@@ -54,6 +58,7 @@ export default {
   },
   data() {
     return {
+      isIos: env.platform.toLowerCase() === 'ios'
     }
   },
   created() {
