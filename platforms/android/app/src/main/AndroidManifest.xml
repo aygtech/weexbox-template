@@ -11,9 +11,8 @@
     <application
         android:name=".App"
         android:allowBackup="false"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/weexbox_icon"
         android:label="WeexBoxExample"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NoActionbarTheme"
         android:largeHeap="true"
