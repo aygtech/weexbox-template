@@ -8,16 +8,16 @@
     </scroller>
     <div class="wrapper">
       <div class="item" @click="course">
-        <text>教程</text>
+        <text class="text">教程</text>
       </div>
       <div class="item" @click="modulePage">
-        <text>实例</text>
+        <text class="text">实例</text>
       </div>
       <div class="item" @click="about">
-        <text>关于</text>
+        <text class="text">关于</text>
       </div>
       <div class="item" @click="use">
-        <text>谁在使用WeexBox</text>
+        <text class="text">谁在使用WeexBox</text>
       </div>
     </div>
   </div>
@@ -99,6 +99,9 @@ export default {
   padding-top: 50px;
   font-size: 40px;
   font-weight: bold;
+}
+.text {
+  font-size: 34px;
 }
 .item {
   width: 375px;

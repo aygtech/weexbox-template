@@ -44,6 +44,7 @@ export default {
 
 <style lang="scss" scoped>
 .item {
+  font-size: 34px;
   padding: 30px 30px;
   border-bottom-color: #e7e5e5;
   border-bottom-width: 1px;
