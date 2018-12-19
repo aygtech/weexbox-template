@@ -1,62 +1,62 @@
 [
   {
     "path": "page/about.js",
-    "md5": "9a61d6afee739ddc68d29593267b1946"
+    "md5": "01a2712581202c07b14363f808937408"
   },
   {
     "path": "page/globalEvent.js",
-    "md5": "e2e31cb6c45adda76cb9e64255e67761"
+    "md5": "8c1860c37c3b6400a77b9c5ee2068353"
   },
   {
     "path": "page/home.js",
-    "md5": "1ea416111f3f50804c42a19c4eb13053"
+    "md5": "19d1bc6130f8cd87276cb749993f8537"
   },
   {
     "path": "page/module.js",
-    "md5": "be6e1afd7e17a0c9424b0bff568a9a6b"
+    "md5": "07c2df708136fe64feb8fd4c8e8343e6"
   },
   {
     "path": "page/page1.js",
-    "md5": "191b8c38bc41e474e8a14780e3844e49"
+    "md5": "909e22b9fe841ed83e78cf9972d1e7fd"
   },
   {
     "path": "page/use.js",
-    "md5": "23b7e1cc05011bb4480b5a4594268925"
+    "md5": "b2c10924bc468f5d9b0232d068d2c532"
   },
   {
     "path": "page/wb-event.js",
-    "md5": "3b477f9d648db673814a3f6bf1fa5930"
+    "md5": "92767fd9703528b6ae917fb35c973458"
   },
   {
     "path": "page/wb-external.js",
-    "md5": "5b8fd3dfe2be03edfd01551783705259"
+    "md5": "cb3cf6bd7e66240c4ca75604c300b2b7"
   },
   {
     "path": "page/wb-location.js",
-    "md5": "14e3122190b215eba4b644e39265de60"
+    "md5": "01418eaa04a52fc7f07735eba467c2ee"
   },
   {
     "path": "page/wb-modal.js",
-    "md5": "f3333610808af613f6baa0ad00f005a0"
+    "md5": "7359991729f4bcc58bc27a66b9f1658f"
   },
   {
     "path": "page/wb-navigator.js",
-    "md5": "d3ec97ed7b398ae586f2659d4ff3f7c9"
+    "md5": "b83d2a104b80b2a962f651ad7f6c1dac"
   },
   {
     "path": "page/wb-network.js",
-    "md5": "e0e7e564b076eec139465575207736d0"
+    "md5": "e045453f576ba8394c0b546efd6856d6"
   },
   {
     "path": "page/wb-router-close.js",
-    "md5": "2297c500733ae90c2adcd1abab1d1ab2"
+    "md5": "3f2ad325e7f370316b945a5547ec91df"
   },
   {
     "path": "page/wb-router.js",
-    "md5": "053ded4ea423d2fb41e2c38d67192807"
+    "md5": "256e7ab8dbfe11ade7a22b18904283c8"
   },
   {
     "path": "page/web.js",
-    "md5": "fcb8dede6c47f44bb0254ea139d609ce"
+    "md5": "10cf9392b04e8d68230a347a5790267c"
   }
 ]

@@ -41,6 +41,10 @@ export default {
       text: 'WeexBox',
       color: '3d3d3d'
     }, () => {})
+    navigator.setLeftItems([{
+      text: '',
+      color: '3d3d3d'
+    }], () => {})
   },
   methods: {
     use() {

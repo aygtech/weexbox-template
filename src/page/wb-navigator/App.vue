@@ -91,10 +91,7 @@ export default {
           color: '000000'
         }
       ], () => {
-        modal.showToast({
-          text: '返回回调',
-          duration: 1.5
-        })
+        router.close()
       })
     },
     setRightItems() {
