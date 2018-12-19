@@ -1,10 +1,7 @@
 package com.weexbox.example
 
 import android.app.Application
-
 import com.weexbox.core.WeexBoxEngine
-import com.weexbox.core.router.Router
-import com.weexbox.core.update.UpdateManager
 
 class App : Application() {
 
