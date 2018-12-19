@@ -108,7 +108,7 @@ export default {
         okTitle: '确定'
       }, (result) => {
         modal.showToast({
-          text: result.status === -1 ? '取消回调' : '确定回调',
+          text: result.status === 0 ? '确定回调' : '取消回调',
           duration: 1.5
         })
       })
