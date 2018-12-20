@@ -27,7 +27,6 @@
 import { router } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
-const modal = weex.requireModule('wb-modal')
 
 export default {
   components: {
@@ -48,9 +47,10 @@ export default {
   },
   methods: {
     use() {
-      modal.showToast({
-        text: '整理中...',
-        duration: 1.5
+      router.open({
+        name: 'web',
+        title: '谁在使用WeexBox',
+        url: 'https://aygtech.github.io/weexbox/guide/who-s-using.html'
       })
     },
     course() {

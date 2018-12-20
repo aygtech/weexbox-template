@@ -17,7 +17,7 @@
       <!-- <text>{{env}}</text> -->
     </div>
     <text class="item" @click="website">WeexBox 官网</text>
-    <text class="item" @click="problem">常见问题</text>
+    <!-- <text class="item" @click="problem">常见问题</text> -->
   </scroller>
 </template>
 
