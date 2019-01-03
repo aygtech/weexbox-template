@@ -35,7 +35,7 @@ const event = weex.requireModule('wb-event')
 // const params = router.getParams()
 const params = {
   title: 'wb-event',
-  url: 'wb-event'
+  url: 'wb-event',
 }
 
 export default {
@@ -49,17 +49,17 @@ export default {
     if (params) {
       navigator.setCenterItem({
         text: params.title,
-        color: '3d3d3d'
+        color: '3d3d3d',
       }, () => {})
     }
     navigator.setRightItems([{
       text: '查看文档',
-      color: '3d3d3d'
+      color: '3d3d3d',
     }], () => {
       router.open({
         name: 'web',
         title: params.title,
-        url: `${weexBoxUrl}#${params.url}`
+        url: `${weexBoxUrl}#${params.url}`,
       })
       // router.open({
       //   url: 'page/web.js',
@@ -73,7 +73,7 @@ export default {
       // result为传过来的参数
       modal.showToast({
         text: `register接收的内容：${result.desc}`,
-        duration: 1.5
+        duration: 1.5,
       })
     })
   },
@@ -82,14 +82,14 @@ export default {
       event.unregisterAll()
       modal.showToast({
         text: '注销所有事件成功',
-        duration: 1.5
+        duration: 1.5,
       })
     },
     unregister() {
       event.unregister('eventName')
       modal.showToast({
         text: '注销成功',
-        duration: 1.5
+        duration: 1.5,
       })
     },
     emit() {
@@ -98,13 +98,13 @@ export default {
         name: 'eventName',
         // 事件参数，默认为空
         params: {
-          desc: 'test'
-        }
+          desc: 'test',
+        },
       })
     },
     register() {
-    }
-  }
+    },
+  },
 }
 </script>
 

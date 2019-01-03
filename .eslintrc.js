@@ -17,20 +17,11 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
-    indent: ['error', 2],
-    'linebreak-style': ['error', 'unix'],
-    quotes: ['error', 'single'],
-    semi: ['error', 'never'],
-    camelcase: [1, { properties: 'never' }],
-    'no-debugger': 0,
-    'no-console': 0,
-    'no-new': 0,
-    'no-underscore-dangle': 0,
-    'no-unused-expressions': 0,
-    'radix': 0,
-    'comma-dangle': ['error', 'never'],
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
-    'prefer-promise-reject-errors': 0,
-    'linebreak-style': ["off", "windows"]
+    'linebreak-style': 0,// 不校验换行符
+    semi: ['error', 'never'],// 不使用分号 
+    'no-debugger': 0,// 不校验debugger
+    'no-console': 0,// 不校验console
+    'no-new': 0,// new Vue要用
+    'no-underscore-dangle': 0,// 可使用下划线命名
   }
 }

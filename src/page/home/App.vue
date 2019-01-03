@@ -38,11 +38,11 @@ export default {
   created() {
     navigator.setCenterItem({
       text: 'WeexBox',
-      color: '3d3d3d'
+      color: '3d3d3d',
     }, () => {})
     navigator.setLeftItems([{
       text: '',
-      color: '3d3d3d'
+      color: '3d3d3d',
     }], () => {})
   },
   methods: {
@@ -50,29 +50,29 @@ export default {
       router.open({
         name: 'web',
         title: '谁在使用WeexBox',
-        url: 'https://aygtech.github.io/weexbox/guide/who-s-using.html'
+        url: 'https://aygtech.github.io/weexbox/guide/who-s-using.html',
       })
     },
     course() {
       router.open({
         name: 'web',
         title: '教程',
-        url: 'https://aygtech.github.io/weexbox'
+        url: 'https://aygtech.github.io/weexbox',
       })
     },
     about() {
       router.open({
         url: 'page/about.js',
-        params: {}
+        params: {},
       })
     },
     modulePage() {
       router.open({
         url: 'page/module.js',
-        params: {}
+        params: {},
       })
-    }
-  }
+    },
+  },
 }
 </script>
 

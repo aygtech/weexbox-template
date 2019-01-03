@@ -52,7 +52,7 @@ const modal = weex.requireModule('wb-modal')
 // const params = router.getParams()
 const params = {
   title: 'wb-modal',
-  url: 'wb-modal'
+  url: 'wb-modal',
 }
 
 export default {
@@ -66,17 +66,17 @@ export default {
     if (params) {
       navigator.setCenterItem({
         text: params.title,
-        color: '3d3d3d'
+        color: '3d3d3d',
       }, () => {})
     }
     navigator.setRightItems([{
       text: '查看文档',
-      color: '3d3d3d'
+      color: '3d3d3d',
     }], () => {
       router.open({
         name: 'web',
         title: params.title,
-        url: `${weexBoxUrl}#${params.url}`
+        url: `${weexBoxUrl}#${params.url}`,
       })
       // router.open({
       //   url: 'page/web.js',
@@ -92,11 +92,11 @@ export default {
       modal.alert({
         title: '标题',
         message: '弹窗内容',
-        okTitle: '确定'
+        okTitle: '确定',
       }, () => {
         modal.showToast({
           text: '确定回调',
-          duration: 1.5
+          duration: 1.5,
         })
       })
     },
@@ -105,11 +105,11 @@ export default {
         title: '标题',
         message: '弹窗内容',
         cancelTitle: '取消',
-        okTitle: '确定'
+        okTitle: '确定',
       }, (result) => {
         modal.showToast({
           text: result.status === 0 ? '确定回调' : '取消回调',
-          duration: 1.5
+          duration: 1.5,
         })
       })
     },
@@ -118,11 +118,11 @@ export default {
         title: '标题',
         placeholder: '请输入密码',
         cancelTitle: '取消',
-        okTitle: '确定'
+        okTitle: '确定',
       }, (result) => {
         modal.showToast({
           text: result.data.text,
-          duration: 1.5
+          duration: 1.5,
         })
       })
     },
@@ -131,20 +131,20 @@ export default {
         actions: [
           { type: 'normal', title: '拍照' },
           { type: 'normal', title: '相册' },
-          { type: 'cancel', title: '取消' }
-        ]
+          { type: 'cancel', title: '取消' },
+        ],
       }, (result) => {
         const { index } = result.data
         modal.showToast({
           text: index,
-          duration: 1.5
+          duration: 1.5,
         })
       })
     },
     showToast() {
       modal.showToast({
         text: '提示信息',
-        duration: 1.5
+        duration: 1.5,
       })
     },
     showLoading() {
@@ -156,13 +156,13 @@ export default {
     showProgress() {
       modal.showProgress({
         progress: 50,
-        text: '加载中...'
+        text: '加载中...',
       })
     },
     dismiss() {
       modal.dismiss()
-    }
-  }
+    },
+  },
 }
 </script>
 

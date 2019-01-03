@@ -29,7 +29,7 @@ export default {
   created() {
     navigator.setCenterItem({
       text: 'WeexBox',
-      color: '3d3d3d'
+      color: '3d3d3d',
     }, () => {})
   },
   methods: {
@@ -37,16 +37,16 @@ export default {
       router.open({
         name: 'web',
         title: '教程',
-        url: 'https://aygtech.github.io/weexbox'
+        url: 'https://aygtech.github.io/weexbox',
       })
     },
     module() {
       router.open({
         url: 'page/module.js',
-        params: {}
+        params: {},
       })
-    }
-  }
+    },
+  },
 }
 </script>
 

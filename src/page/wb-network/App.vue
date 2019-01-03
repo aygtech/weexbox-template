@@ -23,7 +23,7 @@ const modal = weex.requireModule('wb-modal')
 // const params = router.getParams()
 const params = {
   title: 'wb-network',
-  url: 'wb-network'
+  url: 'wb-network',
 }
 
 export default {
@@ -37,17 +37,17 @@ export default {
     if (params) {
       navigator.setCenterItem({
         text: params.title,
-        color: '3d3d3d'
+        color: '3d3d3d',
       }, () => {})
     }
     navigator.setRightItems([{
       text: '查看文档',
-      color: '3d3d3d'
+      color: '3d3d3d',
     }], () => {
       router.open({
         name: 'web',
         title: params.title,
-        url: `${weexBoxUrl}#${params.url}`
+        url: `${weexBoxUrl}#${params.url}`,
       })
       // router.open({
       //   url: 'page/web.js',
@@ -69,14 +69,14 @@ export default {
         headers: { 'X-Requested-With': 'XMLHttpRequest' },
         // 发送的 URL/Body 参数
         params: {
-          ID: 12345
+          ID: 12345,
         },
         // 响应类型, json 或 text，默认 json
-        responseType: 'json'
+        responseType: 'json',
       }, () => {
         modal.showToast({
           text: '请求完成',
-          duration: 1.5
+          duration: 1.5,
         })
       })
     },
@@ -85,22 +85,22 @@ export default {
         // 请求的URL
         url: 'https://weexbox.com/xxx/xxx',
         // 本地文件路径数组
-        files: ['/docment/1.png']
+        files: ['/docment/1.png'],
       }, () => {
         // 完成的callback
         modal.showToast({
           text: '完成的callback',
-          duration: 1.5
+          duration: 1.5,
         })
       }, () => {
         // 进度的callback
         modal.showToast({
           text: '进度的callback',
-          duration: 1.5
+          duration: 1.5,
         })
       })
-    }
-  }
+    },
+  },
 }
 </script>
 

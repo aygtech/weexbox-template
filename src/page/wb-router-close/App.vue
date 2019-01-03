@@ -33,7 +33,7 @@ const navigator = weex.requireModule('wb-navigator')
 // const params = router.getParams()
 const params = {
   title: 'wb-router',
-  url: 'wb-router'
+  url: 'wb-router',
 }
 
 export default {
@@ -47,7 +47,7 @@ export default {
     if (params) {
       navigator.setCenterItem({
         text: params.title,
-        color: '3d3d3d'
+        color: '3d3d3d',
       }, () => {})
     }
   },
@@ -66,8 +66,8 @@ export default {
         closeFromBottomToTop: true,
         params: {
           title: params.title,
-          url: params.url
-        }
+          url: params.url,
+        },
       })
     },
     closeRoot() {
@@ -81,8 +81,8 @@ export default {
         closeFromBottomToTop: true,
         params: {
           title: params.title,
-          url: params.url
-        }
+          url: params.url,
+        },
       })
     },
     closePre() {
@@ -96,11 +96,11 @@ export default {
         closeFromBottomToTop: false,
         params: {
           title: params.title,
-          url: params.url
-        }
+          url: params.url,
+        },
       })
-    }
-  }
+    },
+  },
 }
 </script>
 
