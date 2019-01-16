@@ -23,5 +23,6 @@ module.exports = {
     'no-console': 0,// 不校验console
     'no-new': 0,// new Vue要用
     'no-underscore-dangle': 0,// 可使用下划线命名
+    'prefer-promise-reject-errors': 0,// reject不强制Error
   }
 }
