@@ -18,7 +18,7 @@ const location = weex.requireModule('wb-location')
 // const params = router.getParams()
 const params = {
   title: 'wb-location',
-  url: 'wb-location'
+  url: 'wb-location',
 }
 
 export default {
@@ -26,24 +26,24 @@ export default {
   },
   data() {
     return {
-      info: null
+      info: null,
     }
   },
   created() {
     if (params) {
       navigator.setCenterItem({
         text: params.title,
-        color: '3d3d3d'
+        color: '3d3d3d',
       }, () => {})
     }
     navigator.setRightItems([{
       text: '查看文档',
-      color: '3d3d3d'
+      color: '3d3d3d',
     }], () => {
       router.open({
         name: 'web',
         title: params.title,
-        url: `${weexBoxUrl}#${params.url}`
+        url: `${weexBoxUrl}#${params.url}`,
       })
       // router.open({
       //   url: 'page/web.js',
@@ -61,17 +61,17 @@ export default {
           this.info = result.data
           modal.toast({
             message: '获取成功',
-            duration: 1.5
+            duration: 1.5,
           })
         } else {
           modal.toast({
             message: '获取失败',
-            duration: 1.5
+            duration: 1.5,
           })
         }
       })
-    }
-  }
+    },
+  },
 }
 </script>
 

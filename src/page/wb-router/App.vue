@@ -50,7 +50,7 @@ const { env } = weex.config
 
 const params = {
   title: 'wb-router',
-  url: 'wb-router'
+  url: 'wb-router',
 }
 
 export default {
@@ -58,24 +58,24 @@ export default {
   },
   data() {
     return {
-      isIos: env.platform.toLowerCase() === 'ios'
+      isIos: env.platform.toLowerCase() === 'ios',
     }
   },
   created() {
     if (params) {
       navigator.setCenterItem({
         text: params.title,
-        color: '3d3d3d'
+        color: '3d3d3d',
       }, () => {})
     }
     navigator.setRightItems([{
       text: '查看文档',
-      color: '3d3d3d'
+      color: '3d3d3d',
     }], () => {
       router.open({
         name: 'web',
         title: params.title,
-        url: `${weexBoxUrl}#${params.url}`
+        url: `${weexBoxUrl}#${params.url}`,
       })
       // router.open({
       //   url: 'page/web.js',
@@ -93,15 +93,15 @@ export default {
         disableGestureBack: true,
         params: {
           title: params.title,
-          url: params.url
-        }
+          url: params.url,
+        },
       })
     },
     // 打开新页面并关闭本页
     closeFromBottomToTop() {
       router.open({
         url: 'page/wb-router-close.js',
-        params: {}
+        params: {},
       })
     },
     // closePre() {
@@ -125,7 +125,7 @@ export default {
     getParams() {
       modal.showToast({
         text: `${JSON.stringify(params)}`,
-        duration: 1.5
+        duration: 1.5,
       })
     },
     open() {
@@ -138,10 +138,10 @@ export default {
       // })
       router.open({
         name: 'web',
-        url: `${weexBoxUrl}#${params.url}`
+        url: `${weexBoxUrl}#${params.url}`,
       })
-    }
-  }
+    },
+  },
 }
 </script>
 

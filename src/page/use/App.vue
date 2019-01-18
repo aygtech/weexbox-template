@@ -1,6 +1,16 @@
 <template>
   <scroller>
-    <text>sdfsdf</text>
+    <div class="wrapper">
+      <div class="item">
+        <text>教程</text>
+      </div>
+      <div class="item">
+        <text>实例</text>
+      </div>
+      <div class="item">
+        <text>关于</text>
+      </div>
+    </div>
   </scroller>
 </template>
 
@@ -18,8 +28,8 @@ export default {
   },
   created() {
     navigator.setCenterItem({
-      text: '谁在使用WeexBox',
-      color: '3d3d3d'
+      text: 'WeexBox',
+      color: '3d3d3d',
     }, () => {})
   },
   methods: {
@@ -27,16 +37,16 @@ export default {
       router.open({
         name: 'web',
         title: '教程',
-        url: 'https://aygtech.github.io/weexbox'
+        url: 'https://aygtech.github.io/weexbox',
       })
     },
     module() {
       router.open({
         url: 'page/module.js',
-        params: {}
+        params: {},
       })
-    }
-  }
+    },
+  },
 }
 </script>
 

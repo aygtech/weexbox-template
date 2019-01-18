@@ -12,7 +12,7 @@ const globalEvent = weex.requireModule('globalEvent')
 // const params = router.getParams()
 const params = {
   title: 'globalEvent',
-  url: 'globalEvent'
+  url: 'globalEvent',
 }
 
 export default {
@@ -20,24 +20,24 @@ export default {
   },
   data() {
     return {
-      text: 'globalEvent 全局事件'
+      text: 'globalEvent 全局事件',
     }
   },
   created() {
     if (params) {
       navigator.setCenterItem({
         text: params.title,
-        color: '3d3d3d'
+        color: '3d3d3d',
       }, () => {})
     }
     navigator.setRightItems([{
       text: '查看文档',
-      color: '3d3d3d'
+      color: '3d3d3d',
     }], () => {
       router.open({
         name: 'web',
         title: params.title,
-        url: `${weexBoxUrl}#${params.url}`
+        url: `${weexBoxUrl}#${params.url}`,
       })
       // router.open({
       //   url: 'page/web.js',
@@ -59,8 +59,8 @@ export default {
         this.text += '\n'
         this.text += 'viewDidDisappear'
       })
-    }
-  }
+    },
+  },
 }
 </script>
 

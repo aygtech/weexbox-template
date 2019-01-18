@@ -19,13 +19,13 @@ export default {
   },
   data() {
     return {
-      moduleList
+      moduleList,
     }
   },
   created() {
     navigator.setCenterItem({
       text: 'WeexBox例子',
-      color: '3d3d3d'
+      color: '3d3d3d',
     }, () => {})
   },
   methods: {
@@ -34,11 +34,11 @@ export default {
         url: `page/${item}.js`,
         params: {
           title: item,
-          url: item
-        }
+          url: item,
+        },
       })
-    }
-  }
+    },
+  },
 }
 </script>
 

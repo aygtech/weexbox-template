@@ -35,7 +35,7 @@ const modal = weex.requireModule('wb-modal')
 // const params = router.getParams()
 const params = {
   title: 'wb-external',
-  url: 'wb-external'
+  url: 'wb-external',
 }
 
 export default {
@@ -49,17 +49,17 @@ export default {
     if (params) {
       navigator.setCenterItem({
         text: params.title,
-        color: '3d3d3d'
+        color: '3d3d3d',
       }, () => {})
     }
     navigator.setRightItems([{
       text: '查看文档',
-      color: '3d3d3d'
+      color: '3d3d3d',
     }], () => {
       router.open({
         name: 'web',
         title: params.title,
-        url: `${weexBoxUrl}#${params.url}`
+        url: `${weexBoxUrl}#${params.url}`,
       })
       // router.open({
       //   url: 'page/web.js',
@@ -82,11 +82,11 @@ export default {
         enableCrop: true,
         isCircle: true,
         width: 500,
-        height: 500
+        height: 500,
       }, (result) => {
         modal.showToast({
           text: JSON.stringify(result),
-          duration: 1.5
+          duration: 1.5,
         })
       })
     },
@@ -96,15 +96,15 @@ export default {
         enableCrop: true,
         isCircle: true,
         width: 500,
-        height: 500
+        height: 500,
       }, (result) => {
         modal.showToast({
           text: JSON.stringify(result),
-          duration: 1.5
+          duration: 1.5,
         })
       })
-    }
-  }
+    },
+  },
 }
 </script>
 

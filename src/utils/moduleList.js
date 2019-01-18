@@ -13,9 +13,9 @@ export const moduleList = [
   // 'wb-location',
   'wb-modal',
   'wb-navigator',
-  'wb-external'
+  'wb-external',
 ]
 
 export default {
-  moduleList
+  moduleList,
 }

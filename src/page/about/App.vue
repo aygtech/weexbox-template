@@ -33,13 +33,13 @@ export default {
   },
   data() {
     return {
-      env
+      env,
     }
   },
   created() {
     navigator.setCenterItem({
       text: 'WeexBox',
-      color: '3d3d3d'
+      color: '3d3d3d',
     }, () => {})
   },
   methods: {
@@ -47,16 +47,16 @@ export default {
       router.open({
         name: 'web',
         title: '官网',
-        url: 'https://aygtech.github.io/weexbox'
+        url: 'https://aygtech.github.io/weexbox',
       })
     },
     problem() {
       modal.showToast({
         text: '整理中...',
-        duration: 1.5
+        duration: 1.5,
       })
-    }
-  }
+    },
+  },
 }
 </script>
 

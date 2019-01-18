@@ -40,7 +40,7 @@ const modal = weex.requireModule('wb-modal')
 // const params = router.getParams()
 const params = {
   title: 'wb-navigator',
-  url: 'wb-navigator'
+  url: 'wb-navigator',
 }
 
 export default {
@@ -48,24 +48,24 @@ export default {
   },
   data() {
     return {
-      disabledBack: false
+      disabledBack: false,
     }
   },
   created() {
     if (params) {
       navigator.setCenterItem({
         text: params.title,
-        color: '3d3d3d'
+        color: '3d3d3d',
       }, () => {})
     }
     navigator.setRightItems([{
       text: '查看文档',
-      color: '3d3d3d'
+      color: '3d3d3d',
     }], () => {
       router.open({
         name: 'web',
         title: params.title,
-        url: `${weexBoxUrl}#${params.url}`
+        url: `${weexBoxUrl}#${params.url}`,
       })
       // router.open({
       //   url: 'page/web.js',
@@ -81,15 +81,15 @@ export default {
       const navHeight = navigator.getHeight()
       modal.showToast({
         text: `状态栏高度：${navHeight}`,
-        duration: 1.5
+        duration: 1.5,
       })
     },
     setLeftItems() {
       navigator.setLeftItems([
         {
           text: '返回',
-          color: '000000'
-        }
+          color: '000000',
+        },
       ], () => {
         router.close()
       })
@@ -98,30 +98,30 @@ export default {
       navigator.setRightItems([
         {
           text: '确定',
-          color: '000000'
-        }
+          color: '000000',
+        },
       ], () => {
         modal.showToast({
           text: '确定回调',
-          duration: 1.5
+          duration: 1.5,
         })
       })
     },
     setCenterItem() {
       navigator.setCenterItem({
         text: 'weex-box',
-        color: '000000'
+        color: '000000',
       }, () => {
         modal.showToast({
           text: '设置标题：weex-box',
-          duration: 1.5
+          duration: 1.5,
         })
       })
     },
     setNavColor() {
       navigator.setNavColor('00ff00')
-    }
-  }
+    },
+  },
 }
 </script>
 

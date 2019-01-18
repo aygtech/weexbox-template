@@ -14,7 +14,7 @@ export default {
   data() {
     return {
       height: screenHeight,
-      url: ''
+      url: '',
     }
   },
   created() {
@@ -23,10 +23,10 @@ export default {
       this.url = params.type ? params.url : `${weexBoxUrl}#${params.url}`
       navigator.setCenterItem({
         text: params.title,
-        color: '3d3d3d'
+        color: '3d3d3d',
       }, () => {})
     }
-  }
+  },
 }
 </script>
 

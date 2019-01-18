@@ -12,11 +12,11 @@ import logo from '../../../static/logo.png'
 export default {
   data() {
     return {
-      logo
+      logo,
     }
   },
   created() {
-  }
+  },
 }
 </script>
 

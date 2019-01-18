@@ -39,7 +39,7 @@ export const router = {
       url: null,
       type: 'push',
       navBarHidden: false,
-      params: {}
+      params: {},
     }
     const param = Object.assign(_option, option)
     _router.open(param)
@@ -62,11 +62,11 @@ export const router = {
    */
   getParams() {
     return _router.getParams()
-  }
+  },
 }
 
 export default {
   weexBoxUrl,
   router,
-  screenHeight
+  screenHeight,
 }

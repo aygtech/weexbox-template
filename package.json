@@ -1,18 +1,20 @@
 {
   "name": "weexbox",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A weex project",
   "author": "Mario",
   "private": true,
   "scripts": {
-    "debug": "weexbox-debugger",
-    "develop": "weexbox-builder develop",
-    "test": "weexbox-builder test",
-    "preRelease": "weexbox-builder preRelease",
-    "release": "weexbox-builder release"
+    "debug": "npm run lint && weexbox-debugger",
+    "develop": "npm run lint && weexbox-builder develop",
+    "test": "npm run lint && weexbox-builder test",
+    "preRelease": "npm run lint && weexbox-builder preRelease",
+    "release": "npm run lint && weexbox-builder release",
+    "lint": "eslint --fix --ext .js,.vue src"
   },
   "keywords": [
-    "weex"
+    "weex",
+    "weexbox"
   ],
   "license": "MIT",
   "dependencies": {
@@ -20,5 +22,6 @@
     "@weexbox/debugger": "1.0.1"
   },
   "devDependencies": {
+    "eslint": "5.4.0"
   }
 }

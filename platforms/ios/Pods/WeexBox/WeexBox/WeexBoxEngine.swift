@@ -33,10 +33,10 @@ import VasSonic
                     touch.callBack = {(index)->() in
                         AssistiveTouch.sing.dissShow()
                         if(index == 0){
-                            DebugWeex.refresh()
+                            DebugWeex.openScan()
                         }
                         else{
-                            DebugWeex.openScan()
+                            DebugWeex.refresh()
                         }
                     }
                 }
@@ -61,7 +61,7 @@ import VasSonic
     }
     
     private static func registerComponent() {
-        
+        WXSDKEngine.registerComponent("wb-lottie", with: LottieComponent.self)
     }
     
     private static func registerModule() {
