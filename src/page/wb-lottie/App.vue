@@ -38,8 +38,8 @@ export default {
   },
   methods: {
     play() {
-      this.$refs.lottie.play((complete) => {
-        console.log(complete)
+      this.$refs.lottie.play((result) => {
+        console.log(JSON.stringify(result))
       })
     },
     pause() {
