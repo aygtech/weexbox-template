@@ -1,16 +1,6 @@
 <template>
   <scroller>
-    <div class="wrapper">
-      <div class="item">
-        <text>教程</text>
-      </div>
-      <div class="item">
-        <text>实例</text>
-      </div>
-      <div class="item">
-        <text>关于</text>
-      </div>
-    </div>
+    <text>sdfsdf</text>
   </scroller>
 </template>
 
@@ -28,7 +18,7 @@ export default {
   },
   created() {
     navigator.setCenterItem({
-      text: 'WeexBox',
+      text: '谁在使用WeexBox',
       color: '3d3d3d'
     }, () => {})
   },
