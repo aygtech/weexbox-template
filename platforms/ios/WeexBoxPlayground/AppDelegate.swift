@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  WeexBoxExample
+//  WeexBoxPlayground
 //
 //  Created by Mario on 2018/11/20.
 //  Copyright © 2018 WeexBox. All rights reserved.

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_WeexBoxExampleVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_WeexBoxExampleVersionString[];
+FOUNDATION_EXPORT double Pods_WeexBoxPlaygroundVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_WeexBoxPlaygroundVersionString[];
 

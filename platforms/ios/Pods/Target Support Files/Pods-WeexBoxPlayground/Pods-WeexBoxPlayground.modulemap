@@ -1,0 +1,6 @@
+module Pods_WeexBoxPlayground {
+  umbrella header "Pods-WeexBoxPlayground-umbrella.h"
+
+  export *
+  module * { export * }
+}
