@@ -2,7 +2,7 @@
  * @Author: remi.zhang
  * @Date: 2018-12-11 14:09:43
  * @Last Modified by: remi.zhang
- * @Last Modified time: 2018-12-11 16:45:02
+ * @Last Modified time: 2019-01-21 10:20:46
  */
 
 export const moduleList = [
@@ -14,6 +14,7 @@ export const moduleList = [
   'wb-modal',
   'wb-navigator',
   'wb-external',
+  'wb-lottie',
 ]
 
 export default {

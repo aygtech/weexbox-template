@@ -1,6 +1,6 @@
 <template>
-  <div class="wrap">
-    <wb-lottie class="happyBirthday" :sourceJson=sourceJson :loop=loop ref="lottie"></wb-lottie>
+  <scroller class="wrap">
+    <wb-lottie class="happyBirthday" :sourceJson='sourceJson' :loop='loop' ref="lottie"></wb-lottie>
     <text class="title">播放动画</text>
     <div class="button" @click="play">
       <text class="button-text">播放</text>
@@ -18,11 +18,18 @@
       <text class="button-text">停止</text>
     </div>
     <div class="empty"></div>
-  </div>
+  </scroller>
 </template>
 
 <script>
+import { router, weexBoxUrl } from '../../utils/native'
+
 const happyBirthday = require('./happyBirthday.json')
+
+const params = {
+  title: 'wb-lottie',
+  url: 'wb-lottie',
+}
 
 export default {
   components: {
@@ -34,7 +41,22 @@ export default {
     }
   },
   created() {
-
+    if (params) {
+      navigator.setCenterItem({
+        text: params.title,
+        color: '3d3d3d',
+      }, () => {})
+    }
+    navigator.setRightItems([{
+      text: '查看文档',
+      color: '3d3d3d',
+    }], () => {
+      router.open({
+        name: 'web',
+        title: params.title,
+        url: `${weexBoxUrl}#${params.url}`,
+      })
+    })
   },
   methods: {
     play() {
