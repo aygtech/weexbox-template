@@ -35,7 +35,7 @@ PODS:
   - SwiftyJSON (4.2.0)
   - TZImagePickerController (3.1.9)
   - VasSonic (3.0.0)
-  - WeexBox (1.2.0):
+  - WeexBox (1.2.1):
     - Alamofire
     - Alamofire-Synchronous
     - AsyncSwift
@@ -122,7 +122,7 @@ SPEC CHECKSUMS:
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   TZImagePickerController: c3f7c505d23281e21e98df6dbeae372946caa28f
   VasSonic: 681ec95418d485d8c501d13549e25dff18754893
-  WeexBox: cacee3df5fb018522ce4959ec6a0a4924668814d
+  WeexBox: cd424406567cadf5fd2fdcffc1b0a9d3d913168e
   WeexPluginLoader: 85c1304f8ba29864e58531614a0acfeceef1b85c
   WeexSDK: ced3f2ef2f0cb48d1d76fd2f03c645572c632d21
   WXDevtool: 833dd3e835df1f5f278fc8865c865d48196bfdab

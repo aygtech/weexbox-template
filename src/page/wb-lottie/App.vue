@@ -1,6 +1,6 @@
 <template>
   <scroller class="wrap">
-    <wb-lottie class="happyBirthday" :sourceJson='sourceJson' :loop='loop' ref="lottie"></wb-lottie>
+    <wb-lottie class="lottie" :sourceJson='sourceJson' :loop='loop' ref="lottie"></wb-lottie>
     <text class="title">播放动画</text>
     <div class="button" @click="play">
       <text class="button-text">播放</text>
@@ -25,7 +25,7 @@
 import { router } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
-const happyBirthday = require('./happyBirthday.json')
+const checkedDone = require('./checked_done.json')
 
 const params = {
   title: 'wb-lottie',
@@ -37,7 +37,7 @@ export default {
   },
   data() {
     return {
-      sourceJson: happyBirthday,
+      sourceJson: checkedDone,
       loop: false,
     }
   },
@@ -77,8 +77,8 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../style/global';
-.happyBirthday {
-  width: 750px;
-  height: 750px;
+.lottie {
+  width: 690px;
+  height: 690px;
 }
 </style>
