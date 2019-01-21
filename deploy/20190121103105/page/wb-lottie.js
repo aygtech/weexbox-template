@@ -299,7 +299,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _native = __webpack_require__(5);
 
-var happyBirthday = __webpack_require__(62); //
+var navigator = weex.requireModule('wb-navigator'); //
 //
 //
 //
@@ -322,6 +322,8 @@ var happyBirthday = __webpack_require__(62); //
 //
 //
 //
+
+var happyBirthday = __webpack_require__(62);
 
 var params = {
   title: 'wb-lottie',
