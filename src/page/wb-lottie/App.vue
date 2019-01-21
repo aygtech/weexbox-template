@@ -24,6 +24,7 @@
 <script>
 import { router, weexBoxUrl } from '../../utils/native'
 
+const navigator = weex.requireModule('wb-navigator')
 const happyBirthday = require('./happyBirthday.json')
 
 const params = {
