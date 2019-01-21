@@ -352,7 +352,7 @@ exports.default = {
       _native.router.open({
         name: 'web',
         title: params.title,
-        url: _native.weexBoxUrl + '#' + params.url
+        url: 'https://aygtech.github.io/weexbox/guide/component.html#' + params.url
       });
     });
   },

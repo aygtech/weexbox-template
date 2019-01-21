@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { router, weexBoxUrl } from '../../utils/native'
+import { router } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
 const happyBirthday = require('./happyBirthday.json')
@@ -55,7 +55,7 @@ export default {
       router.open({
         name: 'web',
         title: params.title,
-        url: `${weexBoxUrl}#${params.url}`,
+        url: `https://aygtech.github.io/weexbox/guide/component.html#${params.url}`,
       })
     })
   },
