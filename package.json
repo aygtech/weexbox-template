@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "@weexbox/builder": "1.0.1",
-    "@weexbox/debugger": "1.0.1"
+    "@weexbox/debugger": "1.2.8"
   },
   "devDependencies": {
     "eslint": "5.4.0"
