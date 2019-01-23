@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import { router, weexBoxUrl } from '../../utils/native'
+import { router, weexBoxUrl, weexBoxDomain } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
 const external = weex.requireModule('wb-external')
@@ -72,7 +72,7 @@ export default {
   },
   methods: {
     openBrowser() {
-      external.openBrowser('https://aygtech.github.io/weexbox')
+      external.openBrowser(weexBoxDomain)
     },
     callPhone() {
       external.callPhone('114')

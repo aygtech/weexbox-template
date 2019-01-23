@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import { router } from '../../utils/native'
+import { router, weexBoxDomain } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
 
@@ -50,14 +50,14 @@ export default {
       router.open({
         name: 'web',
         title: '谁在使用WeexBox',
-        url: 'https://aygtech.github.io/weexbox/guide/who-s-using.html',
+        url: `${weexBoxDomain}/guide/who-s-using.html`,
       })
     },
     course() {
       router.open({
         name: 'web',
         title: '教程',
-        url: 'https://aygtech.github.io/weexbox',
+        url: weexBoxDomain,
       })
     },
     about() {

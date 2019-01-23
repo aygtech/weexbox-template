@@ -2,7 +2,7 @@
  * @Author: remi.zhang
  * @Date: 2018-12-11 11:04:31
  * @Last Modified by: remi.zhang
- * @Last Modified time: 2018-12-18 14:21:16
+ * @Last Modified time: 2019-01-23 14:54:16
  */
 // const modal = weex.requireModule('wb-modal')
 // const _network = weex.requireModule('wb-network')
@@ -11,8 +11,16 @@ const _router = weex.requireModule('wb-router')
 
 const { env } = weex.config
 
+let domain = 'https://weexbox.surge.sh'
+const now = new Date().getTime()
+const end = new Date('2019-01-26 12:00:00').getTime()
+if (now >= end) {
+  domain = 'https://aygtech.github.io/weexbox'
+}
+// weexbox 域名地址
+export const weexBoxDomain = domain
 // weexbox module域名地址
-export const weexBoxUrl = 'https://aygtech.github.io/weexbox/guide/module.html'
+export const weexBoxUrl = `${domain}/guide/module.html`
 
 /**
  * 屏幕高度
@@ -66,6 +74,7 @@ export const router = {
 }
 
 export default {
+  weexBoxDomain,
   weexBoxUrl,
   router,
   screenHeight,

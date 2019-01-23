@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { router } from '../../utils/native'
+import { router, weexBoxDomain } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
 const modal = weex.requireModule('wb-modal')
@@ -47,7 +47,7 @@ export default {
       router.open({
         name: 'web',
         title: '官网',
-        url: 'https://aygtech.github.io/weexbox',
+        url: weexBoxDomain,
       })
     },
     problem() {

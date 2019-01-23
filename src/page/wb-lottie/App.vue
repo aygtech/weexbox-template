@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { router } from '../../utils/native'
+import { router, weexBoxDomain } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
 const checkedDone = require('./checked_done.json')
@@ -55,7 +55,7 @@ export default {
       router.open({
         name: 'web',
         title: params.title,
-        url: `https://aygtech.github.io/weexbox/guide/component.html#${params.url}`,
+        url: `${weexBoxDomain}/guide/component.html#${params.url}`,
       })
     })
   },
