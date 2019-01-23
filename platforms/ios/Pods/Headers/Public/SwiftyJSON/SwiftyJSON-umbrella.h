@@ -1,1 +1,1 @@
-/Users/mario/Documents/aygtech/weexbox-template/platforms/ios/Pods/Target Support Files/SwiftyJSON/SwiftyJSON-umbrella.h
+/Users/baird/Desktop/合摩科技/weexbox-template/platforms/ios/Pods/Target Support Files/SwiftyJSON/SwiftyJSON-umbrella.h
