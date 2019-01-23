@@ -7,7 +7,7 @@
         android:name=".App"
         android:allowBackup="false"
         android:icon="@drawable/weexbox_icon"
-        android:label="WeexBoxExample"
+        android:label="WeexBox Playground"
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/NoActionbarTheme"
