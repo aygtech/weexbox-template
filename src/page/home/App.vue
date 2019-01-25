@@ -7,11 +7,11 @@
       </div>
     </scroller>
     <div class="wrapper">
-      <div class="item" @click="course">
-        <text class="text">教程</text>
+      <div class="item" @click="weexPage">
+        <text class="text">Weex实例</text>
       </div>
-      <div class="item" @click="modulePage">
-        <text class="text">实例</text>
+      <div class="item" @click="weexboxPage">
+        <text class="text">WeexBox实例</text>
       </div>
       <div class="item" @click="about">
         <text class="text">关于</text>
@@ -53,11 +53,11 @@ export default {
         url: `${weexBoxDomain}/guide/who-s-using.html`,
       })
     },
-    course() {
+    weexPage() {
       router.open({
-        name: 'web',
-        title: '教程',
-        url: weexBoxDomain,
+        name: 'weex',
+        title: 'Weex实例',
+        url: 'https://raw.githubusercontent.com/apache/incubator-weex/master/ios/playground/bundlejs/examples.weex.js',
       })
     },
     about() {
@@ -66,7 +66,7 @@ export default {
         params: {},
       })
     },
-    modulePage() {
+    weexboxPage() {
       router.open({
         url: 'page/module.js',
         params: {},

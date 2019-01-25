@@ -23,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 开启调试
         WeexBoxEngine.isDebug = true
         
+        Router.register(name: Router.nameWeex, controller: BaseWeexViewController.self)
+        Router.register(name: Router.nameWeb, controller: BaseWebViewController.self)
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
         
