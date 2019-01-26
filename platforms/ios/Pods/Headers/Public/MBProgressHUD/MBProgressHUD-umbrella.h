@@ -1,1 +1,1 @@
-/Users/baird/Desktop/合摩科技/weexbox-template/platforms/ios/Pods/Target Support Files/MBProgressHUD/MBProgressHUD-umbrella.h
+/Users/mario/Documents/aygtech/weexbox-template/platforms/ios/Pods/Target Support Files/MBProgressHUD/MBProgressHUD-umbrella.h

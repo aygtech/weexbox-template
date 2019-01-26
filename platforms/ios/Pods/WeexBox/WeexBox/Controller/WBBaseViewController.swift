@@ -31,10 +31,4 @@ import Foundation
         Event.unregisterAll(target: self)
     }
     
-//    override open func rt_customBackItem(withTarget target: Any!, action: Selector!) -> UIBarButtonItem! {
-//        let button = UIButton(type: .custom)
-//        button.setImage(UIImage(named: "back"), for: .normal)
-//        return UIBarButtonItem(customView: button)
-//    }
-//
 }

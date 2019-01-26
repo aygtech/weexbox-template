@@ -11,8 +11,6 @@
 		AC6ACE7D21BE65E1005E5AFA /* LaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ACE7C21BE65E1005E5AFA /* LaunchController.swift */; };
 		AC6ACE7F21BE688B005E5AFA /* weexbox-update in Resources */ = {isa = PBXBuildFile; fileRef = AC6ACE7E21BE688B005E5AFA /* weexbox-update */; };
 		AC6ACE8121BE7357005E5AFA /* WeexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ACE8021BE7357005E5AFA /* WeexViewController.swift */; };
-		ACA7C92621FAAC070012C4C9 /* BaseWeexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA7C92521FAAC070012C4C9 /* BaseWeexViewController.swift */; };
-		ACA7C92A21FB02890012C4C9 /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA7C92921FB02890012C4C9 /* BaseWebViewController.swift */; };
 		ACE49D7D21A40C2100340A41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE49D7C21A40C2100340A41 /* AppDelegate.swift */; };
 		ACE49D8421A40C2400340A41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE49D8321A40C2400340A41 /* Assets.xcassets */; };
 		ACE49D8721A40C2400340A41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE49D8521A40C2400340A41 /* LaunchScreen.storyboard */; };
@@ -24,8 +22,6 @@
 		AC6ACE7C21BE65E1005E5AFA /* LaunchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchController.swift; sourceTree = "<group>"; };
 		AC6ACE7E21BE688B005E5AFA /* weexbox-update */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "weexbox-update"; sourceTree = "<group>"; };
 		AC6ACE8021BE7357005E5AFA /* WeexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeexViewController.swift; sourceTree = "<group>"; };
-		ACA7C92521FAAC070012C4C9 /* BaseWeexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWeexViewController.swift; sourceTree = "<group>"; };
-		ACA7C92921FB02890012C4C9 /* BaseWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
 		ACE49D7921A40C2100340A41 /* WeexBoxPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeexBoxPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE49D7C21A40C2100340A41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACE49D8321A40C2400340A41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,8 +75,6 @@
 			children = (
 				ACE49D7C21A40C2100340A41 /* AppDelegate.swift */,
 				AC6ACE8021BE7357005E5AFA /* WeexViewController.swift */,
-				ACA7C92521FAAC070012C4C9 /* BaseWeexViewController.swift */,
-				ACA7C92921FB02890012C4C9 /* BaseWebViewController.swift */,
 				AC6ACE7C21BE65E1005E5AFA /* LaunchController.swift */,
 				ACE49D8321A40C2400340A41 /* Assets.xcassets */,
 				ACE49D8521A40C2400340A41 /* LaunchScreen.storyboard */,
@@ -229,10 +223,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACA7C92A21FB02890012C4C9 /* BaseWebViewController.swift in Sources */,
 				AC6ACE8121BE7357005E5AFA /* WeexViewController.swift in Sources */,
 				AC6ACE7D21BE65E1005E5AFA /* LaunchController.swift in Sources */,
-				ACA7C92621FAAC070012C4C9 /* BaseWeexViewController.swift in Sources */,
 				ACE49D7D21A40C2100340A41 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

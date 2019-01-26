@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import WeexBox
 
-class WeexViewController: BaseWeexViewController {
+class WeexViewController: WBWeexViewController {
     
     override func viewDidLoad() {
         router.url = "page/home.js"
-        
+
         super.viewDidLoad()
     }
 }

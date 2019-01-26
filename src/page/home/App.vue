@@ -13,18 +13,18 @@
       <div class="item" @click="weexboxPage">
         <text class="text">WeexBox实例</text>
       </div>
+      <div class="item" @click="news">
+        <text class="text">资讯</text>
+      </div>
       <div class="item" @click="about">
         <text class="text">关于</text>
-      </div>
-      <div class="item" @click="use">
-        <text class="text">谁在使用WeexBox</text>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { router, weexBoxDomain } from '../../utils/native'
+import { router } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
 
@@ -46,18 +46,18 @@ export default {
     }], () => {})
   },
   methods: {
-    use() {
+    news() {
       router.open({
-        name: 'web',
-        title: '谁在使用WeexBox',
-        url: `${weexBoxDomain}/guide/who-s-using.html`,
+        name: 'weex',
+        title: '资讯',
+        url: 'https://raw.githubusercontent.com/aygtech/incubator-weex/master/ios/playground/bundlejs/news.weex.js',
       })
     },
     weexPage() {
       router.open({
         name: 'weex',
         title: 'Weex实例',
-        url: 'https://raw.githubusercontent.com/apache/incubator-weex/master/ios/playground/bundlejs/examples.weex.js',
+        url: 'https://raw.githubusercontent.com/aygtech/incubator-weex/master/ios/playground/bundlejs/examples.weex.js',
       })
     },
     about() {
