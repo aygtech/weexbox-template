@@ -17,7 +17,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.2.0</string>
 	<key>CFBundleVersion</key>
-	<string>3</string>
+	<string>4</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -26,11 +26,11 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>用于扫描二维码</string>
+	<string>用于扫描二维码，方便用户打开新的页面</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>用于保存图片到相册</string>
+	<string>保存图片到相册，方便用户查看</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>用于读取相册图片</string>
+	<string>读取相册图片，用于展示</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
