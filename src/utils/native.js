@@ -13,7 +13,9 @@ const { env } = weex.config
 
 let domain = 'https://weexbox.surge.sh'
 const now = new Date().getTime()
-const end = new Date('2019-01-26 12:00:00').getTime()
+console.log(`now ${now}`)
+const end = new Date('2019/01/30 12:00:00').getTime()
+console.log(`end ${end}`)
 if (now >= end) {
   domain = 'https://aygtech.github.io/weexbox'
 }
