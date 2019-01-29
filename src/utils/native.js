@@ -12,12 +12,12 @@ const _router = weex.requireModule('wb-router')
 const { env } = weex.config
 
 let domain = 'https://weexbox.surge.sh'
+let examplesWeex = 'https://raw.githubusercontent.com/aygtech/incubator-weex/master/ios/playground/bundlejs/examples2.weex.js'
 const now = new Date().getTime()
-console.log(`now ${now}`)
-const end = new Date('2019/01/30 12:00:00').getTime()
-console.log(`end ${end}`)
+const end = new Date('2019/02/3 12:00:00').getTime()
 if (now >= end) {
   domain = 'https://aygtech.github.io/weexbox'
+  examplesWeex = 'https://raw.githubusercontent.com/aygtech/incubator-weex/master/ios/playground/bundlejs/examples.weex.js'
 }
 // weexbox 域名地址
 export const weexBoxDomain = domain
@@ -80,4 +80,5 @@ export default {
   weexBoxUrl,
   router,
   screenHeight,
+  examplesWeex,
 }

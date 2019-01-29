@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import { router } from '../../utils/native'
+import native, { router } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
 
@@ -57,7 +57,7 @@ export default {
       router.open({
         name: 'weex',
         title: 'Weex实例',
-        url: 'https://raw.githubusercontent.com/aygtech/incubator-weex/master/ios/playground/bundlejs/examples.weex.js',
+        url: native.examplesWeex,
       })
     },
     about() {
