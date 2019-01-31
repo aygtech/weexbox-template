@@ -24,5 +24,6 @@ module.exports = {
     'no-new': 0,// new Vue要用
     'no-underscore-dangle': 0,// 可使用下划线命名
     'prefer-promise-reject-errors': 0,// reject不强制Error
+    'import/no-extraneous-dependencies': 0,// 不强制依赖要在dependencies里面
   }
 }

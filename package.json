@@ -1,6 +1,6 @@
 {
   "name": "weexbox",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "A weex project",
   "author": "Mario",
   "private": true,
@@ -18,11 +18,10 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@weexbox/builder": "1.0.1",
-    "@weexbox/debugger": "1.2.8",
+    "@weexbox/debugger": "1.2.9",
+    "@weexbox/builder": "^1.0.0",
     "apollo-boost": "^0.1.27",
-    "graphql": "^14.1.1",
-    "graphql-tag": "^2.10.1"
+    "graphql": "^14.1.1"
   },
   "devDependencies": {
     "eslint": "5.4.0"
