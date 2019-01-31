@@ -1,0 +1,14 @@
+query L($id: ID!) {
+  launch(id: $id) {
+    id
+    isBooked
+    rocket {
+      id
+      name
+    }
+    mission {
+      name
+      missionPatch
+    }
+  }
+}
