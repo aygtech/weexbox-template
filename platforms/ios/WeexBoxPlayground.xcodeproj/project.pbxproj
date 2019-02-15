@@ -51,9 +51,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AC8FC0462216B9D600C21B5D /* static */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
 		ACE49D7021A40C2100340A41 = {
 			isa = PBXGroup;
 			children = (
+				AC8FC0462216B9D600C21B5D /* static */,
 				AC6ACE7E21BE688B005E5AFA /* weexbox-update */,
 				ACE49D7B21A40C2100340A41 /* WeexBoxPlayground */,
 				ACE49D7A21A40C2100340A41 /* Products */,
