@@ -1,1 +1,0 @@
-../../../WeexBox/WeexBox/Component/Lottie/LottieComponent.h
