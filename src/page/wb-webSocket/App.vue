@@ -6,23 +6,25 @@
     <text class="title">oncloseinfo：{{oncloseinfo}}</text>
     <text class="title">sendinfo：{{sendinfo}}</text>
     <div class="empty"></div>
+    <text class="title">连接WebSocket</text>
     <div class="button" @click="connect">
       <text class="button-text">连接</text>
     </div>
     <div class="empty"></div>
+    <text class="title">发送消息(send)</text>
     <div class="button" @click="send">
-      <text class="button-text">send消息</text>
+      <text class="button-text">发送一条消息</text>
     </div>
     <div class="empty"></div>
-    <div class="button" @click="cose">
-      <text class="button-text">cose</text>
+    <text class="title">关闭连接(close)</text>
+    <div class="button" @click="close">
+      <text class="button-text">关闭</text>
     </div>
   </scroller>
 </template>
 
 <script>
-/* eslint-disable */
-// import { router } from '../../utils/native'
+// import { router, weexBoxUrl } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
 const websocket = weex.requireModule('webSocket')
@@ -44,7 +46,7 @@ export default {
       oncloseinfo: '',
       onerrorinfo: '',
       closeinfo: '',
-      message: 0
+      message: 0,
     }
   },
   created() {
@@ -54,6 +56,16 @@ export default {
         color: '3d3d3d',
       }, () => {})
     }
+    // navigator.setRightItems([{
+    //   text: '查看文档',
+    //   color: '3d3d3d',
+    // }], () => {
+    //   router.open({
+    //     name: 'web',
+    //     title: params.title,
+    //     url: `${weexBoxUrl}#${params.url}`,
+    //   })
+    // })
   },
   methods: {
     connect() {
@@ -78,14 +90,11 @@ export default {
     send() {
       const self = this
       this.message += 1
-      websocket.send(`发送一个消息${self.message}`)
-      this.sendinfo = `发送一个消息${self.message}`
+      websocket.send(`发送一条消息${self.message}`)
+      this.sendinfo = `发送一条消息${self.message}`
     },
     close() {
-      websocket.close(() => {
-        this.message = 0
-        this.sendinfo = 'close'
-      })
+      websocket.close()
       this.message = 0
       this.sendinfo = 'close'
     },
