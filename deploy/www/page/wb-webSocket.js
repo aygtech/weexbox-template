@@ -88,6 +88,108 @@
 /************************************************************************/
 /******/ ({
 
+/***/ 5:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/*
+ * @Author: remi.zhang
+ * @Date: 2018-12-11 11:04:31
+ * @Last Modified by: remi.zhang
+ * @Last Modified time: 2019-01-23 14:54:16
+ */
+// const modal = weex.requireModule('wb-modal')
+// const _network = weex.requireModule('wb-network')
+var _router = weex.requireModule('wb-router');
+// const _location = weex.requireModule('wb-location')
+
+var env = weex.config.env;
+
+
+var domain = 'https://weexbox.surge.sh';
+var examplesWeex = 'https://raw.githubusercontent.com/aygtech/incubator-weex/master/ios/playground/bundlejs/examples2.weex.js';
+var now = new Date().getTime();
+var end = new Date('2019/02/3 12:00:00').getTime();
+if (now >= end) {
+  domain = 'https://aygtech.github.io/weexbox';
+  examplesWeex = 'https://raw.githubusercontent.com/aygtech/incubator-weex/master/ios/playground/bundlejs/examples.weex.js';
+}
+// weexbox 域名地址
+var weexBoxDomain = exports.weexBoxDomain = domain;
+// weexbox module域名地址
+var weexBoxUrl = exports.weexBoxUrl = domain + '/guide/module.html';
+
+/**
+ * 屏幕高度
+ */
+var screenHeight = exports.screenHeight = function screenHeight() {
+  var height = env.deviceHeight / env.deviceWidth * 750;
+  return Math.ceil(height);
+};
+
+// 页面路由
+var router = exports.router = {
+  /**
+   * 打开页面
+   * @param {object} option - 参数
+   * @param {string} option.url - 下一个weex/web的路径
+   * @param {string} [option.name] - 页面名称。内置"weex"、"web"，其他路由需要原生先注册
+   * @param {string} [option.type=push] - 下一个weex/web的路径
+   * @param {boolean} [option.navBarHidden=false] - 是否隐藏导航栏
+   * @param {object} [option.params={}] - // 需要传到下一个页面的数据
+   */
+  open: function open(option) {
+    var _option = {
+      name: 'weex',
+      url: null,
+      type: 'push',
+      navBarHidden: false,
+      params: {}
+    };
+    var param = Object.assign(_option, option);
+    _router.open(param);
+  },
+
+  /**
+   * 关闭页面
+   * @param {string} [level=1] - 关闭页面的级数
+   */
+  close: function close() {
+    var level = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+
+    _router.close(level);
+  },
+
+  /**
+   * 刷新weex页面
+   */
+  refresh: function refresh() {
+    _router.refresh();
+  },
+
+  /**
+   * 获取页面参数
+   */
+  getParams: function getParams() {
+    return _router.getParams();
+  }
+};
+
+exports.default = {
+  weexBoxDomain: weexBoxDomain,
+  weexBoxUrl: weexBoxUrl,
+  router: router,
+  screenHeight: screenHeight,
+  examplesWeex: examplesWeex
+};
+
+/***/ }),
+
 /***/ 94:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -202,7 +304,10 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-//
+
+var _native = __webpack_require__(5);
+
+var navigator = weex.requireModule('wb-navigator'); //
 //
 //
 //
@@ -228,9 +333,6 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 
-// import { router, weexBoxUrl } from '../../utils/native'
-
-var navigator = weex.requireModule('wb-navigator');
 var websocket = weex.requireModule('webSocket');
 // const params = router.getParams()
 var params = {
@@ -259,16 +361,16 @@ exports.default = {
         color: '3d3d3d'
       }, function () {});
     }
-    // navigator.setRightItems([{
-    //   text: '查看文档',
-    //   color: '3d3d3d',
-    // }], () => {
-    //   router.open({
-    //     name: 'web',
-    //     title: params.title,
-    //     url: `${weexBoxUrl}#${params.url}`,
-    //   })
-    // })
+    navigator.setRightItems([{
+      text: '查看文档',
+      color: '3d3d3d'
+    }], function () {
+      _native.router.open({
+        name: 'web',
+        title: params.title,
+        url: _native.weexBoxUrl + '#' + params.url
+      });
+    });
   },
 
   methods: {

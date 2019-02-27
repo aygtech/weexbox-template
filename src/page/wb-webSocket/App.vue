@@ -24,7 +24,7 @@
 </template>
 
 <script>
-// import { router, weexBoxUrl } from '../../utils/native'
+import { router, weexBoxUrl } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
 const websocket = weex.requireModule('webSocket')
@@ -56,16 +56,16 @@ export default {
         color: '3d3d3d',
       }, () => {})
     }
-    // navigator.setRightItems([{
-    //   text: '查看文档',
-    //   color: '3d3d3d',
-    // }], () => {
-    //   router.open({
-    //     name: 'web',
-    //     title: params.title,
-    //     url: `${weexBoxUrl}#${params.url}`,
-    //   })
-    // })
+    navigator.setRightItems([{
+      text: '查看文档',
+      color: '3d3d3d',
+    }], () => {
+      router.open({
+        name: 'web',
+        title: params.title,
+        url: `${weexBoxUrl}#${params.url}`,
+      })
+    })
   },
   methods: {
     connect() {
