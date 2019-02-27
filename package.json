@@ -1,6 +1,6 @@
 {
   "name": "weexbox",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A weex project",
   "author": "Mario",
   "private": true,
@@ -18,8 +18,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@weexbox/builder": "1.2.2",
-    "@weexbox/debugger": "1.3.3"
+    "@weexbox/builder": "^1.2.3",
+    "@weexbox/debugger": "^1.3.5"
   },
   "devDependencies": {
     "eslint": "5.4.0"
