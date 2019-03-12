@@ -1,7 +1,7 @@
 const config = {
   develop: {
-    // 从本机加载图片，只有在调试的时候有效
-    imagePublicPath: null,
+    // 从网络加载图片
+    imagePublicPath: 'https://raw.githubusercontent.com/aygtech/weexbox-template/master/deploy',
   },
   test: {
     // 从网络加载图片
