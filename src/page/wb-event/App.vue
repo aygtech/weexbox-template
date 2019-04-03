@@ -1,28 +1,56 @@
 <template>
   <div class="wrap">
-    <text class="title">注册事件(register)</text>
-    <div class="button" @click="register">
-      <text class="button-text">register</text>
+    <text class="title">
+      注册事件(register)
+    </text>
+    <div
+      class="button"
+      @click="register"
+    >
+      <text class="button-text">
+        register
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">发送事件(emit)</text>
-    <div class="button" @click="emit">
-      <text class="button-text">emit</text>
+    <text class="title">
+      发送事件(emit)
+    </text>
+    <div
+      class="button"
+      @click="emit"
+    >
+      <text class="button-text">
+        emit
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">注销事件(unregister)</text>
-    <div class="button" @click="unregister">
-      <text class="button-text">unregister</text>
+    <text class="title">
+      注销事件(unregister)
+    </text>
+    <div
+      class="button"
+      @click="unregister"
+    >
+      <text class="button-text">
+        unregister
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">注销所有事件(unregisterAll)</text>
-    <div class="button" @click="unregisterAll">
-      <text class="button-text">unregisterAll</text>
+    <text class="title">
+      注销所有事件(unregisterAll)
+    </text>
+    <div
+      class="button"
+      @click="unregisterAll"
+    >
+      <text class="button-text">
+        unregisterAll
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
   </div>
 </template>
 

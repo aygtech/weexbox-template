@@ -1,10 +1,13 @@
 <template>
   <scroller class="wrapper">
     <text
-      class="item"
       v-for="(item, index) in moduleList"
       :key="index"
-      @click="detail(item)">{{item}}</text>
+      class="item"
+      @click="detail(item)"
+    >
+      {{ item }}
+    </text>
   </scroller>
 </template>
 

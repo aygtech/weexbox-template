@@ -1,22 +1,49 @@
 <template>
   <scroller>
     <div class="ver">
-      <text class="title">Weex SDK Version</text>
+      <text class="title">
+        Weex SDK Version
+      </text>
       <div class="info">
-        <text class="info-item info-left">appVersion</text>
-        <text class="info-item info-right">{{env['appVersion']}}</text>
-        <text class="info-item info-left">weexVersion</text>
-        <text class="info-item info-right">{{env['weexVersion']}}</text>
-        <text class="info-item info-left">platform</text>
-        <text class="info-item info-right">{{env['platform']}}</text>
-        <text class="info-item info-left">osVersion</text>
-        <text class="info-item info-right">{{env['osVersion']}}</text>
-        <text class="info-item info-left">deviceModel</text>
-        <text class="info-item info-right">{{env['deviceModel']}}</text>
+        <text class="info-item info-left">
+          appVersion
+        </text>
+        <text class="info-item info-right">
+          {{ env['appVersion'] }}
+        </text>
+        <text class="info-item info-left">
+          weexVersion
+        </text>
+        <text class="info-item info-right">
+          {{ env['weexVersion'] }}
+        </text>
+        <text class="info-item info-left">
+          platform
+        </text>
+        <text class="info-item info-right">
+          {{ env['platform'] }}
+        </text>
+        <text class="info-item info-left">
+          osVersion
+        </text>
+        <text class="info-item info-right">
+          {{ env['osVersion'] }}
+        </text>
+        <text class="info-item info-left">
+          deviceModel
+        </text>
+        <text class="info-item info-right">
+          {{ env['deviceModel'] }}
+        </text>
       </div>
       <!-- <text>{{env}}</text> -->
     </div>
-    <text class="item" @click="website">WeexBox 官网</text>
+    <text
+      class="item"
+      @click="website"
+    >
+      WeexBox 官网
+    </text>
     <!-- <text class="item" @click="problem">常见问题</text> -->
   </scroller>
 </template>

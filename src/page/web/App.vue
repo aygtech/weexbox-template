@@ -1,6 +1,8 @@
 <template>
-  <web :style="{height: `${height}px`}"
-    :src="url"></web>
+  <web
+    :style="{height: `${height}px`}"
+    :src="url"
+  />
 </template>
 
 <script>

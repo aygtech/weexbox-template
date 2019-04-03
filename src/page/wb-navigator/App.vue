@@ -1,34 +1,69 @@
 <template>
   <scroller class="wrap">
-    <text class="title">设置导航栏左边按钮(setLeftItems)</text>
-    <div class="button" @click="setLeftItems">
-      <text class="button-text">设置导航栏左边按钮</text>
+    <text class="title">
+      设置导航栏左边按钮(setLeftItems)
+    </text>
+    <div
+      class="button"
+      @click="setLeftItems"
+    >
+      <text class="button-text">
+        设置导航栏左边按钮
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">设置导航栏右边按钮(setRightItems)</text>
-    <div class="button" @click="setRightItems">
-      <text class="button-text">设置导航栏右边按钮</text>
+    <text class="title">
+      设置导航栏右边按钮(setRightItems)
+    </text>
+    <div
+      class="button"
+      @click="setRightItems"
+    >
+      <text class="button-text">
+        设置导航栏右边按钮
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">设置导航栏中间的按钮(setCenterItem)</text>
-    <div class="button" @click="setCenterItem">
-      <text class="button-text">设置导航栏中间的按钮</text>
+    <text class="title">
+      设置导航栏中间的按钮(setCenterItem)
+    </text>
+    <div
+      class="button"
+      @click="setCenterItem"
+    >
+      <text class="button-text">
+        设置导航栏中间的按钮
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">设置导航栏颜色(setNavColor)</text>
-    <div class="button" @click="setNavColor">
-      <text class="button-text">设置导航栏颜色</text>
+    <text class="title">
+      设置导航栏颜色(setNavColor)
+    </text>
+    <div
+      class="button"
+      @click="setNavColor"
+    >
+      <text class="button-text">
+        设置导航栏颜色
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">获取状态栏高度(getHeight)</text>
-    <div class="button" @click="getHeight">
-      <text class="button-text">获取状态栏高度</text>
+    <text class="title">
+      获取状态栏高度(getHeight)
+    </text>
+    <div
+      class="button"
+      @click="getHeight"
+    >
+      <text class="button-text">
+        获取状态栏高度
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
   </scroller>
 </template>
 

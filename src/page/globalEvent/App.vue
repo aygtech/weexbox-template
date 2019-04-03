@@ -1,6 +1,8 @@
 <template>
   <div class="wrap">
-    <text class="title">{{text}}</text>
+    <text class="title">
+      {{ text }}
+    </text>
   </div>
 </template>
 

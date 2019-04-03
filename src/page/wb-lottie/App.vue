@@ -1,23 +1,49 @@
 <template>
   <scroller class="wrap">
-    <wb-lottie class="lottie" :sourceJson='sourceJson' :loop='loop' ref="lottie"></wb-lottie>
-    <text class="title">播放动画</text>
-    <div class="button" @click="play">
-      <text class="button-text">播放</text>
+    <wb-lottie
+      ref="lottie"
+      class="lottie"
+      :source-json="sourceJson"
+      :loop="loop"
+    />
+    <text class="title">
+      播放动画
+    </text>
+    <div
+      class="button"
+      @click="play"
+    >
+      <text class="button-text">
+        播放
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">暂停动画</text>
-    <div class="button" @click="pause">
-      <text class="button-text">暂停</text>
+    <text class="title">
+      暂停动画
+    </text>
+    <div
+      class="button"
+      @click="pause"
+    >
+      <text class="button-text">
+        暂停
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">停止动画</text>
-    <div class="button" @click="stop">
-      <text class="button-text">停止</text>
+    <text class="title">
+      停止动画
+    </text>
+    <div
+      class="button"
+      @click="stop"
+    >
+      <text class="button-text">
+        停止
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
   </scroller>
 </template>
 
