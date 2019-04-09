@@ -5,11 +5,11 @@
   "author": "Mario",
   "private": true,
   "scripts": {
-    "debug": "weexbox-debugger",
-    "develop": "weexbox-builder develop",
-    "test": "weexbox-builder test",
-    "preRelease": "weexbox-builder preRelease",
-    "release": "weexbox-builder release",
+    "debug": "weexbox-service debug",
+    "develop": "weexbox-service build develop",
+    "test": "weexbox-service build test",
+    "preRelease": "weexbox-service build preRelease",
+    "release": "weexbox-service build release",
     "lint": "eslint --fix --ext .js,.vue src"
   },
   "keywords": [
@@ -18,8 +18,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@weexbox/builder": "^2.0.10-beta",
-    "@weexbox/debugger": "^2.0.2-beta"
+    "@weexbox/service": "^0.7.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

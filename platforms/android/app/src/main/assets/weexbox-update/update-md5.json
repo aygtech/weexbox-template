@@ -1,70 +1,70 @@
 [
   {
-    "md5": "a071a09d20d6d1413d8aefd7c8be6071",
+    "md5": "568fa5491ec97686eb110a73ae84beee",
     "path": "page/about.js"
   },
   {
-    "md5": "011460e800f17163d902f06320be219d",
+    "md5": "13d7c76ded93c6cc842e8c01b9e0376c",
     "path": "page/globalEvent.js"
   },
   {
-    "md5": "1c1afe677f86a82e8e2d7fbf056cb6c9",
+    "md5": "096c891f00d87dbcedde009094572ab8",
     "path": "page/home.js"
   },
   {
-    "md5": "990f99b8e8938f13b3d87685b7b30d8c",
+    "md5": "be2f1aae9ff541bb4b1c01b098ff8674",
     "path": "page/module.js"
   },
   {
-    "md5": "73492b9189c4b6329b714b2626bd26e9",
+    "md5": "2e84f17ff56b1c0bde235e4a30f28751",
     "path": "page/page1.js"
   },
   {
-    "md5": "69a031b9fcabc643ea491412df32ebce",
+    "md5": "0aca02ffd094476a1cd1fcaf29d9d321",
     "path": "page/use.js"
   },
   {
-    "md5": "75711897d2068b10423d358679a74838",
+    "md5": "feef8df58c6ee4209edaaf640483417e",
     "path": "page/wb-event.js"
   },
   {
-    "md5": "5aa5c2c947bb4040e5c05b4f317e3c3a",
+    "md5": "b9c2bde91232a9b5eeb75dd64d621c16",
     "path": "page/wb-external.js"
   },
   {
-    "md5": "45e5aa90002dda2d67600ce15c77c126",
+    "md5": "c7593c71957e24998f5d7b257004109e",
     "path": "page/wb-location.js"
   },
   {
-    "md5": "c7fb708250e7ca2418c07ca95a446a71",
+    "md5": "40d77a088eeb78e9a904b6e2740a6ffd",
     "path": "page/wb-lottie.js"
   },
   {
-    "md5": "60680a520554730b6c9ab7873769ed95",
+    "md5": "6c21318fa77a66d7855b6e966e83a3da",
     "path": "page/wb-modal.js"
   },
   {
-    "md5": "9cfe426adb780881e773192143de7c53",
+    "md5": "9a39dc3d8781852a814e7e810868c929",
     "path": "page/wb-navigator.js"
   },
   {
-    "md5": "f5e129ef23a3047d85b44e0b5b68fb83",
+    "md5": "dd4b1bd3a25b524273c6abe7215068bb",
     "path": "page/wb-network.js"
   },
   {
-    "md5": "5a4922d38e2c1850f37c8d5c9a983b88",
+    "md5": "4552fa3936c1e85c7dc636ed028ef7fb",
     "path": "page/wb-router-close.js"
   },
   {
-    "md5": "370f4a1a9fb6791b4bdd4243c7e32fbb",
+    "md5": "4414a96a48fbf7820aa997b960f1181f",
     "path": "page/wb-router.js"
   },
   {
-    "md5": "b86d204f57c0338294473941eacfbdb0",
+    "md5": "040ec7f51162b831d0870ce8bbf5b9a7",
     "path": "page/wb-webSocket.js"
   },
   {
-    "md5": "990af9f80e6c691760d8483b636efe14",
+    "md5": "c18ff0c652dc65a4b3219846fa24c958",
     "path": "page/web.js"
   }
 ]

@@ -1,12 +1,14 @@
+// {
+//   "presets": [
+//     [
+//       "@babel/preset-env", {
+//         "targets": {
+//           "ie": "6"
+//         },
+//       }
+//     ]
+//   ]
+// }
 {
-  "presets": [
-    [
-      "@babel/preset-env", {
-        "targets": {
-          "node": "4"
-        },
-        // "useBuiltIns": "usage"
-      }
-    ]
-  ]
+  "presets": ["@babel/preset-stage-0"]
 }
