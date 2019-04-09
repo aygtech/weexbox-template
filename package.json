@@ -18,10 +18,11 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@weexbox/service": "^0.7.2"
+    "@weexbox/service": "^0.7.4",
+    "weex-ui": "^0.6.10",
+    "weex-bindingx": "^0.0.49"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",

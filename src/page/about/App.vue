@@ -70,6 +70,9 @@ export default {
     }, () => {})
   },
   methods: {
+    async a() {
+      console.log()
+    },
     website() {
       router.open({
         name: 'web',
