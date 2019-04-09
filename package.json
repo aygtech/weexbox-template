@@ -18,7 +18,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@weexbox/builder": "^2.0.7-beta"
+    "@weexbox/builder": "^2.0.10-beta",
+    "@weexbox/debugger": "^2.0.2-beta"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
