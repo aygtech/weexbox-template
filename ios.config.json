@@ -1,9 +1,9 @@
 {
-   "AppName":"WeexApp",
-   "Version":"0.1",
-   "BuildVersion":"0.1.0",
-   "AppId":"com.alibaba.weex",
-   "CodeSign":"",
-   "Profile":"",
-   "WeexBundle":"index.js"
+   "AppName": "WeexBoxPlayground",
+   "Version": "2.0.0",
+   "BuildVersion": "2.0.0",
+   "AppId": "com.weexbox.playground",
+   "CodeSign": "",
+   "Profile": "",
+   "WeexBundle": "index.js"
 }

@@ -10,6 +10,9 @@
     "test": "weexbox-service build test",
     "preRelease": "weexbox-service build preRelease",
     "release": "weexbox-service build release",
+    "ios": "weexbox-service run ios",
+    "android": "weexbox-service run android",
+    "all": "weexbox-service run all",
     "lint": "eslint --fix --ext .js,.vue src"
   },
   "keywords": [
@@ -18,7 +21,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@weexbox/service": "^0.7.4",
+    "@weexbox/service": "^0.7.11",
     "weex-ui": "^0.6.10",
     "weex-bindingx": "^0.0.49"
   },
