@@ -21,7 +21,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@weexbox/service": "^0.7.11",
+    "@weexbox/service": "^0.7.12",
     "weex-ui": "^0.6.10",
     "weex-bindingx": "^0.0.49"
   },
