@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "debug": "weexbox-service debug",
+    "watch": "weexbox-service build watch",
     "develop": "weexbox-service build develop",
     "test": "weexbox-service build test",
     "preRelease": "weexbox-service build preRelease",
@@ -21,7 +22,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@weexbox/service": "^0.7.15",
+    "@weexbox/service": "^0.7.17",
     "weex-bindingx": "^0.0.49",
     "weex-ui": "^0.6.10"
   },
