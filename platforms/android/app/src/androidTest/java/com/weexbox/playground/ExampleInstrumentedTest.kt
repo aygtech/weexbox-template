@@ -1,4 +1,4 @@
-package com.weexbox.example
+package com.weexbox.playground
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

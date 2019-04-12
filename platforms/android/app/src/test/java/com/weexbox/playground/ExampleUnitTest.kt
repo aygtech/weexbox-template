@@ -1,4 +1,4 @@
-package com.weexbox.example
+package com.weexbox.playground
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

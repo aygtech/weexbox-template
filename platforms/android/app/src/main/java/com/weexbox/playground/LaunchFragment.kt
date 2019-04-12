@@ -1,4 +1,4 @@
-package com.weexbox.example
+package com.weexbox.playground
 
 import android.os.Bundle
 import com.weexbox.core.controller.WBBaseFragment
