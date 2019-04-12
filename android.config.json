@@ -1,5 +1,5 @@
 {
-  "AppName":"WeexBoxPlayground",
+  "AppName":"Playground",
   "AppId":"com.weexbox.playground",
   "WeexBundle":"index.js"
 }
