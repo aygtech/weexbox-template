@@ -14,7 +14,7 @@ import com.weexbox.core.update.UpdateManager
 class SplashFragment : WBBaseFragment() {
 
     override fun getLayoutId(): Int {
-        return R.layout.fragment_lauch
+        return R.layout.fragment_splash
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

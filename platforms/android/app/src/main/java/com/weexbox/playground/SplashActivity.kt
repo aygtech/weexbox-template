@@ -2,6 +2,7 @@ package com.weexbox.playground
 
 import android.os.Bundle
 import com.weexbox.core.controller.WBBaseActivity
+import com.weexbox.core.util.HotReloadManager
 
 /**
  * Author: Mario
@@ -12,10 +13,13 @@ import com.weexbox.core.controller.WBBaseActivity
 class SplashActivity : WBBaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        HotReloadManager.ws = intent.dataString
         router.navBarHidden = true
+
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_launch)
-        val launchFragment = SplashFragment()
-        supportFragmentManager.beginTransaction().replace(R.id.launchFragment, launchFragment).commit()
+
+        setContentView(R.layout.activity_splash)
+        val splashFragment = SplashFragment()
+        supportFragmentManager.beginTransaction().replace(R.id.launchFragment, splashFragment).commit()
     }
 }
