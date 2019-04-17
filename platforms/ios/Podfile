@@ -4,5 +4,6 @@ inhibit_all_warnings!
 use_modular_headers!
 
 target 'WeexBoxPlayground' do
-    pod 'WeexBox'
+    pod 'WeexBox', '~> 1.0'
+    pod 'VasSonic', '3.0.0'
 end
