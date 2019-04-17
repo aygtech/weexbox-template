@@ -1,17 +1,20 @@
 module.exports = {
-  // env: {
-  //   browser: true,
-  //   commonjs: true,
-  //   es6: true
-  // },
+  env: {
+    browser: true,
+    commonjs: true,
+    es6: true
+  },
   globals: {
     Vue: false,
     weex: false,
+    window: false
   },
-  extends: ['plugin:vue/recommended', 'airbnb-base'],
+  parser: 'babel-eslint',
+  extends: 'airbnb-base',
+  plugins: ['html'],
   parserOptions: {
-    parser: 'babel-eslint',
-    sourceType: 'module',
+    ecmaVersion: 2017,
+    sourceType: 'module'
   },
   rules: {
     'linebreak-style': 0,// 不校验换行符

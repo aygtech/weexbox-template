@@ -2,47 +2,22 @@
   <div>
     <scroller class="logo-panel">
       <div class="logo">
-        <image
-          src="https://aygtech.github.io/weexbox/logo.png"
-          class="icon"
-        />
-        <text class="title">
-          WeexBox
-        </text>
+        <image src="https://aygtech.github.io/weexbox/logo.png" class="icon"/>
+        <text class="title">WeexBox</text>
       </div>
     </scroller>
     <div class="wrapper">
-      <div
-        class="item"
-        @click="weexPage"
-      >
-        <text class="text">
-          Weex实例
-        </text>
+      <div class="item" @click="weexPage">
+        <text class="text">Weex实例</text>
       </div>
-      <div
-        class="item"
-        @click="weexboxPage"
-      >
-        <text class="text">
-          WeexBox实例
-        </text>
+      <div class="item" @click="weexboxPage">
+        <text class="text">WeexBox实例</text>
       </div>
-      <div
-        class="item"
-        @click="news"
-      >
-        <text class="text">
-          资讯
-        </text>
+      <div class="item" @click="news">
+        <text class="text">资讯</text>
       </div>
-      <div
-        class="item"
-        @click="about"
-      >
-        <text class="text">
-          关于
-        </text>
+      <div class="item" @click="about">
+        <text class="text">关于</text>
       </div>
     </div>
   </div>

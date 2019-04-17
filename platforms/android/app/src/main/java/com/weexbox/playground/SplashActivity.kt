@@ -2,7 +2,8 @@ package com.weexbox.playground
 
 import android.os.Bundle
 import com.weexbox.core.controller.WBBaseActivity
-import com.weexbox.core.util.HotReloadManager
+import com.weexbox.core.extension.toJsonMap
+import com.weexbox.core.util.HotReload
 
 /**
  * Author: Mario
@@ -13,7 +14,11 @@ import com.weexbox.core.util.HotReloadManager
 class SplashActivity : WBBaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        HotReloadManager.ws = intent.dataString
+        val ws = intent.dataString?.toJsonMap()?.get("Ws") as? String
+        if (ws != null) {
+            HotReload.start(ws)
+        }
+
         router.navBarHidden = true
 
         super.onCreate(savedInstanceState)

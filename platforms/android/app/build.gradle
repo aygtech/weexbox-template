@@ -27,10 +27,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    packagingOptions {
+        exclude 'META-INF/atomicfu.kotlin_module'
+    }
 }
 
 dependencies {
-    api 'com.github.aygtech:weexbox-android-library:2.0.2'
+    api 'com.github.aygtech:weexbox-android-library:2.0.12'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
