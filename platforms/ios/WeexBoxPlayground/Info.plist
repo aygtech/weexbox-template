@@ -51,6 +51,6 @@
   <key>WXEntryBundleURL</key>
   <string>bundlejs/index.js</string>
   <key>WXSocketConnectionURL</key>
-  <string>ws://192.168.4.247:9090</string>
+  <string>ws://192.168.4.250:9090</string>
 </dict>
 </plist>

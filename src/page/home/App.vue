@@ -3,7 +3,7 @@
     <scroller class="logo-panel">
       <div class="logo">
         <image src="https://aygtech.github.io/weexbox/logo.png" class="icon"/>
-        <text class="title">WeexBox</text>
+        <text class="title">WeexBoxd</text>
       </div>
     </scroller>
     <div class="wrapper">
@@ -36,6 +36,8 @@ export default {
     }
   },
   created() {
+    console.log('created')
+    console.log('nima')
     navigator.setCenterItem({
       text: 'WeexBox',
       color: '3d3d3d',

@@ -5,4 +5,5 @@ use_modular_headers!
 
 target 'WeexBoxPlayground' do
     pod 'WeexBox', :git => 'https://github.com/aygtech/weexbox-ios-library', :branch => '2.0'
+    pod 'VasSonic', '3.0.0'
 end
