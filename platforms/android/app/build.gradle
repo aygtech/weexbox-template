@@ -35,8 +35,6 @@ dependencies {
     api 'com.github.aygtech:weexbox-android-library:2.0.15'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    // 集成flutter加入下面配置
-    implementation project(':flutter')
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
