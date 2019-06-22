@@ -1,9 +1,0 @@
-{
-   "AppName": "Playground",
-   "Version": "2.0.0",
-   "BuildVersion": "2.0.0",
-   "AppId": "com.weexbox.playground",
-   "CodeSign": "",
-   "Profile": "",
-   "WeexBundle": "index.js"
-}
