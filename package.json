@@ -5,13 +5,15 @@
   "author": "Mario",
   "private": true,
   "scripts": {
-    "debug": "weexbox-service debug",
-    "watch": "weexbox-service build watch",
     "develop": "weexbox-service build develop",
     "test": "weexbox-service build test",
     "preRelease": "weexbox-service build preRelease",
     "release": "weexbox-service build release",
-    "run": "weexbox-service run",
+    "watchDevelop": "weexbox-service watch develop",
+    "watchTest": "weexbox-service watch test",
+    "watchPreRelease": "weexbox-service watch preRelease",
+    "watchRelease": "weexbox-service watch release",
+    "debug": "weexbox-service debug",
     "lint": "eslint --fix --ext .js,.vue src"
   },
   "keywords": [
@@ -20,14 +22,14 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@weexbox/service": "^0.7.18",
+    "@weexbox/service": "^0.8.1",
     "weex-bindingx": "^0.0.49",
-    "weex-ui": "^0.6.10"
+    "weex-ui": "^0.6.14"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
+    "eslint": "^6.0.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "babel-eslint": "^10.0.1"
+    "eslint-plugin-import": "^2.17.3",
+    "babel-eslint": "^10.0.2"
   }
 }

@@ -37,7 +37,7 @@ export default {
   },
   created() {
     console.log('created!!!')
-    console.log('nima')
+    console.log('hehe')
     navigator.setCenterItem({
       text: 'WeexBox',
       color: '3d3d3d',
