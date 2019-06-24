@@ -14,10 +14,6 @@ import com.weexbox.core.util.HotReload
 class SplashActivity : WBBaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        val ws = intent.dataString?.toJsonMap()?.get("Ws") as? String
-        if (ws != null) {
-            HotReload.start(ws)
-        }
 
         router.navBarHidden = true
 
