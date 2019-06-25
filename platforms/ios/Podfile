@@ -4,5 +4,5 @@ inhibit_all_warnings!
 use_modular_headers!
 
 target 'WeexBoxPlayground' do
-    pod 'WeexBox', :git => 'https://github.com/aygtech/weexbox-ios-library', :branch => '2.0'
+    pod 'WeexBox', '~>2.0'
 end
