@@ -1,24 +1,55 @@
 <template>
   <scroller class="wrap">
-    <text class="title">onopeninfo：{{onopeninfo}}</text>
-    <text class="title">onmessage：{{onmessage}}</text>
-    <text class="title">onerrorinfo：{{onerrorinfo}}</text>
-    <text class="title">oncloseinfo：{{oncloseinfo}}</text>
-    <text class="title">sendinfo：{{sendinfo}}</text>
-    <div class="empty"></div>
-    <text class="title">连接WebSocket</text>
-    <div class="button" @click="connect">
-      <text class="button-text">连接</text>
+    <text class="title">
+      onopeninfo：{{ onopeninfo }}
+    </text>
+    <text class="title">
+      onmessage：{{ onmessage }}
+    </text>
+    <text class="title">
+      onerrorinfo：{{ onerrorinfo }}
+    </text>
+    <text class="title">
+      oncloseinfo：{{ oncloseinfo }}
+    </text>
+    <text class="title">
+      sendinfo：{{ sendinfo }}
+    </text>
+    <div class="empty" />
+    <text class="title">
+      连接WebSocket
+    </text>
+    <div
+      class="button"
+      @click="connect"
+    >
+      <text class="button-text">
+        连接
+      </text>
     </div>
-    <div class="empty"></div>
-    <text class="title">发送消息(send)</text>
-    <div class="button" @click="send">
-      <text class="button-text">发送一条消息</text>
+    <div class="empty" />
+    <text class="title">
+      发送消息(send)
+    </text>
+    <div
+      class="button"
+      @click="send"
+    >
+      <text class="button-text">
+        发送一条消息
+      </text>
     </div>
-    <div class="empty"></div>
-    <text class="title">关闭连接(close)</text>
-    <div class="button" @click="close">
-      <text class="button-text">关闭</text>
+    <div class="empty" />
+    <text class="title">
+      关闭连接(close)
+    </text>
+    <div
+      class="button"
+      @click="close"
+    >
+      <text class="button-text">
+        关闭
+      </text>
     </div>
   </scroller>
 </template>

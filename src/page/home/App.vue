@@ -2,7 +2,7 @@
   <div>
     <scroller class="logo-panel">
       <div class="logo">
-        <image src="https://aygtech.github.io/weexbox/logo.png" class="icon"></image>
+        <image src="https://aygtech.github.io/weexbox/logo.png" class="icon"/>
         <text class="title">WeexBox</text>
       </div>
     </scroller>
@@ -36,6 +36,8 @@ export default {
     }
   },
   created() {
+    console.log('created!!!')
+    console.log('hehe')
     navigator.setCenterItem({
       text: 'WeexBox',
       color: '3d3d3d',

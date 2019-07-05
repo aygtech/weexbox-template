@@ -1,4 +1,4 @@
-package com.weexbox.example
+package com.weexbox.playground
 
 import com.taobao.weex.annotation.JSMethod
 import com.weexbox.core.module.BaseModule

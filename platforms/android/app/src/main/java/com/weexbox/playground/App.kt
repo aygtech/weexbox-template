@@ -1,4 +1,4 @@
-package com.weexbox.example
+package com.weexbox.playground
 
 import android.app.Application
 import com.taobao.weex.WXSDKEngine

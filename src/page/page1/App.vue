@@ -1,8 +1,13 @@
 <template>
   <div class="wrapper">
-    <image :src="logo" class="logo" />
-    <text class="greeting">WeexBox is ready!</text>
-    <HelloWorld/>
+    <image
+      :src="logo"
+      class="logo"
+    />
+    <text class="greeting">
+      WeexBox is ready!
+    </text>
+    <HelloWorld />
   </div>
 </template>
 

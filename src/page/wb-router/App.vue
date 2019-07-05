@@ -1,16 +1,30 @@
 <template>
   <scroller class="wrap">
-    <text class="title">打开新页面(open)</text>
-    <div class="button" @click="open">
-      <text class="button-text">打开新页面</text>
+    <text class="title">
+      打开新页面(open)
+    </text>
+    <div
+      class="button"
+      @click="open"
+    >
+      <text class="button-text">
+        打开新页面
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">打开页面与关闭页面(closeFromBottomToTop)</text>
-    <div class="button" @click="closeFromBottomToTop">
-      <text class="button-text">打开页面与关闭页面</text>
+    <text class="title">
+      打开页面与关闭页面(closeFromBottomToTop)
+    </text>
+    <div
+      class="button"
+      @click="closeFromBottomToTop"
+    >
+      <text class="button-text">
+        打开页面与关闭页面
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
     <!-- <text class="title">打开新页面并关闭指定页面(open)</text>
     <div class="button" @click="closePre">
@@ -18,24 +32,45 @@
     </div>
     <div class="empty"></div> -->
 
-    <text class="title">获取router的params参数(getParams)</text>
-    <div class="button" @click="getParams">
-      <text class="button-text">获取参数</text>
+    <text class="title">
+      获取router的params参数(getParams)
+    </text>
+    <div
+      class="button"
+      @click="getParams"
+    >
+      <text class="button-text">
+        获取参数
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">刷新weex页面(refresh)</text>
-    <div class="button" @click="refresh">
-      <text class="button-text">刷新本页</text>
+    <text class="title">
+      刷新weex页面(refresh)
+    </text>
+    <div
+      class="button"
+      @click="refresh"
+    >
+      <text class="button-text">
+        刷新本页
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
     <template v-if="isIos">
-      <text class="title">打开新页面并禁用返回手势(disableGestureBack)</text>
-      <div class="button" @click="disableGestureBack">
-        <text class="button-text">打开新页面并禁用返回手势</text>
+      <text class="title">
+        打开新页面并禁用返回手势(disableGestureBack)
+      </text>
+      <div
+        class="button"
+        @click="disableGestureBack"
+      >
+        <text class="button-text">
+          打开新页面并禁用返回手势
+        </text>
       </div>
-      <div class="empty"></div>
+      <div class="empty" />
     </template>
   </scroller>
 </template>

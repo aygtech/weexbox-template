@@ -1,40 +1,82 @@
 <template>
   <scroller class="wrap">
-    <text class="title">警告弹窗(alert)</text>
-    <div class="button" @click="alert">
-      <text class="button-text">警告弹窗</text>
+    <text class="title">
+      警告弹窗(alert)
+    </text>
+    <div
+      class="button"
+      @click="alert"
+    >
+      <text class="button-text">
+        警告弹窗
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">确定弹窗(confirm)</text>
-    <div class="button" @click="confirm">
-      <text class="button-text">确定弹窗</text>
+    <text class="title">
+      确定弹窗(confirm)
+    </text>
+    <div
+      class="button"
+      @click="confirm"
+    >
+      <text class="button-text">
+        确定弹窗
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">输入弹窗(prompt)</text>
-    <div class="button" @click="prompt">
-      <text class="button-text">输入弹窗</text>
+    <text class="title">
+      输入弹窗(prompt)
+    </text>
+    <div
+      class="button"
+      @click="prompt"
+    >
+      <text class="button-text">
+        输入弹窗
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">操作表弹窗(actionSheet)</text>
-    <div class="button" @click="actionSheet">
-      <text class="button-text">操作表弹窗</text>
+    <text class="title">
+      操作表弹窗(actionSheet)
+    </text>
+    <div
+      class="button"
+      @click="actionSheet"
+    >
+      <text class="button-text">
+        操作表弹窗
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">吐司(showToast)</text>
-    <div class="button" @click="showToast">
-      <text class="button-text">吐司</text>
+    <text class="title">
+      吐司(showToast)
+    </text>
+    <div
+      class="button"
+      @click="showToast"
+    >
+      <text class="button-text">
+        吐司
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">菊花圈(showLoading)</text>
-    <div class="button" @click="showLoading">
-      <text class="button-text">菊花圈</text>
+    <text class="title">
+      菊花圈(showLoading)
+    </text>
+    <div
+      class="button"
+      @click="showLoading"
+    >
+      <text class="button-text">
+        菊花圈
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
     <!-- <text class="title">进度</text>
     <div class="button" @click="showProgress">
