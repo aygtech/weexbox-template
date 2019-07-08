@@ -62,3 +62,21 @@ typings/
 
 # next.js build output
 .next
+platforms/flutter_module/.android/local.properties
+platforms/flutter_module/.android/.gradle/buildOutputCleanup/buildOutputCleanup.lock
+platforms/flutter_module/.android/.gradle/4.10.2/taskHistory/taskHistory.lock
+platforms/flutter_module/.android/.gradle/4.10.2/fileChanges/last-build.bin
+platforms/flutter_module/.android/.gradle/4.10.2/javaCompile/javaCompile.lock
+platforms/flutter_module/.android/.gradle/4.10.2/fileHashes/fileHashes.bin
+platforms/flutter_module/.android/.gradle/4.10.2/fileContent/fileContent.lock
+platforms/flutter_module/.android/.gradle/buildOutputCleanup/outputFiles.bin
+platforms/flutter_module/.android/.gradle/4.10.2/fileHashes/resourceHashesCache.bin
+platforms/flutter_module/.android/.gradle/4.10.2/fileHashes/fileHashes.lock
+platforms/flutter_module/.android/.gradle/vcs-1/gc.properties
+platforms/flutter_module/.android/.gradle/4.10.2/javaCompile/classAnalysis.bin
+platforms/flutter_module/.android/.gradle/4.10.2/gc.properties
+platforms/flutter_module/.android/.gradle/4.10.2/taskHistory/taskHistory.bin
+platforms/flutter_module/.android/.gradle/4.10.2/javaCompile/taskHistory.bin
+platforms/flutter_module/.android/.gradle/buildOutputCleanup/cache.properties
+platforms/flutter_module/.android/.gradle/4.10.2/javaCompile/jarAnalysis.bin
+platforms/flutter_module/.android/Flutter/flutter.iml
