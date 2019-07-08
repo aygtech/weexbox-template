@@ -16,6 +16,7 @@ module.exports = {
   },
   parserOptions: {
     parser: 'babel-eslint',
+    ecmaFeatures: { "legacyDecorators": true }
   },
   rules: {
     'linebreak-style': 0,// 不校验换行符
