@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 FLUTTER_EXPORT
 @interface FlutterPluginAppLifeCycleDelegate : NSObject
-
 /**
  * Registers `delegate` to receive life cycle callbacks via this FlutterPluginAppLifecycleDelegate
  * as long as it is alive.
@@ -67,11 +66,11 @@ FLUTTER_EXPORT
 /**
  * Called if this plugin has been registered for `UIApplicationDelegate` callbacks.
  */
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 - (void)application:(UIApplication*)application
-    didRegisterUserNotificationSettings:(UIUserNotificationSettings*)notificationSettings
-    API_DEPRECATED(
-        "See -[UIApplicationDelegate application:didRegisterUserNotificationSettings:] deprecation",
-        ios(8.0, 10.0));
+    didRegisterUserNotificationSettings:(UIUserNotificationSettings*)notificationSettings;
+#pragma GCC diagnostic pop
 
 /**
  * Calls all plugins registered for `UIApplicationDelegate` callbacks.
@@ -90,10 +89,7 @@ FLUTTER_EXPORT
  * Calls all plugins registered for `UIApplicationDelegate` callbacks.
  */
 - (void)application:(UIApplication*)application
-    didReceiveLocalNotification:(UILocalNotification*)notification
-    API_DEPRECATED(
-        "See -[UIApplicationDelegate application:didReceiveLocalNotification:] deprecation",
-        ios(4.0, 10.0));
+    didReceiveLocalNotification:(UILocalNotification*)notification;
 
 /**
  * Calls all plugins registered for `UNUserNotificationCenterDelegate` callbacks.

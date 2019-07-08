@@ -116,8 +116,8 @@ FLUTTER_EXPORT
 - (UInt32)readSize;
 - (void)readAlignment:(UInt8)alignment;
 - (NSString*)readUTF8;
-- (nullable id)readValue;
-- (nullable id)readValueOfType:(UInt8)type;
+- (id)readValue;
+- (id)readValueOfType:(UInt8)type;
 @end
 
 /**

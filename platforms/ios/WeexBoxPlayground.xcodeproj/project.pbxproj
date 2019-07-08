@@ -133,7 +133,7 @@
 				ACE49D7621A40C2100340A41 /* Frameworks */,
 				ACE49D7721A40C2100340A41 /* Resources */,
 				E50C54FE4142F9B7C6FE9322 /* [CP] Copy Pods Resources */,
-				48DC49C722D2D4DD00BE82C7 /* ShellScript */,
+				48DC49C722D2D4DD00BE82C7 /* Run Script */,
 				46DC3BC92E7EE874A724873A /* [CP] Embed Pods Frameworks */,
 				48DC49D922D2E5D900BE82C7 /* Embed Frameworks */,
 			);
@@ -213,7 +213,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeexBoxPlayground/Pods-WeexBoxPlayground-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		48DC49C722D2D4DD00BE82C7 /* ShellScript */ = {
+		48DC49C722D2D4DD00BE82C7 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -222,6 +222,7 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (

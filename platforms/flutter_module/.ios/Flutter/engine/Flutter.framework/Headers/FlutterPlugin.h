@@ -16,17 +16,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @protocol FlutterPluginRegistrar;
-@protocol FlutterPluginRegistry;
-
-/**
- * A plugin registration callback.
- *
- * Used for registering plugins with additional instances of
- * `FlutterPluginRegistry`.
- *
- * @param registry The registry to register plugins with.
- */
-typedef void (*FlutterPluginRegistrantCallback)(NSObject<FlutterPluginRegistry>* registry);
 
 /**
  * Implemented by the iOS part of a Flutter plugin.
@@ -54,19 +43,6 @@ typedef void (*FlutterPluginRegistrantCallback)(NSObject<FlutterPluginRegistry>*
  *     registering callbacks.
  */
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar;
-@optional
-/**
- * Set a callback for registering plugins to an additional `FlutterPluginRegistry`,
- * including headless `FlutterEngine` instances.
- *
- * This method is typically called from within an application's `AppDelegate` at
- * startup to allow for plugins which create additional `FlutterEngine` instances
- * to register the application's plugins.
- *
- * @param callback A callback for registering some set of plugins with a
- *     `FlutterPluginRegistry`.
- */
-+ (void)setPluginRegistrantCallback:(FlutterPluginRegistrantCallback)callback;
 @optional
 /**
  * Called if this plugin has been registered to receive `FlutterMethodCall`s.
@@ -120,11 +96,11 @@ typedef void (*FlutterPluginRegistrantCallback)(NSObject<FlutterPluginRegistry>*
 /**
  * Called if this plugin has been registered for `UIApplicationDelegate` callbacks.
  */
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 - (void)application:(UIApplication*)application
-    didRegisterUserNotificationSettings:(UIUserNotificationSettings*)notificationSettings
-    API_DEPRECATED(
-        "See -[UIApplicationDelegate application:didRegisterUserNotificationSettings:] deprecation",
-        ios(8.0, 10.0));
+    didRegisterUserNotificationSettings:(UIUserNotificationSettings*)notificationSettings;
+#pragma GCC diagnostic pop
 
 /**
  * Called if this plugin has been registered for `UIApplicationDelegate` callbacks.
@@ -145,10 +121,7 @@ typedef void (*FlutterPluginRegistrantCallback)(NSObject<FlutterPluginRegistry>*
  * Calls all plugins registered for `UIApplicationDelegate` callbacks.
  */
 - (void)application:(UIApplication*)application
-    didReceiveLocalNotification:(UILocalNotification*)notification
-    API_DEPRECATED(
-        "See -[UIApplicationDelegate application:didReceiveLocalNotification:] deprecation",
-        ios(4.0, 10.0));
+    didReceiveLocalNotification:(UILocalNotification*)notification;
 
 /**
  * Calls all plugins registered for `UNUserNotificationCenterDelegate` callbacks.
@@ -249,7 +222,7 @@ typedef void (*FlutterPluginRegistrantCallback)(NSObject<FlutterPluginRegistry>*
 - (NSObject<FlutterTextureRegistry>*)textures;
 
 /**
- * Registers a `FlutterPlatformViewFactory` for creation of platform views.
+ * Registers a `FlutterPlatformViewFactory` for creation of platfrom views.
  *
  * Plugins expose `UIView` for embedding in Flutter apps by registering a view factory.
  *
