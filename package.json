@@ -1,15 +1,19 @@
 {
   "name": "weexbox",
-  "version": "0.5.0",
+  "version": "2.0.0",
   "description": "A weex project",
   "author": "Mario",
   "private": true,
   "scripts": {
-    "debug": "npm run lint && weexbox-debugger",
-    "develop": "npm run lint && weexbox-builder develop",
-    "test": "npm run lint && weexbox-builder test",
-    "preRelease": "npm run lint && weexbox-builder preRelease",
-    "release": "npm run lint && weexbox-builder release",
+    "develop": "weexbox-service build develop",
+    "test": "weexbox-service build test",
+    "preRelease": "weexbox-service build preRelease",
+    "release": "weexbox-service build release",
+    "watchDevelop": "weexbox-service watch develop",
+    "watchTest": "weexbox-service watch test",
+    "watchPreRelease": "weexbox-service watch preRelease",
+    "watchRelease": "weexbox-service watch release",
+    "debug": "weexbox-service debug",
     "lint": "eslint --fix --ext .js,.vue src"
   },
   "keywords": [
@@ -18,10 +22,20 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@weexbox/builder": "^1.2.6",
-    "@weexbox/debugger": "^1.3.5"
+    "@weexbox/service": "1.1.0",
+    "weex-bindingx": "^0.0.49",
+    "weex-ui": "^0.6.14",
+    "vue-class-component": "^7.0.2",
+    "vue-property-decorator": "^8.1.0"
   },
   "devDependencies": {
-    "eslint": "5.4.0"
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.0.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "@vue/cli-service": "^3.8.0",
+    "tslint": "^5.17.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1"
   }
 }

@@ -1,10 +1,17 @@
 <template>
   <scroller class="wrap">
-    <text class="title">请求接口(request)</text>
-    <div class="button" @click="request">
-      <text class="button-text">请求接口</text>
+    <text class="title">
+      请求接口(request)
+    </text>
+    <div
+      class="button"
+      @click="request"
+    >
+      <text class="button-text">
+        请求接口
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
     <!-- <text class="title">文件上传(upload)</text>
     <div class="button" @click="upload">

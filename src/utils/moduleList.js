@@ -10,12 +10,12 @@ export const moduleList = [
   'wb-network',
   'wb-event',
   'globalEvent',
-  // 'wb-location',
   'wb-modal',
   'wb-navigator',
   'wb-external',
   'wb-lottie',
   'wb-websocket',
+  'ts',
 ]
 
 export default {

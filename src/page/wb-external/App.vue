@@ -1,28 +1,56 @@
 <template>
   <scroller class="wrap">
-    <text class="title">打开浏览器(openBrowser)</text>
-    <div class="button" @click="openBrowser">
-      <text class="button-text">打开浏览器</text>
+    <text class="title">
+      打开浏览器(openBrowser)
+    </text>
+    <div
+      class="button"
+      @click="openBrowser"
+    >
+      <text class="button-text">
+        打开浏览器
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">打电话(callPhone)</text>
-    <div class="button" @click="callPhone">
-      <text class="button-text">打电话</text>
+    <text class="title">
+      打电话(callPhone)
+    </text>
+    <div
+      class="button"
+      @click="callPhone"
+    >
+      <text class="button-text">
+        打电话
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">拍照(openCamera)</text>
-    <div class="button" @click="openCamera">
-      <text class="button-text">拍照</text>
+    <text class="title">
+      拍照(openCamera)
+    </text>
+    <div
+      class="button"
+      @click="openCamera"
+    >
+      <text class="button-text">
+        拍照
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">打开相册(openPhoto)</text>
-    <div class="button" @click="openPhoto">
-      <text class="button-text">打开相册</text>
+    <text class="title">
+      打开相册(openPhoto)
+    </text>
+    <div
+      class="button"
+      @click="openPhoto"
+    >
+      <text class="button-text">
+        打开相册
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
   </scroller>
 </template>
 

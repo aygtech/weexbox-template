@@ -9,6 +9,7 @@
 import UIKit
 import WeexBox
 import Flutter
+import WXDevtool
 
 @UIApplicationMain
 class AppDelegate: FlutterAppDelegate {
@@ -16,10 +17,12 @@ class AppDelegate: FlutterAppDelegate {
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // 初始化 WeexBox
+        
         WeexBoxEngine.setup()
         
         // 开启调试
         WeexBoxEngine.isDebug = true
+        WXDevTool.launchDebug(withUrl: "ws://192.168.4.250:8089/debugProxy/native/19bb02fc-eb2c-4d6f-bb4d-f9e9e96cabd7")
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
@@ -53,7 +56,5 @@ class AppDelegate: FlutterAppDelegate {
     override func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 

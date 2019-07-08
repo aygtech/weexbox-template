@@ -1,4 +1,5 @@
-package-lock.json
+deploy
+.temp
 .editorconfig
 
 # Logs

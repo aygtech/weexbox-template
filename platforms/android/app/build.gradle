@@ -32,7 +32,7 @@ android {
 }
 
 dependencies {
-    api 'com.github.aygtech:weexbox-android-library:2.0.15'
+    api 'com.github.aygtech:weexbox-android-library:2.1.30'
 
     // 加入下面配置
     implementation project(':flutter')

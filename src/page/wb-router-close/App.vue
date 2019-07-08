@@ -1,22 +1,43 @@
 <template>
   <scroller class="wrap">
-    <text class="title">打开新页面并关闭栈中第一个页面(open)</text>
-    <div class="button" @click="closeFirst">
-      <text class="button-text">打开新页面并关闭栈中第一个页面</text>
+    <text class="title">
+      打开新页面并关闭栈中第一个页面(open)
+    </text>
+    <div
+      class="button"
+      @click="closeFirst"
+    >
+      <text class="button-text">
+        打开新页面并关闭栈中第一个页面
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">打开新页面并关闭前一个页面(open)</text>
-    <div class="button" @click="closePre">
-      <text class="button-text">打开新页面并关闭前一个页面</text>
+    <text class="title">
+      打开新页面并关闭前一个页面(open)
+    </text>
+    <div
+      class="button"
+      @click="closePre"
+    >
+      <text class="button-text">
+        打开新页面并关闭前一个页面
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
-    <text class="title">关闭页面(close)</text>
-    <div class="button" @click="close">
-      <text class="button-text">关闭本页</text>
+    <text class="title">
+      关闭页面(close)
+    </text>
+    <div
+      class="button"
+      @click="close"
+    >
+      <text class="button-text">
+        关闭本页
+      </text>
     </div>
-    <div class="empty"></div>
+    <div class="empty" />
 
     <!-- <text class="title">打开新页面并关闭其他页面(不包括首页)(open)</text>
     <div class="button" @click="closeRoot">

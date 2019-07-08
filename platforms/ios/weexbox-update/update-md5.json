@@ -1,70 +1,74 @@
 [
   {
-    "path": "page/about.js",
-    "md5": "78285340d3b138ba32d91cd7c223c370"
+    "md5": "7f2f967036c4b244ed184a4accac658f",
+    "path": "page/about.js"
   },
   {
-    "path": "page/globalEvent.js",
-    "md5": "c583d9900da4f8a30df40a189ff90252"
+    "md5": "195cee92f28f3d42bf61bb3f81a071e9",
+    "path": "page/globalEvent.js"
   },
   {
-    "path": "page/home.js",
-    "md5": "b4432e301cfff1d0aba3397323f1ab6f"
+    "md5": "1714595a296aa3383c293c575db54ab6",
+    "path": "page/home.js"
   },
   {
-    "path": "page/module.js",
-    "md5": "3d1b16c591d5b1ceba16b434c4959d47"
+    "md5": "7e1bea04b3d79a8312d7f0e62affda1a",
+    "path": "page/module.js"
   },
   {
-    "path": "page/page1.js",
-    "md5": "7b1a9f1d98e471b149a4f1fbb3938731"
+    "md5": "26a5eaeba2cf7d7017736c0a9cb1c663",
+    "path": "page/page1.js"
   },
   {
-    "path": "page/use.js",
-    "md5": "0466bdea8e9f259d8638c4b781b90cb5"
+    "md5": "60568c8bd061692ffbac2af5ffe21868",
+    "path": "page/ts.js"
   },
   {
-    "path": "page/wb-event.js",
-    "md5": "396001e7f124e2ad834d6d70d1fe2a8d"
+    "md5": "4ec31effe29dd538d115f80ef994e356",
+    "path": "page/use.js"
   },
   {
-    "path": "page/wb-external.js",
-    "md5": "062af980346eba0a9bfdc073ec2f703e"
+    "md5": "aca13aa61970ec536eac116fc915a0f2",
+    "path": "page/wb-event.js"
   },
   {
-    "path": "page/wb-location.js",
-    "md5": "191e7e9332657f80605d06771720ddb6"
+    "md5": "086fcb7895bbd0d77889b58425c5bdcc",
+    "path": "page/wb-external.js"
   },
   {
-    "path": "page/wb-lottie.js",
-    "md5": "208f23c8a0274bdc835926a970748130"
+    "md5": "e3820735a55f08c7a497c82c8a225511",
+    "path": "page/wb-location.js"
   },
   {
-    "path": "page/wb-modal.js",
-    "md5": "b15f8c1d45c6cdb8432134f494906b5e"
+    "md5": "236abcb5caab446eb77d55b2b427a74c",
+    "path": "page/wb-lottie.js"
   },
   {
-    "path": "page/wb-navigator.js",
-    "md5": "7132a7c097077b43257f9503eb92b633"
+    "md5": "cda30a7125dc518c808778d503f34b40",
+    "path": "page/wb-modal.js"
   },
   {
-    "path": "page/wb-network.js",
-    "md5": "511c23ee263f8290c8cd1c8ad1167607"
+    "md5": "83cbcb7e194c7f6cc793bb0695fbc8ad",
+    "path": "page/wb-navigator.js"
   },
   {
-    "path": "page/wb-router-close.js",
-    "md5": "adae6acff52098d68ab640b39b9f930c"
+    "md5": "bfe1167e725c1cde17aa096699eddff6",
+    "path": "page/wb-network.js"
   },
   {
-    "path": "page/wb-router.js",
-    "md5": "83e747a109b42658d9474e3015ee4323"
+    "md5": "cdb78ad52475149deef48d0e6d5f401e",
+    "path": "page/wb-router-close.js"
   },
   {
-    "path": "page/wb-webSocket.js",
-    "md5": "7792fe92a5d935d41947ec8725a4f128"
+    "md5": "2ce6e5e94a8fdff3ffa47df32df0d75b",
+    "path": "page/wb-router.js"
   },
   {
-    "path": "page/web.js",
-    "md5": "3adcaf4b8eeb559772b8360e18fe4ab9"
+    "md5": "1c248ebd18bc3d697515c794a0863071",
+    "path": "page/wb-webSocket.js"
+  },
+  {
+    "md5": "a767092977a691eb09d9ec9f1b479803",
+    "path": "page/web.js"
   }
 ]
