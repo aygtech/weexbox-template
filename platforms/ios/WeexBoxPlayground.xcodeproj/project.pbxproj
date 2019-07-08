@@ -10,7 +10,6 @@
 		48DC49CA22D2DEF100BE82C7 /* Flutter.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 48DC49C922D2DEF100BE82C7 /* Flutter.xcconfig */; };
 		48DC49CC22D2DF0100BE82C7 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 48DC49CB22D2DF0100BE82C7 /* Debug.xcconfig */; };
 		48DC49CE22D2DF1300BE82C7 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 48DC49CD22D2DF1300BE82C7 /* Release.xcconfig */; };
-		48DC49D422D2E3D300BE82C7 /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DC49D022D2E3D300BE82C7 /* App.framework */; };
 		48DC49D622D2E3D300BE82C7 /* Flutter.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 48DC49D322D2E3D300BE82C7 /* Flutter.podspec */; };
 		48DC49D722D2E5D900BE82C7 /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DC49D022D2E3D300BE82C7 /* App.framework */; };
 		48DC49D822D2E5D900BE82C7 /* App.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48DC49D022D2E3D300BE82C7 /* App.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -63,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48DC49D422D2E3D300BE82C7 /* App.framework in Frameworks */,
 				48DC49DA22D2E5DD00BE82C7 /* Flutter.framework in Frameworks */,
 				48DC49D722D2E5D900BE82C7 /* App.framework in Frameworks */,
 				623965C6250C74B6EA2E538C /* libPods-WeexBoxPlayground.a in Frameworks */,
