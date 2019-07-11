@@ -14,7 +14,7 @@ export const moduleList = [
   'wb-navigator',
   'wb-external',
   'wb-lottie',
-  'wb-websocket',
+  'wb-webSocket',
   'ts',
 ]
 

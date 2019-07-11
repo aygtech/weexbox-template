@@ -26,12 +26,6 @@
     </div>
     <div class="empty" />
 
-    <!-- <text class="title">打开新页面并关闭指定页面(open)</text>
-    <div class="button" @click="closePre">
-      <text class="button-text">打开新页面并关闭module列表页面</text>
-    </div>
-    <div class="empty"></div> -->
-
     <text class="title">
       获取router的params参数(getParams)
     </text>
@@ -80,7 +74,6 @@ import { router, weexBoxUrl } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
 const modal = weex.requireModule('wb-modal')
-// const params = router.getParams()
 const { env } = weex.config
 
 const params = {
@@ -112,13 +105,6 @@ export default {
         title: params.title,
         url: `${weexBoxUrl}#${params.url}`,
       })
-      // router.open({
-      //   url: 'page/web.js',
-      //   params: {
-      //     title: params.title,
-      //     url: params.url
-      //   }
-      // })
     })
   },
   methods: {
@@ -139,21 +125,6 @@ export default {
         params: {},
       })
     },
-    // closePre() {
-    //   router.open({
-    //     url: 'page/web.js',
-    //     // 指定从堆栈的哪个页面开始关闭
-    //     closeFrom: 1,
-    //     // 关闭的页面个数
-    //     closeCount: 1,
-    //     // 关闭页面的方向，默认(true)和堆栈方向一致
-    //     closeFromBottomToTop: false,
-    //     params: {
-    //       title: params.title,
-    //       url: params.url
-    //     }
-    //   })
-    // },
     refresh() {
       router.refresh()
     },
@@ -164,13 +135,6 @@ export default {
       })
     },
     open() {
-      // router.open({
-      //   url: 'page/web.js',
-      //   params: {
-      //     title: params.title,
-      //     url: params.url
-      //   }
-      // })
       router.open({
         name: 'web',
         url: `${weexBoxUrl}#${params.url}`,

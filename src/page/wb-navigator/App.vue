@@ -102,13 +102,6 @@ export default {
         title: params.title,
         url: `${weexBoxUrl}#${params.url}`,
       })
-      // router.open({
-      //   url: 'page/web.js',
-      //   params: {
-      //     title: params.title,
-      //     url: params.url
-      //   }
-      // })
     })
   },
   methods: {
