@@ -12,7 +12,7 @@
     "path": "page/home.js"
   },
   {
-    "md5": "7e1bea04b3d79a8312d7f0e62affda1a",
+    "md5": "86d1c6d2cb8373c1cf8cb94203080671",
     "path": "page/module.js"
   },
   {
@@ -20,7 +20,7 @@
     "path": "page/page1.js"
   },
   {
-    "md5": "60568c8bd061692ffbac2af5ffe21868",
+    "md5": "1f6882bb3cb1a50ed0878898bc162530",
     "path": "page/ts.js"
   },
   {
@@ -48,7 +48,7 @@
     "path": "page/wb-modal.js"
   },
   {
-    "md5": "83cbcb7e194c7f6cc793bb0695fbc8ad",
+    "md5": "86acbb3c12df3ecf488dd1426d982d60",
     "path": "page/wb-navigator.js"
   },
   {
@@ -60,7 +60,7 @@
     "path": "page/wb-router-close.js"
   },
   {
-    "md5": "2ce6e5e94a8fdff3ffa47df32df0d75b",
+    "md5": "34d4dfbc739fe5210dae28b3f223fcf7",
     "path": "page/wb-router.js"
   },
   {
