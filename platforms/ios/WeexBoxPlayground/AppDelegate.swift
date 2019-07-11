@@ -9,10 +9,13 @@
 import UIKit
 import WeexBox
 import Flutter
+import FlutterPluginRegistrant
 import WXDevtool
 
 @UIApplicationMain
 class AppDelegate: FlutterAppDelegate {
+    
+    var flutterEngine : FlutterEngine?
 
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -21,6 +24,9 @@ class AppDelegate: FlutterAppDelegate {
         // 开启调试
         WeexBoxEngine.isDebug = true
         
+        // 注册路由
+        Router.register(name: Router.nameFlutter, controller: WBFlutterViewController.self)
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
         
@@ -28,6 +34,10 @@ class AppDelegate: FlutterAppDelegate {
         window?.rootViewController = WBNavigationController(rootViewController: LaunchController())
         
         window?.makeKeyAndVisible()
+        
+        flutterEngine = FlutterEngine(name: "io.flutter", project: nil);
+        flutterEngine?.run(withEntrypoint: nil);
+        GeneratedPluginRegistrant.register(with: self.flutterEngine);
         
         return super.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
