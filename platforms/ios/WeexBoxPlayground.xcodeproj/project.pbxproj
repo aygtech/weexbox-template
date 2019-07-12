@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48CDA28C22D44CB000CA5C7E /* FlutterBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CDA28B22D44CB000CA5C7E /* FlutterBaseController.swift */; };
+		48CDA29222D4739A00CA5C7E /* libFlutterPluginRegistrant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CDA29122D4739A00CA5C7E /* libFlutterPluginRegistrant.a */; };
 		48DC49CA22D2DEF100BE82C7 /* Flutter.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 48DC49C922D2DEF100BE82C7 /* Flutter.xcconfig */; };
 		48DC49CC22D2DF0100BE82C7 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 48DC49CB22D2DF0100BE82C7 /* Debug.xcconfig */; };
 		48DC49CE22D2DF1300BE82C7 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 48DC49CD22D2DF1300BE82C7 /* Release.xcconfig */; };
@@ -35,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		17D389B5D6140E2F5D9B9764 /* Pods-WeexBoxPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexBoxPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeexBoxPlayground/Pods-WeexBoxPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		48CDA28B22D44CB000CA5C7E /* FlutterBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterBaseController.swift; sourceTree = "<group>"; };
+		48CDA29122D4739A00CA5C7E /* libFlutterPluginRegistrant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFlutterPluginRegistrant.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		48DC49C922D2DEF100BE82C7 /* Flutter.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Flutter.xcconfig; sourceTree = "<group>"; };
 		48DC49CB22D2DF0100BE82C7 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		48DC49CD22D2DF1300BE82C7 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48CDA29222D4739A00CA5C7E /* libFlutterPluginRegistrant.a in Frameworks */,
 				623965C6250C74B6EA2E538C /* libPods-WeexBoxPlayground.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +117,7 @@
 				ACE49D8321A40C2400340A41 /* Assets.xcassets */,
 				ACE49D8521A40C2400340A41 /* LaunchScreen.storyboard */,
 				ACE49D8821A40C2400340A41 /* Info.plist */,
+				48CDA28B22D44CB000CA5C7E /* FlutterBaseController.swift */,
 			);
 			path = WeexBoxPlayground;
 			sourceTree = "<group>";
@@ -119,6 +125,7 @@
 		F84C5E53736A41EAF269108C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				48CDA29122D4739A00CA5C7E /* libFlutterPluginRegistrant.a */,
 				E0AAADB72B78DC97D9D3B430 /* libPods-WeexBoxPlayground.a */,
 			);
 			name = Frameworks;
@@ -283,6 +290,7 @@
 				AC6ACE7D21BE65E1005E5AFA /* LaunchController.swift in Sources */,
 				ACD4EFD922D6D6680073A467 /* WBFlutterViewController.swift in Sources */,
 				ACE49D7D21A40C2100340A41 /* AppDelegate.swift in Sources */,
+				48CDA28C22D44CB000CA5C7E /* FlutterBaseController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,9 +20,7 @@ class AppDelegate: FlutterAppDelegate {
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // 初始化 WeexBox
-        
         WeexBoxEngine.setup()
-        
         // 开启调试
         WeexBoxEngine.isDebug = true
         
