@@ -1,9 +1,8 @@
 // This is a generated file; do not edit or check into version control.
-FLUTTER_ROOT=/Users/wubing/Desktop/Flutter/flutter
-FLUTTER_APPLICATION_PATH=/Users/wubing/weexbox-template/platforms/flutter_module
-FLUTTER_TARGET=/Users/wubing/weexbox-template/platforms/flutter_module/lib/main.dart
+FLUTTER_ROOT=/Users/mario/flutter
+FLUTTER_APPLICATION_PATH=/Users/mario/Documents/aygtech/weexbox-template/platforms/flutter_module
+FLUTTER_TARGET=lib/main.dart
 FLUTTER_BUILD_DIR=build
 SYMROOT=${SOURCE_ROOT}/../build/ios
 FLUTTER_BUILD_NAME=1.0.0
 FLUTTER_BUILD_NUMBER=1
-TRACK_WIDGET_CREATION=true
