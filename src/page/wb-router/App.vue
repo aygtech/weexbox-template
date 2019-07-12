@@ -1,68 +1,39 @@
 <template>
   <scroller class="wrap">
-    <text class="title">
-      打开新页面(open)
-    </text>
-    <div
-      class="button"
-      @click="open"
-    >
-      <text class="button-text">
-        打开新页面
-      </text>
+    <text class="title">打开新页面(open)</text>
+    <div class="button" @click="open">
+      <text class="button-text">打开新页面</text>
     </div>
     <div class="empty" />
 
-    <text class="title">
-      打开页面与关闭页面(closeFromBottomToTop)
-    </text>
-    <div
-      class="button"
-      @click="closeFromBottomToTop"
-    >
-      <text class="button-text">
-        打开页面与关闭页面
-      </text>
+    <text class="title">打开Flutter新页面(open)</text>
+    <div class="button" @click="openFlutter">
+      <text class="button-text">打开Flutter新页面</text>
     </div>
     <div class="empty" />
 
-    <text class="title">
-      获取router的params参数(getParams)
-    </text>
-    <div
-      class="button"
-      @click="getParams"
-    >
-      <text class="button-text">
-        获取参数
-      </text>
+    <text class="title">打开页面与关闭页面(closeFromBottomToTop)</text>
+    <div class="button" @click="closeFromBottomToTop">
+      <text class="button-text">打开页面与关闭页面</text>
     </div>
     <div class="empty" />
 
-    <text class="title">
-      刷新weex页面(refresh)
-    </text>
-    <div
-      class="button"
-      @click="refresh"
-    >
-      <text class="button-text">
-        刷新本页
-      </text>
+    <text class="title">获取router的params参数(getParams)</text>
+    <div class="button" @click="getParams">
+      <text class="button-text">获取参数</text>
+    </div>
+    <div class="empty" />
+
+    <text class="title">刷新weex页面(refresh)</text>
+    <div class="button" @click="refresh">
+      <text class="button-text">刷新本页</text>
     </div>
     <div class="empty" />
 
     <template v-if="isIos">
-      <text class="title">
-        打开新页面并禁用返回手势(disableGestureBack)
-      </text>
-      <div
-        class="button"
-        @click="disableGestureBack"
-      >
-        <text class="button-text">
-          打开新页面并禁用返回手势
-        </text>
+      <text class="title">打开新页面并禁用返回手势(disableGestureBack)</text>
+      <div class="button" @click="disableGestureBack">
+        <text class="button-text">打开新页面并禁用返回手势</text>
       </div>
       <div class="empty" />
     </template>
@@ -82,8 +53,7 @@ const params = {
 }
 
 export default {
-  components: {
-  },
+  components: {},
   data() {
     return {
       isIos: env.platform.toLowerCase() === 'ios',
@@ -91,21 +61,29 @@ export default {
   },
   created() {
     if (params) {
-      navigator.setCenterItem({
-        text: params.title,
-        color: '3d3d3d',
-      }, () => {})
+      navigator.setCenterItem(
+        {
+          text: params.title,
+          color: '3d3d3d',
+        },
+        () => {},
+      )
     }
-    navigator.setRightItems([{
-      text: '查看文档',
-      color: '3d3d3d',
-    }], () => {
-      router.open({
-        name: 'web',
-        title: params.title,
-        url: `${weexBoxUrl}#${params.url}`,
-      })
-    })
+    navigator.setRightItems(
+      [
+        {
+          text: '查看文档',
+          color: '3d3d3d',
+        },
+      ],
+      () => {
+        router.open({
+          name: 'web',
+          title: params.title,
+          url: `${weexBoxUrl}#${params.url}`,
+        })
+      },
+    )
   },
   methods: {
     disableGestureBack() {
@@ -140,10 +118,20 @@ export default {
         url: `${weexBoxUrl}#${params.url}`,
       })
     },
+    openFlutter() {
+      router.open({
+        name: 'flutter',
+        url: 'test_fade_app',
+        params: {
+          k: 'v',
+        },
+        navBarHidden: true,
+      })
+    },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../style/global';
+@import "../../style/global";
 </style>
