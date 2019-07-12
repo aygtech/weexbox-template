@@ -27,6 +27,7 @@ class WBFlutterViewController: FlutterViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        setInitialRoute(routerString)
         router = Router.deserialize(from: routerString) ?? Router()
         
         rt_disableInteractivePop = router.disableGestureBack
