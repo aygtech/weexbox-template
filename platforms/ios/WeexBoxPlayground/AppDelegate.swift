@@ -37,9 +37,9 @@ class AppDelegate: FlutterAppDelegate {
         
         window?.makeKeyAndVisible()
         
-        flutterEngine = FlutterEngine(name: "io.flutter", project: nil);
-        flutterEngine?.run(withEntrypoint: nil);
-        GeneratedPluginRegistrant.register(with: self.flutterEngine);
+        flutterEngine = FlutterEngine(name: "io.flutter", project: nil)
+        flutterEngine?.run(withEntrypoint: nil)
+        GeneratedPluginRegistrant.register(with: self.flutterEngine)
         
         return super.application(application, didFinishLaunchingWithOptions: launchOptions)
     }

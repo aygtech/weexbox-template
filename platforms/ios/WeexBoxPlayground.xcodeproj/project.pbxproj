@@ -132,11 +132,11 @@
 			buildConfigurationList = ACE49D8B21A40C2400340A41 /* Build configuration list for PBXNativeTarget "WeexBoxPlayground" */;
 			buildPhases = (
 				C31AD2B68A46F0C8C08B5D6E /* [CP] Check Pods Manifest.lock */,
+				ACD4EFDA22D73B6D0073A467 /* ShellScript */,
 				ACE49D7521A40C2100340A41 /* Sources */,
 				ACE49D7621A40C2100340A41 /* Frameworks */,
 				ACE49D7721A40C2100340A41 /* Resources */,
 				E50C54FE4142F9B7C6FE9322 /* [CP] Copy Pods Resources */,
-				48DC49C722D2D4DD00BE82C7 /* Run Script */,
 				48DC49D922D2E5D900BE82C7 /* Embed Frameworks */,
 				2F0405AD549E3D9A8434DC23 /* [CP] Embed Pods Frameworks */,
 			);
@@ -216,7 +216,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeexBoxPlayground/Pods-WeexBoxPlayground-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		48DC49C722D2D4DD00BE82C7 /* Run Script */ = {
+		ACD4EFDA22D73B6D0073A467 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -225,7 +225,6 @@
 			);
 			inputPaths = (
 			);
-			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
