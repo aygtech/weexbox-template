@@ -9,7 +9,7 @@ class RouterManager {
     {"url":"test_fade_app","param":"{"name":"test","version":"1.0.0"}"}
    */
   static Widget getPageByRouter(String json) {
-
+    json = "{\"url\":\"test_fade_app\",\"type\":\"push\",\"name\":\"flutter\",\"params\":{\"k\":\"v\"},\"disableGestureBack\":false,\"navBarHidden\":true,\"closeFromBottomToTop\":true}";
     var jsonResponse = jsonDecode(json);
     String url = jsonResponse["url"];
     var param = jsonResponse["params"];

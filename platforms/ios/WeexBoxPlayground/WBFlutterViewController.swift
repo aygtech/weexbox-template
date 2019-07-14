@@ -14,19 +14,8 @@ class WBFlutterViewController: FlutterViewController {
     
     // 路由
     public var router: Router!
-    // 状态栏原始高度
-    let statusBarHeight = UIApplication.shared.statusBarFrame.size.height
-    let flutterEngine = (UIApplication.shared.delegate as? AppDelegate)?.flutterEngine
-    
-    init() {
-        super.init(engine: flutterEngine, nibName: nil, bundle: nil)!
-    }
 
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidLoad() {
         setInitialRoute(routerString)
         router = Router.deserialize(from: routerString) ?? Router()
         
@@ -36,8 +25,10 @@ class WBFlutterViewController: FlutterViewController {
             title = router.title
         }
         navigationController?.isNavigationBarHidden = router.navBarHidden
+        
+        super.viewDidLoad()
     }
-    
+
     deinit {
         Event.unregisterAll(target: self)
     }
