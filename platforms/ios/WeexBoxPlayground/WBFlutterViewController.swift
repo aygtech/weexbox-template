@@ -16,8 +16,8 @@ class WBFlutterViewController: FlutterViewController {
     public var router: Router!
 
     override func viewDidLoad() {
-        setInitialRoute(routerString)
-        router = Router.deserialize(from: routerString) ?? Router()
+        setInitialRoute(routerJson)
+        router = Router.deserialize(from: routerJson) ?? Router()
         
         rt_disableInteractivePop = router.disableGestureBack
         view.backgroundColor = .white

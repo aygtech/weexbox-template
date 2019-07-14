@@ -135,8 +135,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACE49D8B21A40C2400340A41 /* Build configuration list for PBXNativeTarget "WeexBoxPlayground" */;
 			buildPhases = (
-				ACD4EFDA22D73B6D0073A467 /* ShellScript */,
 				C31AD2B68A46F0C8C08B5D6E /* [CP] Check Pods Manifest.lock */,
+				ACD4EFDA22D73B6D0073A467 /* ShellScript */,
 				ACE49D7521A40C2100340A41 /* Sources */,
 				ACE49D7621A40C2100340A41 /* Frameworks */,
 				ACE49D7721A40C2100340A41 /* Resources */,
