@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		48CDA29222D4739A00CA5C7E /* libFlutterPluginRegistrant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CDA29122D4739A00CA5C7E /* libFlutterPluginRegistrant.a */; };
-		48DC49CA22D2DEF100BE82C7 /* Flutter.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 48DC49C922D2DEF100BE82C7 /* Flutter.xcconfig */; };
-		48DC49CC22D2DF0100BE82C7 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 48DC49CB22D2DF0100BE82C7 /* Debug.xcconfig */; };
-		48DC49CE22D2DF1300BE82C7 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 48DC49CD22D2DF1300BE82C7 /* Release.xcconfig */; };
 		623965C6250C74B6EA2E538C /* libPods-WeexBoxPlayground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AAADB72B78DC97D9D3B430 /* libPods-WeexBoxPlayground.a */; };
 		AC6ACE7D21BE65E1005E5AFA /* LaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ACE7C21BE65E1005E5AFA /* LaunchController.swift */; };
 		AC6ACE7F21BE688B005E5AFA /* weexbox-update in Resources */ = {isa = PBXBuildFile; fileRef = AC6ACE7E21BE688B005E5AFA /* weexbox-update */; };
@@ -37,9 +34,6 @@
 /* Begin PBXFileReference section */
 		17D389B5D6140E2F5D9B9764 /* Pods-WeexBoxPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexBoxPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeexBoxPlayground/Pods-WeexBoxPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 		48CDA29122D4739A00CA5C7E /* libFlutterPluginRegistrant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFlutterPluginRegistrant.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		48DC49C922D2DEF100BE82C7 /* Flutter.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Flutter.xcconfig; sourceTree = "<group>"; };
-		48DC49CB22D2DF0100BE82C7 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		48DC49CD22D2DF1300BE82C7 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		89B4DC284320D8694EC7BA21 /* Pods-WeexBoxPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexBoxPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeexBoxPlayground/Pods-WeexBoxPlayground.release.xcconfig"; sourceTree = "<group>"; };
 		AC6ACE7C21BE65E1005E5AFA /* LaunchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchController.swift; sourceTree = "<group>"; };
 		AC6ACE7E21BE688B005E5AFA /* weexbox-update */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "weexbox-update"; sourceTree = "<group>"; };
@@ -66,16 +60,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		48DC49C822D2DEB500BE82C7 /* flutter_config */ = {
-			isa = PBXGroup;
-			children = (
-				48DC49C922D2DEF100BE82C7 /* Flutter.xcconfig */,
-				48DC49CB22D2DF0100BE82C7 /* Debug.xcconfig */,
-				48DC49CD22D2DF1300BE82C7 /* Release.xcconfig */,
-			);
-			path = flutter_config;
-			sourceTree = "<group>";
-		};
 		4DC077ECA82FC80F636C821A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +91,6 @@
 		ACE49D7B21A40C2100340A41 /* WeexBoxPlayground */ = {
 			isa = PBXGroup;
 			children = (
-				48DC49C822D2DEB500BE82C7 /* flutter_config */,
 				ACE49D7C21A40C2100340A41 /* AppDelegate.swift */,
 				ACD4EFD822D6D6680073A467 /* WBFlutterViewController.swift */,
 				AC6ACE8021BE7357005E5AFA /* WeexViewController.swift */,
@@ -136,13 +119,13 @@
 			buildConfigurationList = ACE49D8B21A40C2400340A41 /* Build configuration list for PBXNativeTarget "WeexBoxPlayground" */;
 			buildPhases = (
 				C31AD2B68A46F0C8C08B5D6E /* [CP] Check Pods Manifest.lock */,
-				ACD4EFDA22D73B6D0073A467 /* ShellScript */,
+				3DC93FF5290F80AA841AD46A /* [CP-User] Run Flutter Build Script */,
 				ACE49D7521A40C2100340A41 /* Sources */,
 				ACE49D7621A40C2100340A41 /* Frameworks */,
 				ACE49D7721A40C2100340A41 /* Resources */,
 				E50C54FE4142F9B7C6FE9322 /* [CP] Copy Pods Resources */,
 				48DC49D922D2E5D900BE82C7 /* Embed Frameworks */,
-				2F0405AD549E3D9A8434DC23 /* [CP] Embed Pods Frameworks */,
+				2815A680352ECD15FFAF1039 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,10 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC6ACE7F21BE688B005E5AFA /* weexbox-update in Resources */,
-				48DC49CA22D2DEF100BE82C7 /* Flutter.xcconfig in Resources */,
-				48DC49CE22D2DF1300BE82C7 /* Release.xcconfig in Resources */,
 				ACE49D8721A40C2400340A41 /* LaunchScreen.storyboard in Resources */,
-				48DC49CC22D2DF0100BE82C7 /* Debug.xcconfig in Resources */,
 				ACE49D8421A40C2400340A41 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,7 +183,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2F0405AD549E3D9A8434DC23 /* [CP] Embed Pods Frameworks */ = {
+		2815A680352ECD15FFAF1039 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -220,22 +200,21 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeexBoxPlayground/Pods-WeexBoxPlayground-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ACD4EFDA22D73B6D0073A467 /* ShellScript */ = {
+		3DC93FF5290F80AA841AD46A /* [CP-User] Run Flutter Build Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
+				"${SRCROOT}/../flutter_module/.metadata",
+				"${SRCROOT}/../flutter_module/.ios/Flutter/App.framework/App",
+				"${SRCROOT}/../flutter_module/.ios/Flutter/engine/Flutter.framework/Flutter",
+				"${SRCROOT}/../flutter_module/.ios/Flutter/flutter_export_environment.sh",
 			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
+			name = "[CP-User] Run Flutter Build Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed\n";
+			shellScript = "source \"${SRCROOT}/../flutter_module/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build\n";
 		};
 		C31AD2B68A46F0C8C08B5D6E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -306,7 +285,6 @@
 /* Begin XCBuildConfiguration section */
 		ACE49D8921A40C2400340A41 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48DC49CB22D2DF0100BE82C7 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -368,7 +346,6 @@
 		};
 		ACE49D8A21A40C2400340A41 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48DC49CD22D2DF1300BE82C7 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -424,7 +401,7 @@
 		};
 		ACE49D8C21A40C2400340A41 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48DC49CB22D2DF0100BE82C7 /* Debug.xcconfig */;
+			baseConfigurationReference = 17D389B5D6140E2F5D9B9764 /* Pods-WeexBoxPlayground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -452,7 +429,7 @@
 		};
 		ACE49D8D21A40C2400340A41 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48DC49CD22D2DF1300BE82C7 /* Release.xcconfig */;
+			baseConfigurationReference = 89B4DC284320D8694EC7BA21 /* Pods-WeexBoxPlayground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
