@@ -22,7 +22,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@weexbox/service": "1.1.0",
+    "@weexbox/service": "^1.1.1",
     "weex-bindingx": "^0.0.49",
     "weex-ui": "^0.6.14",
     "vue-class-component": "^7.0.2",
