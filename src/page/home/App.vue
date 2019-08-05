@@ -7,14 +7,15 @@
       </div>
     </scroller>
     <div class="wrapper">
-      <div class="item" @click="weexPage">
-        <text class="text">Weex实例</text>
-      </div>
       <div class="item" @click="weexboxPage">
-        <text class="text">WeexBox实例</text>
+        <text class="text">Weex 实例</text>
       </div>
-      <div class="item" @click="news">
-        <text class="text">资讯</text>
+      <div class="item" @click="flutterPage">
+        <text class="text">Flutter 实例</text>
+        <text class="text">需要flutter混合工程</text>
+      </div>
+      <div class="item" @click="ui">
+        <text class="text">Weex UI</text>
       </div>
       <div class="item" @click="about">
         <text class="text">关于</text>
@@ -24,7 +25,7 @@
 </template>
 
 <script>
-import native, { router } from '../../utils/native'
+import { router } from '../../utils/native'
 
 const navigator = weex.requireModule('wb-navigator')
 
@@ -48,18 +49,11 @@ export default {
     }], () => {})
   },
   methods: {
-    news() {
+    ui() {
       router.open({
         name: 'weex',
-        title: '资讯',
-        url: 'https://raw.githubusercontent.com/aygtech/incubator-weex/master/ios/playground/bundlejs/news.weex.js',
-      })
-    },
-    weexPage() {
-      router.open({
-        name: 'weex',
-        title: 'Weex实例',
-        url: native.examplesWeex,
+        title: 'Weex UI',
+        url: 'https://h5.m.taobao.com/trip/weex-ui/index.html?_wx_tpl=https%3A%2F%2Fh5.m.taobao.com%2Ftrip%2Fweex-ui%2Fdemo%2Findex.native-min.js',
       })
     },
     about() {
@@ -72,6 +66,16 @@ export default {
       router.open({
         url: 'page/module.js',
         params: {},
+      })
+    },
+    flutterPage() {
+      router.open({
+        name: 'flutter',
+        url: 'test_fade_app',
+        params: {
+          k: 'v',
+        },
+        navBarHidden: true,
       })
     },
   },
