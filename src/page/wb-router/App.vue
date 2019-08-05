@@ -6,12 +6,6 @@
     </div>
     <div class="empty" />
 
-    <text class="title">打开Flutter新页面(open)</text>
-    <div class="button" @click="openFlutter">
-      <text class="button-text">打开Flutter新页面</text>
-    </div>
-    <div class="empty" />
-
     <text class="title">打开页面与关闭页面(closeFromBottomToTop)</text>
     <div class="button" @click="closeFromBottomToTop">
       <text class="button-text">打开页面与关闭页面</text>
@@ -116,16 +110,6 @@ export default {
       router.open({
         name: 'web',
         url: `${weexBoxUrl}#${params.url}`,
-      })
-    },
-    openFlutter() {
-      router.open({
-        name: 'flutter',
-        url: 'test_fade_app',
-        params: {
-          k: 'v',
-        },
-        navBarHidden: true,
       })
     },
   },
