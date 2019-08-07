@@ -32,7 +32,8 @@ android {
 }
 
 dependencies {
-    api 'com.github.aygtech:weexbox-android-library:2.1.65'
+    implementation 'com.github.aygtech:weexbox-android-library:2.1.65'
+    implementation project(':flutter')
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
