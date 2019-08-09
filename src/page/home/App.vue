@@ -71,7 +71,7 @@ export default {
     flutterPage() {
       router.open({
         name: 'flutter',
-        url: 'test_fade_app',
+        url: 'hello',
         params: {
           k: 'v',
         },
