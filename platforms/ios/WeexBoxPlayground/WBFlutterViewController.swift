@@ -67,6 +67,7 @@ class WBFlutterViewController: FlutterViewController {
         Event.unregisterAll(target: eventChannelHandler)
     }
     
+    // 子类重载此方法，就可以添加自己的method
     public func flutterMethodCall(_ call: FlutterMethodCall, _ result: FlutterResult) {
         
     }
