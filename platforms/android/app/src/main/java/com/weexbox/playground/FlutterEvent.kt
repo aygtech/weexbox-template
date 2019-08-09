@@ -1,4 +1,4 @@
-package iquest.aiyuangong.com.iquest.flutter
+package com.weexbox.playground
 
 import com.weexbox.core.controller.WBBaseActivity
 import com.weexbox.core.event.Event

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		48CDA29222D4739A00CA5C7E /* libFlutterPluginRegistrant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CDA29122D4739A00CA5C7E /* libFlutterPluginRegistrant.a */; };
 		623965C6250C74B6EA2E538C /* libPods-WeexBoxPlayground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AAADB72B78DC97D9D3B430 /* libPods-WeexBoxPlayground.a */; };
+		AC18FC0C22FC0D76002D54E8 /* ChannelManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18FC0B22FC0D76002D54E8 /* ChannelManger.swift */; };
+		AC18FC1122FD64D1002D54E8 /* EventChannelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18FC1022FD64D1002D54E8 /* EventChannelHandler.swift */; };
 		AC6ACE7D21BE65E1005E5AFA /* LaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ACE7C21BE65E1005E5AFA /* LaunchController.swift */; };
 		AC6ACE7F21BE688B005E5AFA /* weexbox-update in Resources */ = {isa = PBXBuildFile; fileRef = AC6ACE7E21BE688B005E5AFA /* weexbox-update */; };
 		AC6ACE8121BE7357005E5AFA /* WeexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ACE8021BE7357005E5AFA /* WeexViewController.swift */; };
@@ -35,6 +37,8 @@
 		17D389B5D6140E2F5D9B9764 /* Pods-WeexBoxPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexBoxPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeexBoxPlayground/Pods-WeexBoxPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 		48CDA29122D4739A00CA5C7E /* libFlutterPluginRegistrant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFlutterPluginRegistrant.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B4DC284320D8694EC7BA21 /* Pods-WeexBoxPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexBoxPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeexBoxPlayground/Pods-WeexBoxPlayground.release.xcconfig"; sourceTree = "<group>"; };
+		AC18FC0B22FC0D76002D54E8 /* ChannelManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelManger.swift; sourceTree = "<group>"; };
+		AC18FC1022FD64D1002D54E8 /* EventChannelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventChannelHandler.swift; sourceTree = "<group>"; };
 		AC6ACE7C21BE65E1005E5AFA /* LaunchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchController.swift; sourceTree = "<group>"; };
 		AC6ACE7E21BE688B005E5AFA /* weexbox-update */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "weexbox-update"; sourceTree = "<group>"; };
 		AC6ACE8021BE7357005E5AFA /* WeexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeexViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +97,9 @@
 			children = (
 				ACE49D7C21A40C2100340A41 /* AppDelegate.swift */,
 				ACD4EFD822D6D6680073A467 /* WBFlutterViewController.swift */,
+				AC18FC1022FD64D1002D54E8 /* EventChannelHandler.swift */,
 				AC6ACE8021BE7357005E5AFA /* WeexViewController.swift */,
+				AC18FC0B22FC0D76002D54E8 /* ChannelManger.swift */,
 				AC6ACE7C21BE65E1005E5AFA /* LaunchController.swift */,
 				ACE49D8321A40C2400340A41 /* Assets.xcassets */,
 				ACE49D8521A40C2400340A41 /* LaunchScreen.storyboard */,
@@ -119,7 +125,7 @@
 			buildConfigurationList = ACE49D8B21A40C2400340A41 /* Build configuration list for PBXNativeTarget "WeexBoxPlayground" */;
 			buildPhases = (
 				C31AD2B68A46F0C8C08B5D6E /* [CP] Check Pods Manifest.lock */,
-				3DC93FF5290F80AA841AD46A /* [CP-User] Run Flutter Build Script */,
+				C2118139FA4A22E78CA765D7 /* [CP-User] Run Flutter Build Script */,
 				ACE49D7521A40C2100340A41 /* Sources */,
 				ACE49D7621A40C2100340A41 /* Frameworks */,
 				ACE49D7721A40C2100340A41 /* Resources */,
@@ -200,7 +206,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeexBoxPlayground/Pods-WeexBoxPlayground-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3DC93FF5290F80AA841AD46A /* [CP-User] Run Flutter Build Script */ = {
+		C2118139FA4A22E78CA765D7 /* [CP-User] Run Flutter Build Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -214,7 +220,7 @@
 			name = "[CP-User] Run Flutter Build Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "source \"${SRCROOT}/../flutter_module/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build\n";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../flutter_module/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 		C31AD2B68A46F0C8C08B5D6E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -263,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC6ACE8121BE7357005E5AFA /* WeexViewController.swift in Sources */,
+				AC18FC0C22FC0D76002D54E8 /* ChannelManger.swift in Sources */,
 				AC6ACE7D21BE65E1005E5AFA /* LaunchController.swift in Sources */,
+				AC18FC1122FD64D1002D54E8 /* EventChannelHandler.swift in Sources */,
 				ACD4EFD922D6D6680073A467 /* WBFlutterViewController.swift in Sources */,
 				ACE49D7D21A40C2100340A41 /* AppDelegate.swift in Sources */,
 			);

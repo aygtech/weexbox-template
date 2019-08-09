@@ -1,4 +1,13 @@
+import '../channel_manger/channel_manger.dart';
+
 class Router {
+  static const typePush = 'push';
+  static const typePresent = 'present';
+  static const typeModalMask = 'modalMask';
+  static const nameWeex = 'weex';
+  static const nameWeb = 'web';
+  static const nameFlutter = 'flutter';
+
   // 页面名称
   var name;
 
@@ -55,4 +64,12 @@ class Router {
     'closeCount': closeCount,
     'type': type
   };
+
+  open() {
+    ChannelManger.methodChannel.invokeMethod('router_open', {'router': this.toJson()});
+  }
+
+  close(int levels) {
+    ChannelManger.methodChannel.invokeMethod('router_close', {'router': this.toJson(), 'levels': levels});
+  }
 }

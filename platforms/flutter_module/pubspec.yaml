@@ -82,5 +82,5 @@ flutter:
   # identifiers, which may be completely independent or the same as these.
   module:
     androidX: false
-    androidPackage: com.example.flutter_module
-    iosBundleIdentifier: com.example.flutterModule
+    androidPackage: com.weexbox.flutter_module
+    iosBundleIdentifier: com.weexbox.flutterModule

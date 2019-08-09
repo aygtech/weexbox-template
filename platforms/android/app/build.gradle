@@ -32,7 +32,7 @@ android {
 }
 
 dependencies {
-    api 'com.github.aygtech:weexbox-android-library:2.1.66'
+    api 'com.github.aygtech:weexbox-android-library:2.1.65'
 
     implementation project(':flutter')
 

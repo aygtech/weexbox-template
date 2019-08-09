@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example.flutter_module.host"
+        applicationId "com.weexbox.flutter_module.host"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
