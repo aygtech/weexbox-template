@@ -51,6 +51,8 @@ class WBFlutterViewController: FlutterViewController {
             case "router_close":
                 let router = Router.deserialize(from: arguments["router"].dictionaryObject)
                 router?.close(from: self!, levels: arguments["levels"].int)
+            case "hud_showToast":
+                HUD.showToast(view: self!.view, message: arguments["message"].stringValue)
             default:
                 break
             }
@@ -62,6 +64,7 @@ class WBFlutterViewController: FlutterViewController {
 
     deinit {
         Event.unregisterAll(target: self)
+        Event.unregisterAll(target: eventChannelHandler)
     }
     
     public func flutterMethodCall(_ call: FlutterMethodCall, _ result: FlutterResult) {

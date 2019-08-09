@@ -1,8 +1,7 @@
 import 'dart:convert';
 import 'dart:developer';
 import 'package:flutter/material.dart';
-import 'package:flutter_module/page/default_route.dart';
-import 'package:flutter_module/page/r1.dart';
+import 'package:flutter_module/page/hello_route.dart';
 import 'package:flutter_module/router/Router.dart';
 
 class RouterManager {
@@ -17,10 +16,9 @@ class RouterManager {
   }
 
   static Widget _getWidgetPage(String url, Map param) {
-    Widget widget = DefaultRoute();
+    Widget widget = HelloRoute();
     switch (url) {
       case 'test_fade_app':
-        widget = Route1();
         break;
     }
     return widget;

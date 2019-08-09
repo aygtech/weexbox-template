@@ -69,7 +69,7 @@ class Router {
     ChannelManger.methodChannel.invokeMethod('router_open', {'router': this.toJson()});
   }
 
-  close(int levels) {
+  close({int levels}) {
     ChannelManger.methodChannel.invokeMethod('router_close', {'router': this.toJson(), 'levels': levels});
   }
 }

@@ -10,7 +10,6 @@ import Foundation
 import Flutter
 import WeexBox
 import SwiftyJSON
-import HandyJSON
 
 class EventChannelHandler: NSObject, FlutterStreamHandler {
 
@@ -19,7 +18,9 @@ class EventChannelHandler: NSObject, FlutterStreamHandler {
         let json = JSON(arguments ?? "")
         let name = json["name"].stringValue
         Event.register(target: self, name: name) { (notification) in
-            events(notification?.userInfo)
+            if let info = notification?.userInfo {
+                events(JSON(info).rawString())
+            }
         }
         return nil
     }
