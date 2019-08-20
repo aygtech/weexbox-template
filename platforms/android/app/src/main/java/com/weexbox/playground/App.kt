@@ -1,7 +1,6 @@
 package com.weexbox.playground
 
 import android.app.Application
-import com.taobao.weex.WXSDKEngine
 import com.weexbox.core.WeexBoxEngine
 import com.weexbox.core.router.Router
 
@@ -15,7 +14,6 @@ class App : Application() {
 
         // 开启调试
         WeexBoxEngine.isDebug = true
-
         Router.register("flutter", WBFlutterActivity::class.java)
     }
 

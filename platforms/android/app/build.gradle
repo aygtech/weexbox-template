@@ -33,7 +33,6 @@ android {
 
 dependencies {
     implementation 'com.github.aygtech:weexbox-android-library:2.1.69'
-
     implementation project(':flutter')
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
