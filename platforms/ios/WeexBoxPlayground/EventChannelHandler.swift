@@ -18,9 +18,11 @@ class EventChannelHandler: NSObject, FlutterStreamHandler {
         let json = JSON(arguments ?? "")
         let name = json["name"].stringValue
         Event.register(target: self, name: name) { (notification) in
+            var infoString: String?
             if let info = notification?.userInfo {
-                events(JSON(info).rawString())
+                infoString = JSON(info).rawString()
             }
+            events(infoString)
         }
         return nil
     }

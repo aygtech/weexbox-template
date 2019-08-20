@@ -11,7 +11,9 @@ import com.weexbox.core.extension.toJsonString
 import com.weexbox.core.extension.toObject
 import com.weexbox.core.router.Router
 import com.weexbox.core.util.StatusBarUtil
+import com.weexbox.core.util.ToastUtil
 import io.flutter.facade.Flutter
+import io.flutter.plugin.common.EventChannel
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 
@@ -41,7 +43,7 @@ open class WBFlutterActivity : WBBaseActivity() {
         MethodChannel(flutterView, "weexbox.com/method_channel").setMethodCallHandler { call, result ->
             flutterMethodCall(call, result)
             val method = call.method
-            val arguments = (call.arguments as String).toJsonMap()
+            val arguments = call.arguments as Map<String, Any>
             when (method) {
                 "event_emit" -> Event.emit(arguments["name"] as String, arguments["info"] as Map<String, Any>)
                 "event_unregister" -> Event.unregister(this, arguments["name"] as String)
@@ -50,12 +52,30 @@ open class WBFlutterActivity : WBBaseActivity() {
                     val router = (arguments["router"] as Map<String, Any>).toObject(Router::class.java)
                     router.open(this)
                 }
-                "router_close" ->{
+                "router_close" -> {
                     val router = (arguments["router"] as Map<String, Any>).toObject(Router::class.java)
                     router.close(this)
                 }
+                "hud_showToast" -> {
+                    ToastUtil.showLongToast(this, arguments["message"] as String)
+                }
             }
         }
+
+        val eventChannel = EventChannel(flutterView, "weexbox.com/event_channel")
+        eventChannel.setStreamHandler(object: EventChannel.StreamHandler {
+            override fun onListen(p0: Any?, p1: EventChannel.EventSink?) {
+                val json = (p0 ?: "").toJsonMap()
+                val name = json["name"] as String
+                Event.register(this@WBFlutterActivity, name) {
+                    p1?.success(it?.toJsonString())
+                }
+            }
+
+            override fun onCancel(p0: Any?) {
+
+            }
+        })
     }
 
     // 子类重载此方法，就可以添加自己的method
