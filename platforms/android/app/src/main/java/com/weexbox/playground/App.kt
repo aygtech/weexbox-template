@@ -16,7 +16,6 @@ class App : Application() {
         // 开启调试
         WeexBoxEngine.isDebug = true
 
-        WXSDKEngine.registerModule("event", EventModule::class.java)
         Router.register("flutter", WBFlutterActivity::class.java)
     }
 
