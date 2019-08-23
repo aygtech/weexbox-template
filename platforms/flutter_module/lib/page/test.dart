@@ -1,9 +1,11 @@
+
+
 import 'package:flutter/material.dart';
 import '../router/router.dart';
 import '../event/event.dart';
 import '../event/hud.dart';
 
-class HelloRoute extends StatelessWidget {
+class TestRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const textStyle = TextStyle(fontSize: 16, color: Colors.black);
@@ -18,7 +20,7 @@ class HelloRoute extends StatelessWidget {
               width: double.infinity,
               margin: EdgeInsets.all(20),
               child: Center(
-                child: Text('打开新页面', style: textStyle),
+                child: Text('打开新页面2', style: textStyle),
               ),
             ),
             onTap: () {
@@ -37,7 +39,7 @@ class HelloRoute extends StatelessWidget {
               width: double.infinity,
               margin: EdgeInsets.all(20),
               child: Center(
-                child: Text('关闭当前页面', style: textStyle),
+                child: Text('关闭当前页面2', style: textStyle),
               ),
             ),
             onTap: () {
@@ -50,13 +52,14 @@ class HelloRoute extends StatelessWidget {
               width: double.infinity,
               margin: EdgeInsets.all(20),
               child: Center(
-                child: Text('注册事件1', style: textStyle),
+                child: Text('注册事件2', style: textStyle),
               ),
             ),
             onTap: () {
-              HUD.showToast('注册事件1');
-              Event.register('name1', (event) {
-                HUD.showToast('接收到1: ' + event);
+              HUD.showToast('注册事件2');
+              Event.register('name2', (event) {
+                HUD.showToast('接收到2: ' + event);
+                print("事件2");
               });
             },
           ),
@@ -65,11 +68,41 @@ class HelloRoute extends StatelessWidget {
               width: double.infinity,
               margin: EdgeInsets.all(20),
               child: Center(
-                child: Text('发送事件1', style: textStyle),
+                child: Text('注册事件3', style: textStyle),
               ),
             ),
             onTap: () {
-              Event.emit('name1', {'k': 'vbbbb'});
+              HUD.showToast('注册事件3');
+              Event.register('name3', (event) {
+                HUD.showToast('接收到3: ' + event);
+                print("事件3");
+              });
+            },
+          ),
+          GestureDetector(
+            child: Container(
+              width: double.infinity,
+              margin: EdgeInsets.all(20),
+              child: Center(
+                child: Text('发送事件2', style: textStyle),
+              ),
+            ),
+            onTap: () {
+              Event.emit('name2', {'k2': 'vbbbb2'});
+
+            },
+          ),
+          GestureDetector(
+            child: Container(
+              width: double.infinity,
+              margin: EdgeInsets.all(20),
+              child: Center(
+                child: Text('发送事件3', style: textStyle),
+              ),
+            ),
+            onTap: () {
+              Event.emit('name3', {'k3': 'vbbbb3'});
+
             },
           ),
         ],

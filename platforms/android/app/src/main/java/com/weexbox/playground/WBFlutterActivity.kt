@@ -4,6 +4,7 @@ import android.graphics.PixelFormat
 import android.os.Bundle
 import android.view.ViewGroup
 import android.widget.FrameLayout
+import com.alibaba.fastjson.JSONObject
 import com.weexbox.core.controller.WBBaseActivity
 import com.weexbox.core.event.Event
 import com.weexbox.core.extension.toJsonMap
@@ -16,6 +17,7 @@ import io.flutter.facade.Flutter
 import io.flutter.plugin.common.EventChannel
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
+import java.util.*
 
 /**
  *Author:leon.wen
@@ -23,6 +25,9 @@ import io.flutter.plugin.common.MethodChannel
  *Description:This is WBFlutterActivity
  */
 open class WBFlutterActivity : WBBaseActivity() {
+
+    // 保存当前事件通道的最新会话
+    var eventSink: EventChannel.EventSink? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -63,12 +68,16 @@ open class WBFlutterActivity : WBBaseActivity() {
         }
 
         val eventChannel = EventChannel(flutterView, "weexbox.com/event_channel")
-        eventChannel.setStreamHandler(object: EventChannel.StreamHandler {
+        eventChannel.setStreamHandler(object : EventChannel.StreamHandler {
             override fun onListen(p0: Any?, p1: EventChannel.EventSink?) {
+                eventSink = p1
                 val json = (p0 ?: "").toJsonMap()
                 val name = json["name"] as String
                 Event.register(this@WBFlutterActivity, name) {
-                    p1?.success(it?.toJsonString())
+                    val params = TreeMap<String, Any?>()
+                    params["name"] = name
+                    params["info"] = it
+                    eventSink?.success(params.toJsonString())
                 }
             }
 
