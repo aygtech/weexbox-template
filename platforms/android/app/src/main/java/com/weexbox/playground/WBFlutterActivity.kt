@@ -44,14 +44,13 @@ open class WBFlutterActivity : WBBaseActivity() {
         flutterView.holder.setFormat(PixelFormat.TRANSLUCENT)
         val layout = FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
         setContentView(flutterView, layout)
-
         MethodChannel(flutterView, "weexbox.com/method_channel").setMethodCallHandler { call, result ->
             flutterMethodCall(call, result)
             val method = call.method
-            val arguments = call.arguments as Map<String, Any>
+            val arguments = call.arguments as? Map<String, Any> ?: TreeMap<String, Any>()
             when (method) {
                 "event_emit" -> Event.emit(arguments["name"] as String, arguments["info"] as Map<String, Any>)
-                "event_unregister" -> Event.unregister(this, arguments["name"] as String)
+                "event_unregister" ->  Event.unregister(this, arguments["name"] as String)
                 "event_unregisterAll" -> Event.unregisterAll(this)
                 "router_open" -> {
                     val router = (arguments["router"] as Map<String, Any>).toObject(Router::class.java)
@@ -63,6 +62,9 @@ open class WBFlutterActivity : WBBaseActivity() {
                 }
                 "hud_showToast" -> {
                     ToastUtil.showLongToast(this, arguments["message"] as String)
+                }
+                "getControllerId" -> {
+                    result.success(this.hashCode().toString())
                 }
             }
         }

@@ -59,7 +59,7 @@ class TestRoute extends StatelessWidget {
               HUD.showToast('注册事件2');
               Event.register('name2', (event) {
                 HUD.showToast('接收到2: ' + event);
-                print("事件2");
+                print('test 接收到2');
               });
             },
           ),
@@ -103,6 +103,30 @@ class TestRoute extends StatelessWidget {
             onTap: () {
               Event.emit('name3', {'k3': 'vbbbb3'});
 
+            },
+          ),
+          GestureDetector(
+            child: Container(
+              width: double.infinity,
+              margin: EdgeInsets.all(20),
+              child: Center(
+                child: Text('注销事件3', style: textStyle),
+              ),
+            ),
+            onTap: () {
+              Event.unregister("name3");
+            },
+          ),
+          GestureDetector(
+            child: Container(
+              width: double.infinity,
+              margin: EdgeInsets.all(20),
+              child: Center(
+                child: Text('注销当前界面全部事件', style: textStyle),
+              ),
+            ),
+            onTap: () {
+              Event.unregisterAll();
             },
           ),
         ],

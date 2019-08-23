@@ -57,6 +57,7 @@ class HelloRoute extends StatelessWidget {
               HUD.showToast('注册事件1');
               Event.register('name1', (event) {
                 HUD.showToast('接收到1: ' + event);
+                print('hello_route 接收到1 ');
               });
             },
           ),
