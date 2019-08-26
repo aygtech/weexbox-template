@@ -62,6 +62,7 @@ class WBFlutterViewController: FlutterViewController {
         
         eventChannel = FlutterEventChannel(name: "weexbox.com/event_channel", binaryMessenger: engine as! FlutterBinaryMessenger)
         eventChannel.setStreamHandler(eventChannelHandler)
+        EventChannelHandler.flutter = self
     }
 
     deinit {

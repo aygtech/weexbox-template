@@ -13,6 +13,9 @@ import SwiftyJSON
 
 class EventChannelHandler: NSObject, FlutterStreamHandler {
     
+    // 保存一个flutter，解决闪退
+    static var flutter: WBFlutterViewController?
+    
     // 保存当前事件通道的最新会话
     var eventSink: FlutterEventSink?
 

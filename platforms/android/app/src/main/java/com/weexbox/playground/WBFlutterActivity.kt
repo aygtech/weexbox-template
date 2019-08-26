@@ -46,7 +46,7 @@ open class WBFlutterActivity : WBBaseActivity() {
         MethodChannel(flutterView, "weexbox.com/method_channel").setMethodCallHandler { call, result ->
             flutterMethodCall(call, result)
             val method = call.method
-            val arguments = call.arguments as? Map<String, Any> ?: TreeMap<String, Any>()
+            val arguments = call.arguments as? Map<String, Any> ?: TreeMap()
             when (method) {
                 "event_emit" -> Event.emit(arguments["name"] as String, arguments["info"] as Map<String, Any>)
                 "event_unregister" -> Event.unregister(this, arguments["name"] as String)
