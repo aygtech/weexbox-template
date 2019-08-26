@@ -50,9 +50,11 @@ class WBFlutterViewController: FlutterViewController {
                 router?.open(from: self!)
             case "router_close":
                 let router = Router.deserialize(from: arguments["router"].dictionaryObject)
-                router?.close(from: self!, levels: arguments["levels"].int)
+                router?.close(from: self!, count: arguments["levels"].int)
             case "hud_showToast":
                 HUD.showToast(view: self!.view, message: arguments["message"].stringValue)
+            case "getControllerId":
+                result(String(self!.hashValue))
             default:
                 break
             }

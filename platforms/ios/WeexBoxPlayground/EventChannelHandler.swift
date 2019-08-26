@@ -12,17 +12,22 @@ import WeexBox
 import SwiftyJSON
 
 class EventChannelHandler: NSObject, FlutterStreamHandler {
+    
+    // 保存当前事件通道的最新会话
+    var eventSink: FlutterEventSink?
 
     // MARK- FlutterStreamHandler
     func onListen(withArguments arguments: Any?, eventSink events: @escaping FlutterEventSink) -> FlutterError? {
+        eventSink = events
         let json = JSON(arguments ?? "")
         let name = json["name"].stringValue
         Event.register(target: self, name: name) { (notification) in
-            var infoString: String?
+            var params = Dictionary<String, Any>()
+            params["name"] = name
             if let info = notification?.userInfo {
-                infoString = JSON(info).rawString()
+                params["info"] = info
             }
-            events(infoString)
+            self.eventSink?(JSON(params).rawString())
         }
         return nil
     }

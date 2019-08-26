@@ -4,7 +4,6 @@ import android.graphics.PixelFormat
 import android.os.Bundle
 import android.view.ViewGroup
 import android.widget.FrameLayout
-import com.alibaba.fastjson.JSONObject
 import com.weexbox.core.controller.WBBaseActivity
 import com.weexbox.core.event.Event
 import com.weexbox.core.extension.toJsonMap
@@ -50,7 +49,7 @@ open class WBFlutterActivity : WBBaseActivity() {
             val arguments = call.arguments as? Map<String, Any> ?: TreeMap<String, Any>()
             when (method) {
                 "event_emit" -> Event.emit(arguments["name"] as String, arguments["info"] as Map<String, Any>)
-                "event_unregister" ->  Event.unregister(this, arguments["name"] as String)
+                "event_unregister" -> Event.unregister(this, arguments["name"] as String)
                 "event_unregisterAll" -> Event.unregisterAll(this)
                 "router_open" -> {
                     val router = (arguments["router"] as Map<String, Any>).toObject(Router::class.java)
