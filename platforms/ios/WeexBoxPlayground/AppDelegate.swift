@@ -18,12 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // 初始化 WeexBox
-        
         WeexBoxEngine.setup()
         
         // 开启调试
         WeexBoxEngine.isDebug = true
-        WXDevTool.launchDebug(withUrl: "ws://192.168.4.250:8089/debugProxy/native/19bb02fc-eb2c-4d6f-bb4d-f9e9e96cabd7")
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
